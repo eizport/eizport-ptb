@@ -1,0 +1,2065 @@
+# Copyright (C) 2026 eizport
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Eizport 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/eizport/eizport/issues\n"
+"POT-Creation-Date: 2026-10-13T03:42:54+00:00\n"
+"PO-Revision-Date: 2026-10-11 00:00+0000\n"
+"Last-Translator: eizport\n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: eizport\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+msgid "Playground"
+msgstr "Playground"
+
+msgid ""
+"What the WordPress Playground .zip installs — any installed theme or plugin. "
+"The ones from the WordPress.org directory are installed from there, in the "
+"version this site has; premium and custom ones go inside the file: share it "
+"only where their licenses allow."
+msgstr ""
+"O que o .zip do WordPress Playground instala — qualquer tema ou plugin "
+"instalado. Os do diretório do WordPress.org são instalados de lá, na versão "
+"que este site tem; os premium e os personalizados vão dentro do arquivo: "
+"compartilhe-o só onde as licenças deles permitirem."
+
+msgid ""
+"The exported attachments’ files (images, PDFs, videos) go inside the file, "
+"so the importer doesn’t download them from this site. Off, the importer can "
+"still fetch them while this site is online."
+msgstr ""
+"Os arquivos dos anexos exportados (imagens, PDFs, vídeos) vão dentro do "
+"arquivo, então o importador não os baixa deste site. Desligado, o importador "
+"ainda pode buscá-los enquanto este site estiver no ar."
+
+msgid ""
+"A plugin .zip holding the bundle: installed on the other site, it imports "
+"itself from its screen under Tools."
+msgstr ""
+"Um .zip de plugin com o pacote dentro: instalado no outro site, ele se "
+"importa sozinho pela tela dele em Ferramentas."
+
+msgid ""
+"On import, pages, posts and products that already exist on the other site "
+"(same slug) are updated with this content instead of getting copies — the "
+"homepage stays the homepage, a second delivery updates the first. The "
+"importer can still turn it off."
+msgstr ""
+"Na importação, as páginas, posts e produtos que já existem no outro site "
+"(mesmo slug) são atualizados com este conteúdo em vez de ganharem cópias — a "
+"página inicial continua sendo a página inicial, e uma segunda entrega "
+"atualiza a primeira. Quem importa ainda pode desligar."
+
+msgid "WXR ZIP"
+msgstr "WXR ZIP"
+
+msgid "WXRZ"
+msgstr "WXRZ"
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "WXR XML"
+msgstr "WXR XML"
+
+msgid "File name"
+msgstr "Nome do arquivo"
+
+#: includes/bundle-plugin.php:591
+msgid "Media files"
+msgstr "Arquivos de mídia"
+
+msgid "As plugin"
+msgstr "Como plugin"
+
+msgid "Update existing"
+msgstr "Atualizar existentes"
+
+msgid "Themes to install"
+msgstr "Temas a instalar"
+
+#: includes/export.php:404
+msgid "active"
+msgstr "ativo"
+
+msgid ""
+"A child theme brings its parent. The active one is activated, if chosen."
+msgstr ""
+"Um tema descendente traz o tema ascendente. O ativo é ativado, se escolhido."
+
+msgid "Plugins to install and activate"
+msgstr "Plugins a instalar e ativar"
+
+#. translators: 1: number of themes, 2: number of plugins.
+msgid "Playground: %1$s, %2$s"
+msgstr "Playground: %1$s, %2$s"
+
+#. translators: %d: number of themes.
+msgid "%d theme"
+msgid_plural "%d themes"
+msgstr[0] "%d tema"
+msgstr[1] "%d temas"
+
+#. translators: %d: number of plugins.
+msgid "%d plugin"
+msgid_plural "%d plugins"
+msgstr[0] "%d plugin"
+msgstr[1] "%d plugins"
+
+msgid "custom filename"
+msgstr "nome de arquivo personalizado"
+
+msgid "default filename"
+msgstr "nome de arquivo padrão"
+
+msgid "media files"
+msgstr "arquivos de mídia"
+
+msgid "no media files"
+msgstr "sem arquivos de mídia"
+
+msgid "as plugin"
+msgstr "como plugin"
+
+msgid "updates existing"
+msgstr "atualiza existentes"
+
+msgid "Details"
+msgstr "Detalhes"
+
+msgid "Themes and plugins"
+msgstr "Temas e plugins"
+
+msgid "Playground themes and plugins"
+msgstr "Temas e plugins do Playground"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Done"
+msgstr "Concluído"
+
+#. translators: %d: number of items.
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d itens"
+
+#. translators: %d: number of items or settings suggested by the items chosen (the homepage's settings, the products a block shows…).
+msgid "%d suggested"
+msgid_plural "%d suggested"
+msgstr[0] "%d sugerido"
+msgstr[1] "%d sugeridos"
+
+msgid "All options"
+msgstr "Todas as opções"
+
+#: includes/selection.php:342 includes/selection.php:365
+#: includes/selection.php:392
+msgid "All"
+msgstr "Tudo"
+
+msgid "Filtered"
+msgstr "Filtrado"
+
+msgid "Not included"
+msgstr "Não incluído"
+
+msgid "Saved defaults cleared."
+msgstr "Padrões salvos limpos."
+
+msgid "Saved as default."
+msgstr "Salvo como padrão."
+
+msgid "Product reviews"
+msgstr "Avaliações de produtos"
+
+#: includes/bundle-plugin.php:605
+msgid "Options"
+msgstr "Opções"
+
+msgid "Content"
+msgstr "Conteúdo"
+
+msgid "Items"
+msgstr "Itens"
+
+#: includes/admin-app.php:163
+msgid "Export"
+msgstr "Exportar"
+
+msgid "Close items"
+msgstr "Fechar itens"
+
+msgid "Choose items"
+msgstr "Escolher itens"
+
+msgid "Export all of it"
+msgstr "Exportar tudo"
+
+msgid "Leave out"
+msgstr "Não exportar"
+
+#. translators: %s: file name.
+#: includes/cli.php:168
+#, php-format
+msgid "%s is ready."
+msgstr "%s está pronto."
+
+msgid "Download"
+msgstr "Baixar"
+
+#. translators: %d: number of content types.
+msgid "%d content type checked. Choose items per type; set up the file above."
+msgid_plural ""
+"%d content types checked. Choose items per type; set up the file above."
+msgstr[0] ""
+"%d tipo de conteúdo marcado. Escolha itens por tipo; configure o arquivo "
+"acima."
+msgstr[1] ""
+"%d tipos de conteúdo marcados. Escolha itens por tipo; configure o arquivo "
+"acima."
+
+msgid ""
+"No content type checked: all content is exported. Check types to export only "
+"those."
+msgstr ""
+"Nenhum tipo de conteúdo marcado: todo o conteúdo é exportado. Marque tipos "
+"para exportar só eles."
+
+msgid "Clear defaults"
+msgstr "Limpar padrões"
+
+msgid "Reset to defaults"
+msgstr "Redefinir para os padrões"
+
+msgid "Save as default"
+msgstr "Salvar como padrão"
+
+msgid "More actions"
+msgstr "Mais ações"
+
+msgid "Selection"
+msgstr "Seleção"
+
+msgid "Selected"
+msgstr "Selecionados"
+
+msgid "Suggested"
+msgstr "Sugeridos"
+
+msgid "Option"
+msgstr "Opção"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "Size"
+msgstr "Tamanho"
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "Notes"
+msgstr "Observações"
+
+msgid "IDs mapped on import"
+msgstr "IDs remapeados na importação"
+
+msgid ""
+"Check the options to set on the site that imports the file: they join the "
+"export at once. Site URLs, the admin email, keys, active plugins, roles and "
+"transients are never listed."
+msgstr ""
+"Marque as opções a definir no site que importa o arquivo: elas entram na "
+"exportação na hora. URLs do site, o e-mail do administrador, chaves, plugins "
+"ativos, funções e transients nunca são listados."
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Select"
+msgstr "Selecionar"
+
+msgid "Product"
+msgstr "Produto"
+
+msgid "Review"
+msgstr "Avaliação"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Rating"
+msgstr "Classificação"
+
+#. translators: %d: rating, 1 to 5.
+msgid "%d of 5"
+msgstr "%d de 5"
+
+msgid "Date"
+msgstr "Data"
+
+msgid ""
+"Check reviews to export them with their products: they join the export at "
+"once. Without this row, products go without their reviews."
+msgstr ""
+"Marque avaliações para exportá-las com os produtos: elas entram na "
+"exportação na hora. Sem esta linha, os produtos vão sem as avaliações."
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "Draft"
+msgstr "Rascunho"
+
+msgid "Pending"
+msgstr "Pendente"
+
+msgid "Private"
+msgstr "Privado"
+
+msgid "Scheduled"
+msgstr "Agendado"
+
+msgid "Attached"
+msgstr "Anexado"
+
+msgid "Trash"
+msgstr "Lixeira"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "File"
+msgstr "Arquivo"
+
+msgid "Status"
+msgstr "Status"
+
+msgid ""
+"Check items to export only those: they join the export at once. Filter by "
+"Selection to see the ones chosen."
+msgstr ""
+"Marque itens para exportar só eles: eles entram na exportação na hora. "
+"Filtre por Seleção para ver os escolhidos."
+
+msgid "WXR bundle .wxrz"
+msgstr "Pacote WXR .wxrz"
+
+msgid "Playground .zip"
+msgstr ".zip do Playground"
+
+msgid "WXR bundle .zip"
+msgstr "Pacote WXR .zip"
+
+msgid "WXR .xml"
+msgstr "WXR .xml"
+
+msgid "Plugin .zip"
+msgstr ".zip de plugin"
+
+msgid "Created"
+msgstr "Criada"
+
+msgid "Expires"
+msgstr "Expira"
+
+#: includes/settings.php:75
+msgid "Never"
+msgstr "Nunca"
+
+#: includes/export.php:379
+msgid "Open in WordPress Playground"
+msgstr "Abrir no WordPress Playground"
+
+#: includes/export.php:381
+msgid "Copy link"
+msgstr "Copiar link"
+
+msgid "Link copied."
+msgstr "Link copiado."
+
+msgid "Import into this site"
+msgstr "Importar neste site"
+
+msgid "Import this copy?"
+msgstr "Importar esta cópia?"
+
+msgid ""
+"Its posts, media and settings are added to this site with the WordPress "
+"Importer. Items that already exist are skipped."
+msgstr ""
+"Os posts, a mídia e as configurações dela são adicionados a este site com o "
+"Importador do WordPress. Itens que já existem são ignorados."
+
+#. translators: 1: number of posts, 2: number of settings.
+msgid "Imported %1$d items and %2$d settings."
+msgstr "%1$d itens e %2$d configurações importados."
+
+#: includes/bundle-plugin.php:108
+msgid "Import"
+msgstr "Importar"
+
+msgid "Delete permanently"
+msgstr "Excluir permanentemente"
+
+msgid "Delete permanently?"
+msgstr "Excluir permanentemente?"
+
+#. translators: %d: number of copies.
+msgid "%d copy is deleted, and its link stops working."
+msgid_plural "%d copies are deleted, and their links stop working."
+msgstr[0] "%d cópia é excluída, e o link dela deixa de funcionar."
+msgstr[1] "%d cópias são excluídas, e os links delas deixam de funcionar."
+
+#. translators: %d: number of copies.
+msgid "%d copy deleted."
+msgid_plural "%d copies deleted."
+msgstr[0] "%d cópia excluída."
+msgstr[1] "%d cópias excluídas."
+
+msgid "Delete"
+msgstr "Excluir"
+
+msgid "Delete all"
+msgstr "Excluir todas"
+
+msgid "Delete all copies?"
+msgstr "Excluir todas as cópias?"
+
+msgid "No copies yet"
+msgstr "Nenhuma cópia ainda"
+
+msgid ""
+"Exports made here are kept as copies, to download, open in Playground or "
+"import."
+msgstr ""
+"As exportações feitas aqui são guardadas como cópias, para baixar, abrir no "
+"Playground ou importar."
+
+msgid "General"
+msgstr "Geral"
+
+msgid "Copies"
+msgstr "Cópias"
+
+#. Plugin Name of the plugin
+#: eizport.php includes/abilities.php:50 includes/admin-app.php:158
+#: includes/bundle-plugin.php:754 includes/settings.php:215
+#: includes/settings.php:216
+msgid "Eizport"
+msgstr "Eizport"
+
+msgid ""
+"Exports kept on this site, to download, open in WordPress Playground or "
+"import. Anyone with a copy’s link can download it until it expires."
+msgstr ""
+"Exportações guardadas neste site, para baixar, abrir no WordPress Playground "
+"ou importar. Qualquer pessoa com o link de uma cópia pode baixá-la até que "
+"expire."
+
+msgid "Keep copies for"
+msgstr "Manter cópias por"
+
+msgid ""
+"After that, a copy stops being served and is deleted. Copies already kept "
+"follow the new choice too."
+msgstr ""
+"Depois disso, a cópia deixa de ser servida e é excluída. As cópias já "
+"guardadas também seguem a nova escolha."
+
+msgid "Replace Tools → Export"
+msgstr "Substituir Ferramentas → Exportar"
+
+msgid ""
+"Tools → Export opens the plugin’s Export screen. Off, WordPress’s Export "
+"screen stays as it is, and the plugin’s is at Tools → Eizport."
+msgstr ""
+"Ferramentas → Exportar abre a tela Exportar do plugin. Desativado, a tela "
+"Exportar do WordPress fica como está, e a do plugin fica em Ferramentas → "
+"Eizport."
+
+msgid "Use the classic Export screen"
+msgstr "Usar a tela Exportar clássica"
+
+msgid ""
+"Tools → Export opens WordPress’s classic screen, with the plugin’s choices "
+"added, instead of the new one."
+msgstr ""
+"Ferramentas → Exportar abre a tela clássica do WordPress, com as opções do "
+"plugin adicionadas, em vez da nova."
+
+msgid "Style Tools → Import → WordPress"
+msgstr "Estilizar Ferramentas → Importar → WordPress"
+
+msgid ""
+"The WordPress Importer looks like the plugin’s Export screen: a header with "
+"the main button, its steps in cards, and a file button in the admin’s "
+"language. Off, it looks as WordPress made it (.wxrz bundles are accepted "
+"either way)."
+msgstr ""
+"O Importador do WordPress fica com o visual da tela Exportar do plugin: um "
+"cabeçalho com o botão principal, as etapas em cartões e um botão de arquivo "
+"no idioma do painel. Desativado, ele fica como o WordPress fez "
+"(pacotes .wxrz são aceitos de qualquer jeito)."
+
+msgid "Open the WordPress Importer from Tools → Import"
+msgstr "Abrir o Importador do WordPress em Ferramentas → Importar"
+
+msgid ""
+"Tools → Import goes straight to the WordPress Importer (when it is active); "
+"its screen links to all importers. Off, Tools → Import lists them, as "
+"WordPress does."
+msgstr ""
+"Ferramentas → Importar vai direto ao Importador do WordPress (quando ele "
+"está ativo); a tela dele leva a todos os importadores. Desativado, "
+"Ferramentas → Importar os lista, como faz o WordPress."
+
+msgid "Only attached media"
+msgstr "Só mídia anexada"
+
+msgid ""
+"Items exported bring their attached media and featured images, and also the "
+"media they use without being attached: images, galleries, covers and files "
+"in their content (and product galleries). On, only the attached ones, like "
+"WordPress."
+msgstr ""
+"Os itens exportados trazem sua mídia anexada e suas imagens destacadas, e "
+"também a mídia que usam sem estar anexada: imagens, galerias, coberturas e "
+"arquivos no conteúdo (e galerias de produtos). Ativado, só a anexada, como "
+"faz o WordPress."
+
+msgid "Bundle as .zip"
+msgstr "Pacote como .zip"
+
+msgid ""
+"Bundles are plain .zip files, which any computer opens, instead of .wxrz (a "
+"gzipped tar). Same contents; the importer takes both."
+msgstr ""
+"Os pacotes são arquivos .zip comuns, que qualquer computador abre, em vez "
+"de .wxrz (um tar compactado com gzip). O conteúdo é o mesmo; o importador "
+"aceita os dois."
+
+msgid "As plugin holds the bundle as"
+msgstr "Como plugin traz o pacote como"
+
+msgid ""
+"One .wxrz file, like any export; or its files (manifest.json, the WXR "
+"formatted line by line, uploads/…), next to the plugin’s or in a bundle/ "
+"folder, to look at or change before installing it."
+msgstr ""
+"Um arquivo .wxrz, como qualquer exportação; ou os arquivos dele "
+"(manifest.json, o WXR formatado linha a linha, uploads/…), ao lado dos do "
+"plugin ou numa pasta bundle/, para ver ou mudar antes de instalar."
+
+msgid "As plugin: allow importing again"
+msgstr "Como plugin: permitir importar de novo"
+
+msgid ""
+"Once it imported, a plugin exported \"as plugin\" still offers Import again. "
+"Off, it only offers to deactivate and delete itself."
+msgstr ""
+"Depois de importar, um plugin exportado \"como plugin\" continua oferecendo "
+"Importar de novo. Desativado, ele só oferece se desativar e se excluir."
+
+msgid "Content as .html files"
+msgstr "Conteúdo como arquivos .html"
+
+msgid ""
+"Each post’s content goes to post_content/<slug>.html in the .wxrz or "
+"Playground .zip, instead of inside the WXR. Off, it all stays in the WXR."
+msgstr ""
+"O conteúdo de cada post vai para post_content/<slug>.html no .wxrz ou "
+"no .zip do Playground, em vez de dentro do WXR. Desativado, tudo fica no WXR."
+
+msgid "Defaults are saved for"
+msgstr "Os padrões são salvos para"
+
+msgid "Linked settings"
+msgstr "Configurações vinculadas"
+
+msgid ""
+"Settings that point to the items exported (homepage, posts page, privacy "
+"policy page, site icon, pages plugins register like WooCommerce’s shop and "
+"cart). When items are checked, they show in the Options row at once; on "
+"export, they also come with items exported by filters or with all content."
+msgstr ""
+"Configurações que apontam para os itens exportados (página inicial, página "
+"de posts, página de política de privacidade, ícone do site, páginas que "
+"plugins cadastram, como a loja e o carrinho do WooCommerce). Quando itens "
+"são marcados, elas aparecem na hora na linha Opções; na exportação, também "
+"vêm com itens exportados por filtros ou com todo o conteúdo."
+
+msgid "Settings saved."
+msgstr "Configurações salvas."
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "With the items exported"
+msgstr "Com os itens exportados"
+
+msgid "What comes with the items exported, and how bundles keep their content."
+msgstr ""
+"O que vem com os itens exportados, e como os pacotes guardam o conteúdo."
+
+msgid "Export screen"
+msgstr "Tela Exportar"
+
+msgid ""
+"\"Save as default\" on the Export screens keeps the choices, to start with "
+"them next time."
+msgstr ""
+"\"Salvar como padrão\" nas telas Exportar guarda as escolhas, para iniciar "
+"com elas da próxima vez."
+
+msgid "Import screen"
+msgstr "Tela Importar"
+
+msgid "Exports kept on this site, to open by link or import."
+msgstr "Exportações guardadas neste site, para abrir por link ou importar."
+
+msgid ""
+"Which Export screen opens, saved defaults, and how long exports are kept."
+msgstr ""
+"Qual tela Exportar abre, os padrões salvos e por quanto tempo as exportações "
+"são guardadas."
+
+msgid "Clear saved defaults"
+msgstr "Limpar padrões salvos"
+
+#. Plugin URI of the plugin
+#: eizport.php
+msgid "https://eizport.github.io/"
+msgstr "https://eizport.github.io/"
+
+#. Description of the plugin
+#: eizport.php
+msgid ""
+"Export and import WordPress content as .wxrz bundles: the WXR plus its media "
+"and content files, gzipped, optionally ready for WordPress Playground. "
+"Export several content types at once, each by filters or by selection, with "
+"settings."
+msgstr ""
+"Exporte e importe conteúdo do WordPress como pacotes .wxrz: o WXR com sua "
+"mídia e seus arquivos de conteúdo, compactado com gzip, opcionalmente pronto "
+"para o WordPress Playground. Exporte vários tipos de conteúdo de uma vez, "
+"cada um por filtros ou por seleção, com configurações."
+
+#. Author of the plugin
+#: eizport.php
+msgid "eizport"
+msgstr "eizport"
+
+#. Author URI of the plugin
+#: eizport.php
+msgid "https://profiles.wordpress.org/eizport/"
+msgstr "https://profiles.wordpress.org/eizport/"
+
+#: includes/abilities.php:51
+msgid ""
+"Export and import content as .wxrz bundles or WordPress Playground .zip "
+"files."
+msgstr ""
+"Exporte e importe conteúdo como pacotes .wxrz ou arquivos .zip do WordPress "
+"Playground."
+
+#: includes/abilities.php:97
+msgid "Get export options"
+msgstr "Obter opções de exportação"
+
+#: includes/abilities.php:98
+msgid ""
+"Lists what can be exported: content types with their item counts, taxonomy "
+"terms, statuses and months; the groups of settings; the default file name; "
+"the themes and plugins a Playground .zip can install; the homepage and posts "
+"page; how long copies last. Use it before eizport/export."
+msgstr ""
+"Lista o que pode ser exportado: tipos de conteúdo com a quantidade de itens, "
+"termos de taxonomia, status e meses; os grupos de configurações; o nome de "
+"arquivo padrão; os temas e plugins que um .zip do Playground pode instalar; "
+"a página inicial e a página de posts; quanto tempo as cópias duram. Use "
+"antes de eizport/export."
+
+#: includes/abilities.php:121
+msgid "Get items"
+msgstr "Obter itens"
+
+#: includes/abilities.php:122
+msgid ""
+"Lists a page of one content type's items (pages, posts, products, media…) "
+"that can be exported: searched, sorted and filtered like eizport/export "
+"filters them. Use the IDs in eizport/export \"types\"."
+msgstr ""
+"Lista uma página dos itens de um tipo de conteúdo (páginas, posts, produtos, "
+"mídia…) que podem ser exportados: pesquisados, ordenados e filtrados como o "
+"eizport/export os filtra. Use os IDs em \"types\" do eizport/export."
+
+#: includes/abilities.php:144
+msgid ""
+"The item's roles on the site, from the options pointing to it "
+"(eizport_linked_options)."
+msgstr ""
+"As funções do item no site, pelas opções que apontam para ele "
+"(eizport_linked_options)."
+
+#: includes/abilities.php:178
+msgid "Get suggestions"
+msgstr "Obter sugestões"
+
+#: includes/abilities.php:179
+msgid ""
+"What the items chosen suggest exporting too: \"items\" (post type => IDs, "
+"like the products a block in their content shows), \"reviews\" (comment IDs "
+"of the products' approved reviews) and \"options\" (settings pointing to "
+"them, like page_on_front, as Settings → Export → \"Linked settings\" says). "
+"Nothing is added by itself: pass them to eizport/export to include them."
+msgstr ""
+"O que os itens escolhidos sugerem exportar também: \"items\" (tipo de post "
+"=> IDs, como os produtos que um bloco no conteúdo deles mostra), \"reviews\" "
+"(IDs de comentário das avaliações aprovadas dos produtos) e \"options\" "
+"(configurações que apontam para eles, como page_on_front, conforme "
+"Configurações → Exportar → \"Configurações vinculadas\"). Nada é adicionado "
+"sozinho: passe-os ao eizport/export para incluí-los."
+
+#: includes/abilities.php:189
+msgid ""
+"Post types chosen whole (the same as {} in \"types\"; easier to send in a "
+"URL)."
+msgstr ""
+"Tipos de post escolhidos inteiros (o mesmo que {} em \"types\"; mais fácil "
+"de mandar num URL)."
+
+#: includes/abilities.php:222
+msgid "Get product reviews"
+msgstr "Obter avaliações de produtos"
+
+#: includes/abilities.php:223
+msgid ""
+"Lists a page of WooCommerce's approved product reviews (author, product, "
+"rating, excerpt), searched, or only the ones in \"include\". Use their IDs "
+"in eizport/export reviews.ids. Empty without WooCommerce."
+msgstr ""
+"Lista uma página das avaliações de produtos aprovadas do WooCommerce (autor, "
+"produto, classificação, trecho), pesquisadas, ou só as de \"include\". Use "
+"os IDs delas em reviews.ids do eizport/export. Vazio sem o WooCommerce."
+
+#: includes/abilities.php:268
+msgid "Get options"
+msgstr "Obter opções"
+
+#: includes/abilities.php:269
+msgid ""
+"Lists a page of the site's options that can be exported, one by one (never "
+"site URLs, the admin email, keys, active plugins, roles or transients), with "
+"their size, whether they are autoloaded and whether they hold a post ID "
+"(mapped on import). Use the names in eizport/export options.names."
+msgstr ""
+"Lista uma página das opções do site que podem ser exportadas, uma a uma "
+"(nunca URLs do site, o e-mail do administrador, chaves, plugins ativos, "
+"funções ou transients), com o tamanho, se são carregadas automaticamente e "
+"se guardam um ID de post (remapeado na importação). Use os nomes em "
+"options.names do eizport/export."
+
+#: includes/abilities.php:279
+msgid "Only these options (for instance, the ones chosen)."
+msgstr "Só estas opções (por exemplo, as escolhidas)."
+
+#: includes/abilities.php:284
+msgid ""
+"Only the options of this group (eizport/get-export-options option_groups)."
+msgstr ""
+"Só as opções deste grupo (option_groups do eizport/get-export-options)."
+
+#: includes/abilities.php:310
+msgid "The value in a line (arrays as JSON), up to 200 characters."
+msgstr "O valor numa linha (arrays como JSON), até 200 caracteres."
+
+#: includes/abilities.php:335
+msgid "Export content"
+msgstr "Exportar conteúdo"
+
+#: includes/abilities.php:336
+msgid ""
+"Exports content to a temporary copy on this site and returns its link: "
+"a .wxrz bundle (WXR, media and content files, settings) for the WordPress "
+"Importer, or, with \"blueprint\", a WordPress Playground .zip that also "
+"installs themes and plugins. Without \"types\", everything is exported."
+msgstr ""
+"Exporta conteúdo para uma cópia temporária neste site e retorna o link dela: "
+"um pacote .wxrz (WXR, arquivos de mídia e de conteúdo, configurações) para o "
+"Importador do WordPress, ou, com \"blueprint\", um .zip do WordPress "
+"Playground que também instala temas e plugins. Sem \"types\", tudo é "
+"exportado."
+
+#: includes/abilities.php:355
+msgid "Get copies"
+msgstr "Obter cópias"
+
+#: includes/abilities.php:356
+msgid ""
+"Lists the export copies kept on this site (.wxrz bundles and Playground .zip "
+"files), with their download link, Playground link and expiry."
+msgstr ""
+"Lista as cópias de exportação guardadas neste site (pacotes .wxrz e "
+"arquivos .zip do Playground), com o link para baixar, o link do Playground e "
+"a validade."
+
+#: includes/abilities.php:382
+msgid "Delete copies"
+msgstr "Excluir cópias"
+
+#: includes/abilities.php:383
+msgid ""
+"Permanently deletes export copies, by name, or all of them with \"all\"."
+msgstr ""
+"Exclui permanentemente cópias de exportação, pelo nome, ou todas com \"all\"."
+
+#: includes/abilities.php:392
+msgid "Names of the copies to delete, as eizport/get-copies returns them."
+msgstr "Nomes das cópias a excluir, como o eizport/get-copies os retorna."
+
+#: includes/abilities.php:396
+msgid "Delete every copy."
+msgstr "Excluir todas as cópias."
+
+#: includes/abilities.php:424
+msgid "How long copies are kept, in seconds; 0 keeps them until deleted."
+msgstr ""
+"Por quanto tempo as cópias são mantidas, em segundos; 0 as mantém até serem "
+"excluídas."
+
+#: includes/abilities.php:428
+msgid ""
+"Whether Tools → Export opens the plugin's Export screen. Off, WordPress's "
+"Export screen is left as it is, the plugin's is at Tools → Eizport, and "
+"classic_ui doesn't apply."
+msgstr ""
+"Se Ferramentas → Exportar abre a tela Exportar do plugin. Desativado, a tela "
+"Exportar do WordPress fica como está, a do plugin fica em Ferramentas → "
+"Eizport, e classic_ui não se aplica."
+
+#: includes/abilities.php:432
+msgid ""
+"Whether Tools → Import opens the WordPress Importer directly (its screen "
+"links to all importers)."
+msgstr ""
+"Se Ferramentas → Importar abre direto o Importador do WordPress (a tela dele "
+"leva a todos os importadores)."
+
+#: includes/abilities.php:436
+msgid ""
+"Whether Tools → Import → WordPress looks like the plugin's Export screen. "
+"Off, the WordPress Importer looks as it is."
+msgstr ""
+"Se Ferramentas → Importar → WordPress tem o visual da tela Exportar do "
+"plugin. Desativado, o Importador do WordPress fica como é."
+
+#: includes/abilities.php:440
+msgid ""
+"Whether Tools → Export opens the classic screen instead of the new one (only "
+"with replace_export)."
+msgstr ""
+"Se Ferramentas → Exportar abre a tela clássica em vez da nova (só com "
+"replace_export)."
+
+#: includes/abilities.php:444
+msgid "Whether bundles are plain .zip files instead of .wxrz (gzipped tar)."
+msgstr ""
+"Se os pacotes são arquivos .zip comuns em vez de .wxrz (tar compactado com "
+"gzip)."
+
+#: includes/abilities.php:448
+msgid ""
+"What a plugin exported \"as plugin\" holds: wxrz (one .wxrz file), root (the "
+"bundle's files next to the plugin's) or folder (in a bundle/ folder)."
+msgstr ""
+"O que um plugin exportado \"como plugin\" traz: wxrz (um arquivo .wxrz), "
+"root (os arquivos do pacote ao lado dos do plugin) ou folder (numa pasta "
+"bundle/)."
+
+#: includes/abilities.php:452
+msgid ""
+"Whether exports of some items bring only their attached media and featured "
+"images, like WordPress, without the media they use in their content."
+msgstr ""
+"Se exportações de alguns itens trazem só a mídia anexada e as imagens "
+"destacadas deles, como faz o WordPress, sem a mídia que usam no conteúdo."
+
+#: includes/abilities.php:456
+msgid ""
+"Whether bundles keep each post's content in post_content/<slug>.html files "
+"instead of the WXR."
+msgstr ""
+"Se os pacotes guardam o conteúdo de cada post em arquivos post_content/"
+"<slug>.html em vez de no WXR."
+
+#: includes/abilities.php:460
+msgid "Who saved export defaults belong to: each user, or the whole site."
+msgstr ""
+"A quem pertencem os padrões de exportação salvos: a cada usuário ou ao site "
+"inteiro."
+
+#: includes/abilities.php:464
+msgid ""
+"When settings that point to exported items (homepage, posts page, shop…) are "
+"added: both, check, export or off."
+msgstr ""
+"Quando as configurações que apontam para itens exportados (página inicial, "
+"página de posts, loja…) são adicionadas: both, check, export ou off."
+
+#: includes/abilities.php:485
+msgid "Get settings"
+msgstr "Obter configurações"
+
+#: includes/abilities.php:486
+msgid ""
+"The plugin's settings, with their choices: how long export copies are kept, "
+"whether Tools → Export is the plugin's screen and whether it is the classic "
+"one, whether the WordPress Importer looks like it and whether Tools → Import "
+"opens it, who saved export defaults belong to, and when settings linked to "
+"exported items are added."
+msgstr ""
+"As configurações do plugin, com as escolhas possíveis: por quanto tempo as "
+"cópias de exportação são mantidas, se Ferramentas → Exportar é a tela do "
+"plugin e se é a clássica, se o Importador do WordPress tem o visual dela e "
+"se Ferramentas → Importar o abre, a quem pertencem os padrões de exportação "
+"salvos e quando as configurações vinculadas a itens exportados são "
+"adicionadas."
+
+#: includes/abilities.php:508
+msgid ""
+"The Export screen's choices: \"types\" (post type => \"ids\" or \"filters\", "
+"as eizport/export takes them) and \"settings\" (format \"wxr\" or "
+"\"playground\", filename, media, option_names, option_groups, option_all, "
+"include_suggested (rows that bring what the items chosen suggest: post "
+"types, \"__options\", \"__reviews\"), review_ids, review_all, themes, "
+"plugins)."
+msgstr ""
+"As escolhas da tela Exportar: \"types\" (tipo de post => \"ids\" ou "
+"\"filters\", como o eizport/export os recebe) e \"settings\" (format \"wxr\" "
+"ou \"playground\", filename, media, option_names, option_groups, option_all, "
+"include_suggested (linhas que trazem o que os itens escolhidos sugerem: "
+"tipos de post, \"__options\", \"__reviews\"), review_ids, review_all, "
+"themes, plugins)."
+
+#: includes/abilities.php:514
+msgid "Get export defaults"
+msgstr "Obter padrões de exportação"
+
+#: includes/abilities.php:515
+msgid ""
+"The export choices saved as default (the current user's, or the site's, as "
+"Settings → Saved defaults says), which the Export screens start with; empty "
+"when none."
+msgstr ""
+"As escolhas de exportação salvas como padrão (as do usuário atual ou as do "
+"site, conforme Configurações → Padrões salvos), com as quais as telas "
+"Exportar iniciam; vazio quando não há nenhuma."
+
+#: includes/abilities.php:538
+msgid "Save export defaults"
+msgstr "Salvar padrões de exportação"
+
+#: includes/abilities.php:539
+msgid ""
+"Saves export choices as default (sanitized: unknown types, options never "
+"exported and themes or plugins not installed are dropped) and returns them. "
+"The site's defaults need manage_options."
+msgstr ""
+"Salva escolhas de exportação como padrão (sanitizadas: tipos desconhecidos, "
+"opções nunca exportadas e temas ou plugins não instalados são descartados) e "
+"as retorna. Os padrões do site exigem manage_options."
+
+#: includes/abilities.php:566
+msgid "Clear export defaults"
+msgstr "Limpar padrões de exportação"
+
+#: includes/abilities.php:567
+msgid ""
+"Forgets the export choices saved as default: the Export screens start empty "
+"again."
+msgstr ""
+"Esquece as escolhas de exportação salvas como padrão: as telas Exportar "
+"voltam a iniciar vazias."
+
+#: includes/abilities.php:591
+msgid "Update settings"
+msgstr "Atualizar configurações"
+
+#: includes/abilities.php:592
+msgid ""
+"Changes the plugin's settings given (copy_lifetime in seconds, "
+"replace_export, classic_ui, style_import, import_direct, content_files, "
+"attached_only, bundle_zip, plugin_content, plugin_import_again, "
+"defaults_scope, linked_options: one of the choices eizport/get-settings "
+"lists) and returns them all."
+msgstr ""
+"Altera as configurações do plugin informadas (copy_lifetime em segundos, "
+"replace_export, classic_ui, style_import, import_direct, content_files, "
+"attached_only, bundle_zip, plugin_content, plugin_import_again, "
+"defaults_scope, linked_options: uma das escolhas que o eizport/get-settings "
+"lista) e retorna todas elas."
+
+#: includes/abilities.php:641
+msgid "Import content"
+msgstr "Importar conteúdo"
+
+#: includes/abilities.php:642
+msgid ""
+"Imports a copy kept on this site, or a WXR/.wxrz file in the media library, "
+"with the WordPress Importer: posts, media (from the bundle when it has them) "
+"and settings, with IDs mapped. Posts go to the current user."
+msgstr ""
+"Importa uma cópia guardada neste site, ou um arquivo WXR/.wxrz da biblioteca "
+"de mídia, com o Importador do WordPress: posts, mídia (do pacote, quando ele "
+"a tem) e configurações, com os IDs remapeados. Os posts ficam com o usuário "
+"atual."
+
+#: includes/abilities.php:650
+msgid "Name of a copy, as eizport/get-copies returns it."
+msgstr "Nome de uma cópia, como o eizport/get-copies o retorna."
+
+#: includes/abilities.php:655
+msgid "ID of a .wxrz, .xml or .xml.gz file in the media library."
+msgstr "ID de um arquivo .wxrz, .xml ou .xml.gz da biblioteca de mídia."
+
+#: includes/abilities.php:659
+msgid ""
+"Update the posts that already exist (same type and slug) with the imported "
+"content instead of adding copies. Default: as the bundle asks (exported with "
+"update_existing), else no."
+msgstr ""
+"Atualizar os posts que já existem (mesmo tipo e slug) com o conteúdo "
+"importado em vez de adicionar cópias. Padrão: o que o pacote pede (exportado "
+"com update_existing); senão, não."
+
+#: includes/abilities.php:706
+msgid "Post type, as eizport/get-export-options lists them."
+msgstr "Tipo de post, como o eizport/get-export-options os lista."
+
+#: includes/abilities.php:712
+msgid "Only these items (for instance, the ones chosen)."
+msgstr "Só estes itens (por exemplo, os escolhidos)."
+
+#: includes/abilities.php:770
+msgid ""
+"Post type => what to export of it: \"ids\", or \"filters\". Omit to export "
+"everything."
+msgstr ""
+"Tipo de post => o que exportar dele: \"ids\" ou \"filters\". Omita para "
+"exportar tudo."
+
+#: includes/abilities.php:804
+msgid ""
+"Ask the import to update the posts that already exist on the other site "
+"(same type and slug) instead of adding copies: the bundle's default, which "
+"the importer can change. Not with blueprint."
+msgstr ""
+"Pedir à importação que atualize os posts que já existem no outro site (mesmo "
+"tipo e slug) em vez de adicionar cópias: o padrão do pacote, que quem "
+"importa pode mudar. Não com blueprint."
+
+#: includes/abilities.php:808
+msgid ""
+"A plugin .zip holding the bundle: installed on another site, it shows a "
+"screen (Tools) that checks the plugins needed and imports the bundle with "
+"one click. Not with blueprint."
+msgstr ""
+"Um .zip de plugin com o pacote dentro: instalado em outro site, ele mostra "
+"uma tela (Ferramentas) que confere os plugins necessários e importa o pacote "
+"com um clique. Não com blueprint."
+
+#: includes/abilities.php:812
+msgid ""
+"WooCommerce product reviews to export with their products: \"ids\" (comment "
+"IDs; none: no reviews) or \"all\". Default: all of the exported products' "
+"reviews."
+msgstr ""
+"Avaliações de produtos do WooCommerce a exportar com os produtos: \"ids\" "
+"(IDs de comentário; nenhum: sem avaliações) ou \"all\". Padrão: todas as "
+"avaliações dos produtos exportados."
+
+#: includes/abilities.php:824
+msgid ""
+"With types: also the media the exported items use in their content without "
+"being attached (images, galleries, covers, files). Default: true, unless the "
+"\"Only attached media\" setting is on."
+msgstr ""
+"Com types: também a mídia que os itens exportados usam no conteúdo sem estar "
+"anexada (imagens, galerias, coberturas, arquivos). Padrão: true, a menos que "
+"a configuração \"Só mídia anexada\" esteja ativada."
+
+#: includes/abilities.php:828
+msgid ""
+"The bundle as a plain .zip instead of a .wxrz (gzipped tar), with the same "
+"contents. Default: the \"Bundle as .zip\" setting."
+msgstr ""
+"O pacote como um .zip comum em vez de um .wxrz (tar compactado com gzip), "
+"com o mesmo conteúdo. Padrão: a configuração \"Pacote como .zip\"."
+
+#: includes/abilities.php:832
+msgid ""
+"A .wxrz bundle (default true). False: core's plain WXR .xml, without media, "
+"content files or settings."
+msgstr ""
+"Um pacote .wxrz (padrão true). False: o WXR .xml simples dos arquivos "
+"básicos do WordPress, sem mídia, arquivos de conteúdo ou configurações."
+
+#: includes/abilities.php:836
+msgid "Include the attachment files. Default true."
+msgstr "Incluir os arquivos dos anexos. Padrão true."
+
+#: includes/abilities.php:840
+msgid ""
+"Content as post_content/<slug>.html files instead of inside the WXR. "
+"Default: the \"Content as .html files\" setting (on unless changed)."
+msgstr ""
+"Conteúdo como arquivos post_content/<slug>.html em vez de dentro do WXR. "
+"Padrão: a configuração \"Conteúdo como arquivos .html\" (ativada, a menos "
+"que alterada)."
+
+#: includes/abilities.php:844
+msgid ""
+"Settings to include: groups, option names or all, and whether to set the "
+"exported homepage and posts page on import."
+msgstr ""
+"Configurações a incluir: grupos, nomes de opções ou todas, e se a página "
+"inicial e a página de posts exportadas devem ser definidas na importação."
+
+#: includes/abilities.php:860
+msgid ""
+"Also the settings that point to the posts exported (homepage, posts page, "
+"shop…). Default: the \"Linked settings\" setting."
+msgstr ""
+"Também as configurações que apontam para os posts exportados (página "
+"inicial, página de posts, loja…). Padrão: a configuração \"Configurações "
+"vinculadas\"."
+
+#: includes/abilities.php:864
+msgid ""
+"Every option that can be exported (no transients, no denied options), "
+"instead of groups and names."
+msgstr ""
+"Todas as opções que podem ser exportadas (sem transients, sem opções "
+"bloqueadas), em vez de grupos e nomes."
+
+#: includes/abilities.php:871
+msgid ""
+"Make a WordPress Playground .zip instead of a .wxrz, installing these themes "
+"(a child theme brings its parent) and plugins."
+msgstr ""
+"Gerar um .zip do WordPress Playground em vez de um .wxrz, instalando estes "
+"temas (um tema descendente traz o tema ascendente) e plugins."
+
+#: includes/abilities.php:886
+msgid "File name without extension. Default: \"<site name>.WordPress.<date>\"."
+msgstr ""
+"Nome do arquivo sem extensão. Padrão: \"<site name>.WordPress.<date>\"."
+
+#: includes/abilities.php:911
+msgid ""
+"When the copy is deleted (ISO 8601), or \"\" when it is kept until deleted."
+msgstr ""
+"Quando a cópia é excluída (ISO 8601), ou \"\" quando ela é mantida até ser "
+"excluída."
+
+#: includes/abilities.php:916
+msgid "Opens a Playground .zip on playground.wordpress.net; \"\" for a .wxrz."
+msgstr ""
+"Abre um .zip do Playground no playground.wordpress.net; \"\" para um .wxrz."
+
+#: includes/abilities.php:920
+msgid ""
+"Runs a downloaded Playground .zip with the Playground CLI; \"\" for a .wxrz."
+msgstr ""
+"Executa um .zip do Playground baixado com o Playground CLI; \"\" para "
+"um .wxrz."
+
+#: includes/abilities.php:1013
+msgid "Attachments"
+msgstr "Anexos"
+
+#: includes/abilities.php:1078
+msgid "Give the \"type\" of the items to list."
+msgstr "Informe o \"type\" dos itens a listar."
+
+#. translators: %s: post type.
+#: includes/abilities.php:1084 includes/selection.php:684
+#, php-format
+msgid "\"%s\" is not a content type that can be exported."
+msgstr "\"%s\" não é um tipo de conteúdo que pode ser exportado."
+
+#. translators: %s: option names.
+#: includes/abilities.php:1112
+#, php-format
+msgid "These options are never exported: %s."
+msgstr "Estas opções nunca são exportadas: %s."
+
+#. translators: %s: theme stylesheets or plugin files.
+#: includes/abilities.php:1127
+#, php-format
+msgid "Not installed on this site: %s."
+msgstr "Não instalados neste site: %s."
+
+#: includes/abilities.php:1184
+msgid "Give the names of the copies to delete, or \"all\"."
+msgstr "Informe os nomes das cópias a excluir, ou \"all\"."
+
+#: includes/abilities.php:1200
+msgid "There is no such copy: see eizport/get-copies."
+msgstr "Essa cópia não existe: veja o eizport/get-copies."
+
+#: includes/abilities.php:1207
+msgid "The attachment is not a .wxrz, .zip, .xml or .xml.gz file."
+msgstr "O anexo não é um arquivo .wxrz, .zip, .xml ou .xml.gz."
+
+#: includes/abilities.php:1212
+msgid "Give a \"copy\" name or an \"attachment_id\" to import."
+msgstr "Informe um nome em \"copy\" ou um \"attachment_id\" para importar."
+
+#: includes/abilities.php:1225
+msgid ""
+"This .zip is a plugin: install it in Plugins → Add Plugin → Upload Plugin, "
+"then run its import screen under Tools."
+msgstr ""
+"Este .zip é um plugin: instale-o em Plugins → Adicionar plugin → Enviar "
+"plugin e depois use a tela de importação dele em Ferramentas."
+
+#: includes/bundle-plugin.php:91
+msgid "Activate Eizport to import"
+msgstr "Ative o Eizport para importar"
+
+#: includes/bundle-plugin.php:92
+msgid "Eizport is needed to import"
+msgstr "O Eizport é necessário para importar"
+
+#: includes/bundle-plugin.php:93
+msgid ""
+"This plugin holds content exported with Eizport. Eizport imports it, and "
+"then this plugin can go."
+msgstr ""
+"Este plugin traz conteúdo exportado com o Eizport. O Eizport o importa, e "
+"depois este plugin pode sair."
+
+#: includes/bundle-plugin.php:94
+msgid "Activate Eizport"
+msgstr "Ativar o Eizport"
+
+#: includes/bundle-plugin.php:95 includes/bundle-plugin.php:629
+msgid "Install Now"
+msgstr "Instalar agora"
+
+#: includes/bundle-plugin.php:96 includes/bundle-plugin.php:419
+msgid "Installing…"
+msgstr "Instalando…"
+
+#: includes/bundle-plugin.php:97 includes/bundle-plugin.php:420
+msgid "Activating…"
+msgstr "Ativando…"
+
+#. translators: %s: error message.
+#: includes/bundle-plugin.php:99 includes/bundle-plugin.php:424
+#, php-format
+msgid "Installation failed: %s"
+msgstr "Falha na instalação: %s"
+
+#: includes/bundle-plugin.php:100 includes/bundle-plugin.php:613
+msgid "Eizport is active."
+msgstr "O Eizport está ativo."
+
+#: includes/bundle-plugin.php:101
+msgid "Continue"
+msgstr "Continuar"
+
+#: includes/bundle-plugin.php:102
+msgid "Download Eizport."
+msgstr "Baixe o Eizport."
+
+#: includes/bundle-plugin.php:103
+msgid "Add it in"
+msgstr "Adicione-o em"
+
+#: includes/bundle-plugin.php:104
+msgid "Plugins → Add Plugin → Upload Plugin"
+msgstr "Plugins → Adicionar plugin → Enviar plugin"
+
+#: includes/bundle-plugin.php:105
+msgid ", and activate it."
+msgstr ", e ative-o."
+
+#: includes/bundle-plugin.php:106
+msgid "Come back here to import."
+msgstr "Volte aqui para importar."
+
+#: includes/bundle-plugin.php:107
+msgid "Download Eizport"
+msgstr "Baixar o Eizport"
+
+#: includes/bundle-plugin.php:109
+msgid "open the import screen"
+msgstr "abrir a tela de importação"
+
+#. translators: %s: the export's file name.
+#: includes/bundle-plugin.php:159
+#, php-format
+msgid "Import: %s"
+msgstr "Importação: %s"
+
+#. translators: %s: site title.
+#: includes/bundle-plugin.php:167 includes/bundle-plugin.php:194
+#, php-format
+msgid ""
+"The content exported from %s, with Eizport. Open its screen under Tools to "
+"import it."
+msgstr ""
+"O conteúdo exportado de %s, com o Eizport. Abra a tela dele em Ferramentas "
+"para importá-lo."
+
+#: includes/bundle-plugin.php:262 includes/bundle-plugin.php:349
+#: includes/bundle-plugin.php:353
+msgid "The plugin holds no bundle to import."
+msgstr "O plugin não tem pacote para importar."
+
+#: includes/bundle-plugin.php:301 includes/bundle-plugin.php:321
+msgid "The bundle could not be taken out of the plugin."
+msgstr "Não foi possível tirar o pacote de dentro do plugin."
+
+#: includes/bundle-plugin.php:340 includes/bundle-plugin.php:781
+msgid "This is not an installed plugin."
+msgstr "Este não é um plugin instalado."
+
+#: includes/bundle-plugin.php:418
+msgid "Importing…"
+msgstr "Importando…"
+
+#. translators: %s: plugin name.
+#: includes/bundle-plugin.php:422
+#, php-format
+msgid "%s was installed and activated."
+msgstr "%s foi instalado e ativado."
+
+#: includes/bundle-plugin.php:483
+msgid ""
+"Imported. This plugin did its job, and it holds a large file: you can remove "
+"it now."
+msgstr ""
+"Importado. Este plugin cumpriu seu papel e guarda um arquivo grande: você "
+"pode removê-lo agora."
+
+#: includes/bundle-plugin.php:484
+msgid ""
+"Imports the content this plugin holds into this site: posts, pages, media "
+"and settings, as they were exported."
+msgstr ""
+"Importa neste site o conteúdo que este plugin traz: posts, páginas, mídia e "
+"configurações, como foram exportados."
+
+#: includes/bundle-plugin.php:495 includes/bundle-plugin.php:611
+msgid "Import again"
+msgstr "Importar de novo"
+
+#: includes/bundle-plugin.php:495
+msgid "Run import"
+msgstr "Executar importação"
+
+#: includes/bundle-plugin.php:499
+msgid "Deactivate and delete"
+msgstr "Desativar e excluir"
+
+#: includes/bundle-plugin.php:499
+msgid "Deactivate and delete this plugin"
+msgstr "Desativar e excluir este plugin"
+
+#: includes/bundle-plugin.php:507
+msgid "Imported"
+msgstr "Importado"
+
+#: includes/bundle-plugin.php:507
+msgid "The import stopped"
+msgstr "A importação parou"
+
+#. translators: %d: number of posts.
+#: includes/bundle-plugin.php:516
+#, php-format
+msgid "%d item imported or already there."
+msgid_plural "%d items imported or already there."
+msgstr[0] "%d item importado ou já existente."
+msgstr[1] "%d itens importados ou já existentes."
+
+#. translators: %s: option names.
+#: includes/bundle-plugin.php:524
+#, php-format
+msgid "Settings set: %s."
+msgstr "Configurações definidas: %s."
+
+#: includes/bundle-plugin.php:530
+msgid "Visit the site"
+msgstr "Visitar o site"
+
+#: includes/bundle-plugin.php:533 includes/import.php:830
+msgid "Importer messages"
+msgstr "Mensagens do importador"
+
+#: includes/bundle-plugin.php:543
+msgid "Remove this plugin"
+msgstr "Remover este plugin"
+
+#. translators: %s: date.
+#: includes/bundle-plugin.php:550
+#, php-format
+msgid "Imported on %s. Deactivate and delete removes this plugin and its file."
+msgstr ""
+"Importado em %s. Desativar e excluir remove este plugin e o arquivo dele."
+
+#: includes/bundle-plugin.php:559
+msgid "Also delete (checked: installed for this import)"
+msgstr "Também excluir (marcados: instalados para esta importação)"
+
+#: includes/bundle-plugin.php:573
+msgid "What it holds"
+msgstr "O que ele traz"
+
+#. translators: %d: number of items not listed.
+#: includes/bundle-plugin.php:584
+#, php-format
+msgid " and %d more"
+msgstr " e mais %d"
+
+#. translators: 1: number of files, 2: size.
+#: includes/bundle-plugin.php:596
+#, php-format
+msgid "%1$d file, %2$s"
+msgid_plural "%1$d files, %2$s"
+msgstr[0] "%1$d arquivo, %2$s"
+msgstr[1] "%1$d arquivos, %2$s"
+
+#: includes/bundle-plugin.php:611
+msgid "Before importing"
+msgstr "Antes de importar"
+
+#: includes/bundle-plugin.php:617 includes/bundle-plugin.php:625
+msgid "The WordPress Importer is installed."
+msgstr "O Importador do WordPress está instalado."
+
+#: includes/bundle-plugin.php:621
+msgid "The WordPress Importer is needed."
+msgstr "O Importador do WordPress é necessário."
+
+#: includes/bundle-plugin.php:629 includes/bundle-plugin.php:755
+msgid "WordPress Importer"
+msgstr "Importador do WordPress"
+
+#. translators: 1: file name, 2: size, 3: date.
+#: includes/bundle-plugin.php:643
+#, php-format
+msgid "The bundle: %1$s, %2$s, made %3$s."
+msgstr "O pacote: %1$s, %2$s, feito em %3$s."
+
+#: includes/bundle-plugin.php:657 includes/import.php:661
+msgid ""
+"Update pages, posts and products that already exist (same slug) instead of "
+"adding copies"
+msgstr ""
+"Atualizar páginas, posts e produtos que já existem (mesmo slug) em vez de "
+"adicionar cópias"
+
+#: includes/bundle-plugin.php:661
+msgid ""
+"Importing again finds the same items and doesn’t duplicate them, but "
+"settings are set again."
+msgstr ""
+"Importar de novo encontra os mesmos itens e não os duplica, mas as "
+"configurações são definidas de novo."
+
+#: includes/bundle-plugin.php:793
+msgid "Sorry, you are not allowed to import."
+msgstr "Você não tem permissão para importar."
+
+#: includes/bundle-plugin.php:850
+msgid "Sorry, you are not allowed to delete plugins."
+msgstr "Você não tem permissão para excluir plugins."
+
+#: includes/bundle.php:541
+msgid "The .wxrz bundle is damaged or incomplete."
+msgstr "O pacote .wxrz está danificado ou incompleto."
+
+#: includes/bundle.php:596 includes/bundle.php:630
+msgid "The content of the .wxrz bundle could not be merged."
+msgstr "Não foi possível mesclar o conteúdo do pacote .wxrz."
+
+#: includes/bundle.php:707
+msgid "The .wxrz bundle has no valid manifest."
+msgstr "O pacote .wxrz não tem um manifesto válido."
+
+#: includes/bundle.php:738
+msgid "Could not create a folder for the .wxrz bundle."
+msgstr "Não foi possível criar uma pasta para o pacote .wxrz."
+
+#: includes/bundle.php:987
+msgid "The .zip bundle is damaged, incomplete or not a bundle."
+msgstr "O pacote .zip está danificado, incompleto ou não é um pacote."
+
+#. translators: %d: number of posts.
+#: includes/cli.php:53
+#, php-format
+msgid "%d post imported."
+msgid_plural "%d posts imported."
+msgstr[0] "%d post importado."
+msgstr[1] "%d posts importados."
+
+#: includes/cli.php:155
+msgid "--dir writes a bundle, not a plugin: leave out --as-plugin."
+msgstr "--dir grava um pacote, não um plugin: tire o --as-plugin."
+
+#. translators: %s: folder.
+#: includes/cli.php:164
+#, php-format
+msgid "Bundle written to %s."
+msgstr "Pacote gravado em %s."
+
+#: includes/compat/woocommerce.php:28
+msgid "Shop page"
+msgstr "Página da loja"
+
+#: includes/compat/woocommerce.php:29
+msgid "Cart page"
+msgstr "Página do carrinho"
+
+#: includes/compat/woocommerce.php:30
+msgid "Checkout page"
+msgstr "Página de finalização de compra"
+
+#: includes/compat/woocommerce.php:31
+msgid "My account page"
+msgstr "Página Minha conta"
+
+#: includes/compat/woocommerce.php:32
+msgid "Terms and conditions page"
+msgstr "Página de termos e condições"
+
+#: includes/compat/woocommerce.php:282
+msgid "WooCommerce pages: shop, cart, checkout, my account, terms"
+msgstr ""
+"Páginas do WooCommerce: loja, carrinho, finalização de compra, minha conta, "
+"termos"
+
+#: includes/copies.php:122
+msgid "until deleted"
+msgstr "até serem excluídas"
+
+#. translators: %s: bundle extension, "wxrz" or "zip".
+#: includes/export.php:154
+#, php-format
+msgid ""
+"Bundle (.%s): the WXR and, optionally, its media and content files, "
+"compressed"
+msgstr ""
+"Pacote (.%s): o WXR e, opcionalmente, seus arquivos de mídia e de conteúdo, "
+"compactados"
+
+#: includes/export.php:160
+msgid "File name:"
+msgstr "Nome do arquivo:"
+
+#: includes/export.php:167
+msgid ""
+"Include media: the files of the exported attachments, so the importer "
+"doesn't download them from this site"
+msgstr ""
+"Incluir mídia: os arquivos dos anexos exportados, para que o importador não "
+"os baixe deste site"
+
+#: includes/export.php:174
+msgid "Include a Playground blueprint"
+msgstr "Incluir um blueprint do Playground"
+
+#: includes/export.php:178
+msgid ""
+"The download becomes a .zip with blueprint.json, the WXR (.xml) and, as "
+"checked above, the attachment files and the content as .html files: run it "
+"with WordPress Playground to get a site with the exported content."
+msgstr ""
+"O arquivo baixado vira um .zip com blueprint.json, o WXR (.xml) e, conforme "
+"marcado acima, os arquivos dos anexos e o conteúdo como arquivos .html: "
+"execute-o com o WordPress Playground para ter um site com o conteúdo "
+"exportado."
+
+#. translators: %s: how long the copy lasts, like "1 day" or "until deleted".
+#: includes/export.php:188
+#, php-format
+msgid "Keep a copy (%s) to open by link on playground.wordpress.net"
+msgstr "Manter uma cópia (%s) para abrir por link no playground.wordpress.net"
+
+#. translators: %s: link to the plugin's settings.
+#: includes/export.php:196
+#, php-format
+msgid ""
+"The copy goes to uploads/eizport/tmp/, anyone with its link can download it, "
+"and it is deleted when it expires (the time is set in the same settings); "
+"manage the copies in %s."
+msgstr ""
+"A cópia vai para uploads/eizport/tmp/, qualquer pessoa com o link dela pode "
+"baixá-la, e ela é excluída quando expira (o tempo é definido nas mesmas "
+"configurações); gerencie as cópias em %s."
+
+#: includes/export.php:197
+msgid "Eizport settings"
+msgstr "configurações do Eizport"
+
+#: includes/export.php:211
+msgid "Save these choices as the site's default"
+msgstr "Salvar estas escolhas como o padrão do site"
+
+#: includes/export.php:212
+msgid "Save these choices as my default"
+msgstr "Salvar estas escolhas como meu padrão"
+
+#. translators: %s: link to the WordPress Importer screen.
+#: includes/export.php:253
+#, php-format
+msgid "Import .xml and .wxrz files with %s."
+msgstr "Importe arquivos .xml e .wxrz em %s."
+
+#: includes/export.php:254
+msgid "Tools → Import → WordPress"
+msgstr "Ferramentas → Importar → WordPress"
+
+#. translators: %s: link to Tools → Import.
+#: includes/export.php:257
+#, php-format
+msgid "To import .xml and .wxrz files, install the WordPress Importer from %s."
+msgstr ""
+"Para importar arquivos .xml e .wxrz, instale o Importador do WordPress em %s."
+
+#: includes/export.php:258
+msgid "Tools → Import"
+msgstr "Ferramentas → Importar"
+
+#: includes/export.php:376
+msgid "Playground .zip downloaded:"
+msgstr ".zip do Playground baixado:"
+
+#: includes/export.php:377
+msgid "Run it in a terminal, in the folder you saved it to:"
+msgstr "Execute-o num terminal, na pasta em que você o salvou:"
+
+#: includes/export.php:378
+msgid ""
+"Or open the copy kept on this site until it expires (anyone with the link "
+"can download it):"
+msgstr ""
+"Ou abra a cópia guardada neste site até que expire (qualquer pessoa com o "
+"link pode baixá-la):"
+
+#: includes/export.php:380
+msgid "Copy"
+msgstr "Copiar"
+
+#: includes/export.php:382
+msgid "Copied!"
+msgstr "Copiado!"
+
+#: includes/export.php:396
+msgid "Themes to install:"
+msgstr "Temas a instalar:"
+
+#. translators: %s: parent theme name.
+#: includes/export.php:408
+#, php-format
+msgid "child of %s, installed too"
+msgstr "descendente de %s, também instalado"
+
+#: includes/export.php:416
+msgid "Plugins to install and activate:"
+msgstr "Plugins a instalar e ativar:"
+
+#: includes/export.php:419
+msgid "No other plugins."
+msgstr "Nenhum outro plugin."
+
+#: includes/export.php:429
+msgid ""
+"The active theme is activated, if checked; else the first theme checked."
+msgstr "O tema ativo é ativado, se marcado; senão, o primeiro tema marcado."
+
+#: includes/export.php:430
+msgid ""
+"Any installed theme or plugin can go in. The ones from the WordPress.org "
+"directory are installed from there, in the version this site has; premium "
+"and custom ones are copied into the file: share it only where their licenses "
+"allow."
+msgstr ""
+"Qualquer tema ou plugin instalado pode ir junto. Os do diretório do "
+"WordPress.org são instalados de lá, na versão que este site tem; os premium "
+"e os personalizados são copiados para dentro do arquivo: compartilhe-o só "
+"onde as licenças deles permitirem."
+
+#: includes/folder.php:39 includes/import.php:195 includes/import.php:228
+msgid "The file could not be read."
+msgstr "Não foi possível ler o arquivo."
+
+#: includes/folder.php:42
+msgid "This is not a bundle (.wxrz or .zip)."
+msgstr "Isto não é um pacote (.wxrz ou .zip)."
+
+#: includes/folder.php:93
+msgid "The folder could not be created."
+msgstr "Não foi possível criar a pasta."
+
+#: includes/folder.php:108 includes/folder.php:114
+msgid "The bundle could not be written to the folder."
+msgstr "Não foi possível gravar o pacote na pasta."
+
+#: includes/folder.php:192
+msgid "The folder has no manifest.json: it isn't a bundle."
+msgstr "A pasta não tem manifest.json: não é um pacote."
+
+#: includes/folder.php:196
+msgid "A temporary file could not be written."
+msgstr "Não foi possível gravar um arquivo temporário."
+
+#: includes/import.php:97
+msgid "Import .wxrz"
+msgstr "Importar .wxrz"
+
+#: includes/import.php:98
+msgid "Install the WordPress Importer"
+msgstr "Instalar o Importador do WordPress"
+
+#: includes/import.php:126 includes/import.php:203
+msgid "The decompressed .wxrz file could not be saved."
+msgstr "Não foi possível salvar o arquivo .wxrz descompactado."
+
+#: includes/import.php:543
+msgid "The WordPress Importer plugin is not installed."
+msgstr "O plugin Importador do WordPress não está instalado."
+
+#: includes/import.php:559
+msgid "The WordPress Importer could not be loaded."
+msgstr "Não foi possível carregar o Importador do WordPress."
+
+#: includes/import.php:653
+msgid "Existing items"
+msgstr "Itens existentes"
+
+#: includes/import.php:743
+msgid ""
+".wxrz bundles, the .zip of a bundle exported as plugin and gzipped WXR files "
+"are accepted too: their attachment files come from the bundle."
+msgstr ""
+"Pacotes .wxrz, o .zip de um pacote exportado como plugin e arquivos WXR "
+"compactados com gzip também são aceitos: os arquivos dos anexos vêm do "
+"pacote."
+
+#: includes/import.php:795 includes/import.php:839
+msgid "All importers"
+msgstr "Todos os importadores"
+
+#: includes/import.php:824
+msgid "Choose file"
+msgstr "Escolher arquivo"
+
+#: includes/import.php:825
+msgid "Change file"
+msgstr "Alterar arquivo"
+
+#: includes/import.php:827
+msgid ""
+"Choose who the imported items belong to and whether their attachments come "
+"along."
+msgstr ""
+"Escolha a quem pertencem os itens importados e se os anexos deles vêm junto."
+
+#: includes/import.php:828
+msgid "What was imported, and the importer’s messages."
+msgstr "O que foi importado, e as mensagens do importador."
+
+#: includes/import.php:833
+msgid "The file could not be imported."
+msgstr "Não foi possível importar o arquivo."
+
+#: includes/import.php:834
+msgid "Choose another file"
+msgstr "Escolher outro arquivo"
+
+#: includes/options.php:34
+msgid "Reading: homepage, posts page, posts per page"
+msgstr "Leitura: página inicial, página de posts, posts por página"
+
+#: includes/options.php:38
+msgid "General: title, tagline, language, time zone, date and time formats"
+msgstr ""
+"Geral: título, descrição, idioma, fuso horário, formatos de data e hora"
+
+#: includes/options.php:42
+msgid "Permalinks"
+msgstr "Links permanentes"
+
+#: includes/options.php:46
+msgid "Discussion"
+msgstr "Discussão"
+
+#: includes/options.php:50
+msgid "Media: image sizes, uploads by month"
+msgstr "Mídia: tamanhos de imagem, envios por mês"
+
+#: includes/options.php:54 includes/options.php:103
+msgid "Privacy policy page"
+msgstr "Página de política de privacidade"
+
+#: includes/options.php:58
+msgid "Theme customizations (logo, menus, colors) and site icon"
+msgstr "Personalizações do tema (logo, menus, cores) e ícone do site"
+
+#: includes/options.php:66
+msgid ""
+"Basics (suggested): title, tagline, homepage, permalinks, logo and site icon"
+msgstr ""
+"Básicas (sugeridas): título, descrição, página inicial, links permanentes, "
+"logo e ícone do site"
+
+#: includes/options.php:93 includes/selection.php:555
+msgid "Homepage"
+msgstr "Página inicial"
+
+#: includes/options.php:98 includes/selection.php:557
+msgid "Posts page"
+msgstr "Página de posts"
+
+#: includes/options.php:106
+msgid "Site icon"
+msgstr "Ícone do site"
+
+#: includes/options.php:430
+msgid "Include settings:"
+msgstr "Incluir configurações:"
+
+#: includes/options.php:435
+msgid "Homepage and posts page: on import, set the exported ones as such"
+msgstr ""
+"Página inicial e página de posts: na importação, definir as exportadas como "
+"tais"
+
+#: includes/options.php:448
+msgid "Other options, by name:"
+msgstr "Outras opções, pelo nome:"
+
+#: includes/options.php:451
+msgid ""
+"Pages, media and other items the settings point to get their new IDs on "
+"import; settings pointing to items not exported are left out. Site URLs, the "
+"admin email, keys, active plugins, roles, who may register and transients "
+"are never exported, nor set by an import."
+msgstr ""
+"Páginas, mídia e outros itens para os quais as configurações apontam recebem "
+"os novos IDs na importação; configurações que apontam para itens não "
+"exportados ficam de fora. URLs do site, o e-mail do administrador, chaves, "
+"plugins ativos, funções, quem pode se registrar e transients nunca são "
+"exportados, nem gravados por uma importação."
+
+#: includes/runner.php:37
+msgid ""
+"An export already ran in this request: run each export in its own request."
+msgstr ""
+"Uma exportação já foi executada nesta solicitação: execute cada exportação "
+"na sua própria solicitação."
+
+#: includes/runner.php:89
+msgid "The export could not be written to a file."
+msgstr "Não foi possível gravar a exportação num arquivo."
+
+#: includes/selection.php:243
+msgid "Choose what to export."
+msgstr "Escolha o que exportar."
+
+#: includes/selection.php:246
+msgid "Check at least one item to export for each type exported by selection."
+msgstr ""
+"Marque pelo menos um item a exportar para cada tipo exportado por seleção."
+
+#. translators: %s: post type name, like "Products".
+#: includes/selection.php:272
+#, php-format
+msgid "Choose %s by"
+msgstr "Escolher %s"
+
+#: includes/selection.php:275
+msgid "By filters"
+msgstr "Por filtros"
+
+#: includes/selection.php:277
+msgid "By selection"
+msgstr "Por seleção"
+
+#: includes/selection.php:289
+msgid "Nothing to select."
+msgstr "Nada para selecionar."
+
+#: includes/selection.php:291
+msgid "Filter the list"
+msgstr "Filtrar a lista"
+
+#: includes/selection.php:297
+msgid ""
+"Only the checked items are exported, with their attachments and their "
+"children of other types (like a product's variations)."
+msgstr ""
+"Só os itens marcados são exportados, com seus anexos e seus descendentes de "
+"outros tipos (como as variações de um produto)."
+
+#. translators: %d: number of items listed.
+#: includes/selection.php:301
+#, php-format
+msgid "Only the latest %d are listed: use the filters for the others."
+msgstr "Só os %d mais recentes são listados: use os filtros para os outros."
+
+#: includes/selection.php:357
+msgid "Authors:"
+msgstr "Autores:"
+
+#: includes/selection.php:376
+msgid "Date range:"
+msgstr "Intervalo de datas:"
+
+#: includes/selection.php:377
+msgid "Start date:"
+msgstr "Data de início:"
+
+#: includes/selection.php:379 includes/selection.php:384
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Selecionar &mdash;"
+
+#: includes/selection.php:382
+msgid "End date:"
+msgstr "Data de término:"
+
+#: includes/selection.php:390
+msgid "Status:"
+msgstr "Status:"
+
+#: includes/selection.php:547 includes/selection.php:1016
+msgid "(no title)"
+msgstr "(sem título)"
+
+#: includes/settings.php:35
+msgid "1 hour"
+msgstr "1 hora"
+
+#: includes/settings.php:36
+msgid "12 hours"
+msgstr "12 horas"
+
+#: includes/settings.php:37
+msgid "1 day"
+msgstr "1 dia"
+
+#: includes/settings.php:38
+msgid "1 week"
+msgstr "1 semana"
+
+#: includes/settings.php:39
+msgid "Until deleted"
+msgstr "Até serem excluídas"
+
+#: includes/settings.php:59
+msgid "Each user"
+msgstr "Cada usuário"
+
+#: includes/settings.php:60
+msgid "The whole site"
+msgstr "O site inteiro"
+
+#: includes/settings.php:72
+msgid "When items are checked, and on export"
+msgstr "Quando itens são marcados, e na exportação"
+
+#: includes/settings.php:73
+msgid "When items are checked"
+msgstr "Quando itens são marcados"
+
+#: includes/settings.php:74
+msgid "On export"
+msgstr "Na exportação"
+
+#: includes/settings.php:86
+msgid "One .wxrz file"
+msgstr "Um arquivo .wxrz"
+
+#: includes/settings.php:87
+msgid "Its files, next to the plugin's"
+msgstr "Os arquivos dele, ao lado dos do plugin"
+
+#: includes/settings.php:88
+msgid "Its files, in a bundle/ folder"
+msgstr "Os arquivos dele, numa pasta bundle/"
+
+#: includes/settings.php:244
+msgid "Settings"
+msgstr "Configurações"
+
+#: includes/wxrz.php:71
+msgid "The .wxrz file could not be read."
+msgstr "Não foi possível ler o arquivo .wxrz."
+
+#: includes/wxrz.php:104
+msgid "The .wxrz file is damaged or incomplete."
+msgstr "O arquivo .wxrz está danificado ou incompleto."
+
+#. translators: %s: size such as "512 MB".
+#: includes/wxrz.php:111
+#, php-format
+msgid "The .wxrz file expands to more than %s."
+msgstr "O arquivo .wxrz descompactado passa de %s."
+
+#, php-format
+#~ msgid "Import %1$s (%2$s)"
+#~ msgstr "Importar %1$s (%2$s)"
+
+#~ msgid ""
+#~ "Exporter Importer Z is now Eizport: the old plugin was deactivated, and "
+#~ "your settings and copies are here. You can delete it."
+#~ msgstr ""
+#~ "O Exporter Importer Z agora é o Eizport: o plugin antigo foi desativado, "
+#~ "e suas configurações e cópias estão aqui. Você pode excluí-lo."
+
+#~ msgid "Go to Plugins"
+#~ msgstr "Ir para Plugins"
+
+#~ msgid ""
+#~ "Exports kept on this site. Anyone with a copy’s link can download it "
+#~ "until it expires."
+#~ msgstr ""
+#~ "Exportações guardadas neste site. Qualquer pessoa com o link de uma cópia "
+#~ "pode baixá-la até que expire."
+
+#~ msgid "New export"
+#~ msgstr "Nova exportação"
+
+#~ msgid "Export all %s"
+#~ msgstr "Exportar tudo de %s"
+
+#~ msgid "Export %d item"
+#~ msgid_plural "Export %d items"
+#~ msgstr[0] "Exportar %d item"
+#~ msgstr[1] "Exportar %d itens"
+
+#~ msgid "Export the filtered items"
+#~ msgstr "Exportar os itens filtrados"
+
+#~ msgid ""
+#~ "Check items to export only those, or filter the list to export what "
+#~ "matches the filters (and their children, like product variations). "
+#~ "Attachments and featured images come along."
+#~ msgstr ""
+#~ "Marque itens para exportar só eles, ou filtre a lista para exportar o que "
+#~ "corresponde aos filtros (e seus descendentes, como as variações de "
+#~ "produtos). Os anexos e as imagens destacadas vêm junto."

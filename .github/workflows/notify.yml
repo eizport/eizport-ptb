@@ -1,0 +1,28 @@
+name: Publish
+
+# Each push asks the plugin's repository to rebuild the site, which downloads
+# this translation (site/translations.json there). DISPATCH_TOKEN is a
+# fine-grained token with access only to eizport/eizport and
+# "Contents: read and write".
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebuild the site
+        env:
+          GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::DISPATCH_TOKEN is not set: run the Site workflow of eizport/eizport by hand."
+            exit 0
+          fi
+          gh api repos/eizport/eizport/dispatches -f event_type=translations -f "client_payload[sha]=${{ github.sha }}"

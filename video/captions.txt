@@ -1,0 +1,9 @@
+intro: Leve seu conteúdo WordPress. Não a bagunça.
+choose: Escolha exatamente o que vai: a página inicial e as configurações que vão com ela.
+download: Um arquivo só, com o conteúdo, as imagens e as configurações.
+import: Em outro site, o Importador do WordPress que você já conhece recebe o arquivo.
+result: A página inicial continua sendo a página inicial — com as imagens. Sem buscar e substituir.
+playground-link: Ou o site inteiro num .zip do WordPress Playground — uma cópia feita em localhost abre no playground.wordpress.net.
+playground-cli: Ou rode off-line, com um comando.
+agents: Feito para agentes de IA: cada exportação, importação e configuração é uma habilidade.
+outro: Gratuito e de código aberto — eizport.github.io

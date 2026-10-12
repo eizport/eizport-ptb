@@ -1,0 +1,548 @@
+{
+	"language": "Português (Brasil)",
+	"translatedFrom": "fd91ed47b73026c542c7910f368d8ca1f1399eeb",
+	"site": {
+		"tagline": "Leve o conteúdo do WordPress com sua mídia, configurações e arquivos.",
+		"description": "O Eizport dá a Ferramentas → Exportar uma tela nova e pacotes .wxrz: o conteúdo com sua mídia, configurações e arquivos de conteúdo dos posts num arquivo só. Escolha os itens e o que eles usam vem como sugestão; importe com o Importador do WordPress, ou envie o arquivo como um plugin que se importa sozinho. Gratuito e de código aberto."
+	},
+	"layout": {
+		"skip": "Pular para o conteúdo",
+		"markdown": "Esta página em Markdown"
+	},
+	"header": {
+		"home": "Eizport, início",
+		"main": "Principal",
+		"menu": "Menu",
+		"docs": "Documentação",
+		"agents": "Agentes de IA",
+		"changelog": "Registro de alterações",
+		"support": "Apoie",
+		"github": "GitHub",
+		"language": "Idioma"
+	},
+	"footer": {
+		"about": "{tagline} Gratuito e de código aberto, para o WordPress {requires} ou mais recente.",
+		"product": "Produto",
+		"playground": "Experimentar no Playground",
+		"download": "Baixar",
+		"changelog": "Registro de alterações",
+		"docs": "Documentação",
+		"gettingStarted": "Primeiros passos",
+		"exporting": "Exportação",
+		"formats": "Formatos",
+		"developers": "Desenvolvedores",
+		"project": "Projeto",
+		"source": "Código no GitHub",
+		"issue": "Relatar um problema",
+		"releases": "Versões",
+		"support": "Apoie o projeto",
+		"supporters": "Apoiadores",
+		"legal": "Distribuído sob a licença {license}. WordPress é uma marca registrada da WordPress Foundation; este projeto não tem vínculo com ela."
+	},
+	"agents": {
+		"button": "Para agentes",
+		"install": "Copiar o comando de instalação do WP-CLI",
+		"llms": "Copiar o URL do llms.txt",
+		"docs": "Documentação para agentes de IA: habilidades por MCP",
+		"full": "Toda a documentação num arquivo só",
+		"chatgpt": "Perguntar ao ChatGPT",
+		"claude": "Perguntar ao Claude",
+		"copied": "Copiado",
+		"prompt": "Leia {llms} para que eu possa fazer perguntas sobre o {name}, o plugin do WordPress. Responda em português do Brasil."
+	},
+	"video": {
+		"watch": "Veja a demonstração · 1 min e meio",
+		"play": "Reproduzir: {label}",
+		"captions": "Inglês"
+	},
+	"docs": {
+		"menu": "Documentação",
+		"nav": "Documentação",
+		"navMenu": "Documentação (menu)",
+		"edit": "Editar esta página no GitHub",
+		"markdown": "Ver em Markdown",
+		"pager": "Páginas anterior e seguinte",
+		"previous": "Anterior",
+		"next": "Próxima",
+		"toc": "Nesta página",
+		"notTranslated": "Esta página ainda não foi traduzida, por isso aparece em inglês.",
+		"translate": "Traduzir esta página",
+		"outdated": "A página em inglês mudou depois desta tradução.",
+		"original": "Ler a página em inglês",
+		"groups": {
+			"getting-started": "Primeiros passos",
+			"exporting": "Exportação",
+			"formats": "Formatos",
+			"settings": "Configurações",
+			"developers": "Desenvolvedores",
+			"reference": "Referência"
+		},
+		"home": {
+			"title": "Documentação",
+			"description": "Tudo sobre o Eizport: exportação, formatos, importação, configurações, e as habilidades, os hooks e o comando WP-CLI para desenvolvedores.",
+			"eyebrow": "Documentação",
+			"heading": "Documentação do Eizport",
+			"lead": "Como a tela Exportar funciona, o que vai em cada formato de arquivo, como a importação põe tudo de volta no lugar, e como controlar tudo pelo código.",
+			"faq": "Respostas sobre segurança, limites, privacidade e arquivos.",
+			"changelog": "O que mudou em cada versão."
+		},
+		"faq": {
+			"title": "Perguntas frequentes",
+			"description": "Respostas sobre segurança, limites de tamanho, privacidade, cópias do Playground e onde os arquivos ficam."
+		},
+		"changelog": {
+			"title": "Registro de alterações",
+			"description": "Cada versão do Eizport e o que mudou nela, da mais recente para a mais antiga.",
+			"intro": "Baixe qualquer versão {releases}. A mais recente é a {version}.",
+			"releases": "nas versões do GitHub"
+		}
+	},
+	"home": {
+		"badges": "Gratuito e de código aberto · WordPress {requires}+",
+		"video": "Demonstração de 1 minuto e meio: exporte uma página com suas configurações, importe em outro site, abra o site no WordPress Playground e chame tudo de um agente de IA.",
+		"pains": {
+			"eyebrow": "Parece familiar?",
+			"title": "Levar conteúdo não deveria significar reconstruir o site"
+		},
+		"steps": {
+			"eyebrow": "Como funciona",
+			"title": "Três passos. Nenhuma ferramenta nova para aprender.",
+			"lead": "Ele funciona dentro de Ferramentas → Exportar e do Importador do WordPress — as telas que você já usa — e faz com que elas terminem o trabalho.",
+			"step": "Passo {number}"
+		},
+		"agent": {
+			"eyebrow": "Feito para agentes",
+			"button": "Use com agentes de IA",
+			"chat": "Um exemplo de conversa por MCP"
+		},
+		"why": {
+			"eyebrow": "O meio-termo simples",
+			"title": "Nem uma migração completa. Nem uma exportação crua.",
+			"lead": "Copiar o banco de dados inteiro arrasta transients, registros, sessões e tabelas de plugins que já se foram — e sobrescreve o site para onde você importa. A exportação do próprio WordPress deixa de fora os arquivos de mídia, as configurações e as imagens que o seu conteúdo usa. O Eizport leva só o que você escolhe, e tudo de que isso depende.",
+			"caption": "Como o Eizport se compara a uma migração completa do site e à exportação do WordPress"
+		},
+		"more": "Saiba mais: {topic}",
+		"audiences": {
+			"eyebrow": "Feito para",
+			"title": "Quem leva conteúdo de WordPress de um lado para o outro no trabalho"
+		},
+		"formats": {
+			"eyebrow": "Formatos",
+			"title": "O arquivo certo para cada viagem",
+			"lead": "O formato segue o que vai dentro: WXR simples quando é só conteúdo, um pacote assim que mídia ou configurações entram.",
+			"caption": "O que cada formato de exportação leva",
+			"format": "Formato",
+			"file": "Arquivo",
+			"media": "Arquivos de mídia",
+			"settings": "Configurações",
+			"html": "Conteúdo como .html",
+			"use": "Melhor para",
+			"yes": "Sim",
+			"no": "Não",
+			"more": "O formato .wxrz, entrada por entrada"
+		},
+		"compat": {
+			"eyebrow": "Funciona com",
+			"title": "Os plugins que ele conhece — e os que ainda não",
+			"lead": "O suporte a um plugin é uma compatibilidade feita com hooks públicos. O WooCommerce tem uma; os outros abaixo não foram testados, então aqui está o que esperar pela forma como eles guardam os dados.",
+			"supported": "Suportado",
+			"unknown": "Ainda não suportado oficialmente · não testado",
+			"more": "O que esperar de cada um",
+			"issue": "Usa outro? Abra uma issue"
+		},
+		"mobile": {
+			"eyebrow": "No celular",
+			"title": "Funciona onde você estiver",
+			"lead": "As duas telas Exportar cabem num celular: a lista mantém o que importa sob cada título, o painel Detalhes se empilha, e cada caixa de seleção da tela clássica é uma linha de 40px para tocar.",
+			"newAlt": "A nova tela Exportar num celular.",
+			"newCaption": "Tela nova",
+			"classicAlt": "A tela Exportar clássica num celular, com linhas de 40px.",
+			"classicCaption": "Tela clássica"
+		},
+		"devs": {
+			"eyebrow": "Para desenvolvedores e agentes de IA",
+			"title": "Automatize cada exportação e importação",
+			"lead": "Cada passo é uma habilidade da Abilities API do WordPress: chame por REST, pelo PHP ou pelo WP-CLI, ou entregue a um agente de IA por MCP. O seu plugin pode cadastrar as próprias páginas, configurações e mídia por meio de hooks.",
+			"rest": "Exportar uma página como pacote .zip, por REST",
+			"hook": "Dar um papel à página do seu plugin",
+			"abilities": "14 habilidades",
+			"hooks": "12 hooks",
+			"compatibilities": "Compatibilidades",
+			"wpcli": "WP-CLI"
+		},
+		"faq": {
+			"eyebrow": "Antes de instalar",
+			"title": "Perguntas que as pessoas fazem",
+			"more": "Mais respostas nas perguntas frequentes"
+		},
+		"cta": {
+			"text": "{finale} Gratuito, GPL, para o WordPress {requires} ou mais recente — versão {version}.",
+			"docs": "Ou leia a documentação antes"
+		}
+	},
+	"landing": {
+		"hero": {
+			"title": "Leve o seu conteúdo do WordPress. Não a bagunça.",
+			"lead": "Escolha as páginas, os produtos ou os posts de que você precisa — ou só peça ao seu agente de IA. Eles chegam no outro site com suas imagens, suas configurações e sua página inicial: sem dump do banco de dados, sem imagens quebradas, sem pesquisar e substituir.",
+			"primary": "Experimente grátis no navegador",
+			"secondary": "Baixar grátis",
+			"note": "Gratuito e de código aberto. Sem conta, sem upsell, sem versão “pro”."
+		},
+		"pains": [
+			{
+				"title": "As imagens quebram depois da importação",
+				"text": "A exportação do WordPress só aponta para a sua mídia. O importador precisa baixar cada arquivo do site antigo — e, se ele estiver off-line, lento ou atrás de uma tela de acesso, ficam caixas cinza."
+			},
+			{
+				"title": "A página inicial some",
+				"text": "As configurações nunca vão junto com a exportação do WordPress. A sua página inicial estática, a página de posts, a loja e a finalização de compra chegam como páginas comuns, e você reconstrói o site à mão."
+			},
+			{
+				"title": "Plugins de migração trazem o lixo junto",
+				"text": "Copiar o banco de dados inteiro traz transients, registros, sessões e as tabelas de plugins que você excluiu há anos — e sobrescreve o site para onde você estava importando."
+			}
+		],
+		"steps": [
+			{
+				"title": "Escolha o que vai",
+				"text": "Em Ferramentas → Exportar, marque os tipos de conteúdo ou os itens exatos. O que eles usam — os produtos que uma página mostra, as configurações que apontam para ela — aparece como sugestão."
+			},
+			{
+				"title": "Receba um arquivo completo",
+				"text": "Conteúdo, arquivos de mídia, as configurações que apontam para ele e cada post como .html legível — num só .wxrz ou .zip."
+			},
+			{
+				"title": "Importe em qualquer lugar",
+				"text": "Ferramentas → Importar abre o Importador do WordPress que você já conhece, com o visual da tela Exportar — ou instale o arquivo como plugin e clique em Executar importação. A mídia vem do arquivo, os IDs são remapeados, as configurações são aplicadas."
+			}
+		],
+		"features": [
+			{
+				"eyebrow": "Escolha",
+				"title": "Leve exatamente o que você precisa — nada mais",
+				"text": "Posts, páginas, produtos, formulários, anexos e opções ficam numa lista só. Leve o catálogo de uma loja sem o blog, ou uma landing page sem o resto. Você vê o que cada linha exporta antes de clicar.",
+				"points": [
+					"Vários tipos de conteúdo de uma vez",
+					"Variações vão com os produtos; avaliações quando você quiser",
+					"Nada marcado? Vai tudo, como você espera"
+				],
+				"alt": "A tela Exportar: Páginas com 1 item, e Produtos e Opções trazendo o que a página inicial sugere (4 e 2 sugeridos); os detalhes do arquivo abertos acima da lista."
+			},
+			{
+				"eyebrow": "Precisão",
+				"title": "Escolha os itens à mão — o que eles usam vem sugerido",
+				"text": "Abra qualquer tipo num painel lateral, pesquise, filtre por status ou categoria, e marque exatamente os itens que você quer: eles entram na exportação na hora. A página inicial, a loja e a finalização de compra têm selos, e os produtos que uma página mostra aparecem como sugestões, para você nunca deixar uma peça importante para trás.",
+				"points": [
+					"A seleção continua na pesquisa e entre as páginas",
+					"Produtos mostrados por blocos, e as avaliações deles, sugeridos",
+					"Um filtro Selecionados para rever o que você escolheu"
+				],
+				"alt": "O painel lateral de Páginas: Home marcada com o selo Página inicial; Carrinho, Finalização de compra e Loja com os selos de página do WooCommerce."
+			},
+			{
+				"eyebrow": "Configurações que acompanham",
+				"title": "A sua página inicial continua sendo a página inicial",
+				"text": "Escolha uma página que é a página inicial, a loja ou a finalização de compra, e as configurações que apontam para ela são sugeridas — marque Opções e elas vão junto, remapeadas para a nova página na importação. Acrescente qualquer outra opção uma a uma.",
+				"points": [
+					"Configurações vinculadas: página inicial, página de posts, loja, carrinho, finalização de compra…",
+					"IDs remapeados para as páginas importadas",
+					"URLs do site, chaves, usuários e plugins nunca saem"
+				],
+				"alt": "O painel lateral de Opções com as configurações que a página inicial traz: page_on_front e show_on_front, marcadas."
+			},
+			{
+				"eyebrow": "Demonstrações em segundos",
+				"title": "Entregue um site inteiro funcionando num .zip",
+				"text": "Exporte um pacote do WordPress Playground com o seu conteúdo, a mídia dele, o tema e os plugins que você escolher — premium e personalizados também, não só os do diretório. O Playground roda no navegador, então até uma cópia feita no servidor local do seu notebook abre no playground.wordpress.net com um link.",
+				"points": [
+					"Funciona a partir do localhost: o Playground roda no seu navegador",
+					"Qualquer tema ou plugin instalado, premium ou personalizado",
+					"Ou rode off-line: npx @wp-playground/cli server --blueprint=site.zip"
+				],
+				"alt": "A janela de temas e plugins do Playground: Twenty Twenty-Five escolhido para instalar."
+			},
+			{
+				"eyebrow": "Um clique no outro site",
+				"title": "Envie um plugin que se importa sozinho",
+				"text": "Ligue “Como plugin” e o arquivo vira um plugin com o pacote dentro. No outro site, instale-o como qualquer plugin: a tela dele em Ferramentas confere se o Eizport e o Importador do WordPress estão lá — com links para instalá-los — e importa o pacote com Executar importação. Sem arquivo para enviar, sem tela do importador; no fim, ele se oferece para se excluir.",
+				"points": [
+					"Sem envio de arquivo, sem tela do importador",
+					"Confere o que precisa, com links para instalar",
+					"Se desativa e se exclui no fim"
+				],
+				"alt": "A tela do plugin importado no outro site: o que ele precisa, tudo conferido, o resultado de Executar importação e “Desativar e excluir este plugin”."
+			},
+			{
+				"eyebrow": "Do seu jeito",
+				"title": "Configure uma vez. Toda exportação segue.",
+				"text": "Leve a mídia que o seu conteúdo usa ou só a anexada, escolha quando as configurações vinculadas entram, faça pacotes .zip simples que qualquer pessoa abre — e salve a sua exportação favorita como padrão, para você ou para a equipe toda.",
+				"points": [
+					"Salvar como padrão, por usuário ou para o site inteiro",
+					"Pacotes .zip simples, se você quiser",
+					"A tela Exportar do WordPress intacta, ou a clássica, se preferir"
+				],
+				"alt": "Configurações do plugin → Exportar: Só mídia anexada, Configurações vinculadas, Pacote como .zip e Conteúdo como arquivos .html."
+			},
+			{
+				"eyebrow": "Nada se perde",
+				"title": "Cada exportação guardada — por pouco tempo, e longe dos olhos",
+				"text": "Cada exportação fica guardada como uma cópia que você pode baixar de novo, abrir no Playground ou importar de volta. On-line, o link funciona como uma senha: um token aleatório que ninguém adivinha. Os mecanismos de pesquisa são orientados a ficar longe, o acesso direto à pasta é bloqueado, e uma tarefa do cron exclui a cópia quando o tempo dela acaba.",
+				"points": [
+					"Token aleatório de 16 caracteres em cada link",
+					"robots.txt, noindex e uma pasta trancada",
+					"Expira sozinha — de 1 hora a 1 semana, nas Configurações"
+				],
+				"alt": "Configurações do plugin → Cópias: um pacote .wxrz, um pacote .zip e um .zip do Playground, com tamanhos e datas de validade."
+			}
+		],
+		"audiences": [
+			{
+				"title": "Agências e freelancers",
+				"text": "Leve uma seção pronta da homologação para a produção, ou um conjunto de páginas-modelo do site de um cliente para o próximo — sem mexer no resto."
+			},
+			{
+				"title": "Donos de loja",
+				"text": "Copie um catálogo de produtos com imagens, variações e páginas da loja para uma loja nova, somado ao que já está lá."
+			},
+			{
+				"title": "Criadores de temas e plugins",
+				"text": "Empacote conteúdo de demonstração com o seu tema ou plugin como um .zip do Playground, pronto para revisores e compradores."
+			},
+			{
+				"title": "Desenvolvedores e agentes de IA",
+				"text": "Automatize cada exportação e importação pela Abilities API, por REST ou WP-CLI — ou deixe um agente fazer isso por MCP."
+			}
+		],
+		"objections": [
+			{
+				"question": "É gratuito mesmo?",
+				"answer": "Sim. Gratuito e de código aberto, sob a GPL, sem conta, sem chave de licença e sem versão paga segurando recursos."
+			},
+			{
+				"question": "Ele sobrescreve o site para onde eu importo?",
+				"answer": "Não. Ele importa com o Importador do WordPress, que acrescenta o conteúdo ao site. Só as configurações que você escolheu exportar são aplicadas."
+			},
+			{
+				"question": "O site antigo precisa estar on-line?",
+				"answer": "Não. Os arquivos de mídia viajam dentro do pacote, então o importador nunca baixa nada do site antigo."
+			},
+			{
+				"question": "E as minhas configurações privadas?",
+				"answer": "URLs do site, o e-mail do administrador, chaves e salts, usuários e funções, plugins ativos, transients e caches nunca são exportados — não importa o que você escolha."
+			},
+			{
+				"question": "Preciso do plugin no outro site?",
+				"answer": "Para importar um pacote, sim (mais o Importador do WordPress, gratuito). Exportado “como plugin”, o arquivo avisa e tem link para os dois. Exportações .xml simples importam em qualquer lugar, como sempre."
+			},
+			{
+				"question": "O outro site pode importar sem enviar um arquivo?",
+				"answer": "Sim: exporte “como plugin”. Instale esse .zip como qualquer plugin, clique em Executar importação na tela dele em Ferramentas, e ele se exclui no fim."
+			},
+			{
+				"question": "Quais plugins são suportados?",
+				"answer": "WooCommerce: produtos, pedidos, cupons, páginas da loja, galerias e avaliações. Advanced Custom Fields e Elementor ainda não são suportados oficialmente e não foram testados: os dados deles vão junto com os posts, mas os IDs dentro deles não são remapeados."
+			}
+		],
+		"finale": {
+			"title": "Pare de reconstruir depois de cada importação.",
+			"text": "Instale em um minuto, exporte o que você precisa e deixe chegar completo."
+		},
+		"formats": [
+			{
+				"use": "A exportação do próprio WordPress, sem mudanças"
+			},
+			{
+				"use": "Levar conteúdo entre sites"
+			},
+			{
+				"use": "Quando pessoas vão abrir o arquivo"
+			},
+			{
+				"use": "Um site que roda: conteúdo, tema, plugins"
+			},
+			{
+				"use": "Importar com um clique no outro site"
+			}
+		],
+		"comparison": {
+			"columns": [
+				"Migração do site inteiro",
+				"Exportação do WordPress",
+				"Eizport"
+			],
+			"rows": [
+				{
+					"label": "O que vai",
+					"cells": [
+						"O banco de dados inteiro e todos os arquivos",
+						"Um tipo de conteúdo, ou tudo",
+						"O que você escolhe, e aquilo de que ele depende"
+					]
+				},
+				{
+					"label": "Sobras",
+					"cells": [
+						"Transients, registros, sessões, tabelas de plugins antigos, spam",
+						"Nenhuma",
+						"Nenhuma: nunca transients, chaves ou caches"
+					]
+				},
+				{
+					"label": "Arquivos de mídia",
+					"cells": [
+						"Todos",
+						"Fora do arquivo — baixados do site antigo",
+						"Só a mídia dos itens, dentro do arquivo"
+					]
+				},
+				{
+					"label": "Mídia usada no conteúdo",
+					"cells": [
+						"Sim, junto com todo o resto",
+						"Só a anexada e a destacada",
+						"Sim, anexada ou não"
+					]
+				},
+				{
+					"label": "Configurações",
+					"cells": [
+						"Todas, inclusive os URLs e os usuários do site",
+						"Nenhuma",
+						"As que você escolhe; página inicial, loja… seguem suas páginas"
+					]
+				},
+				{
+					"label": "IDs e URLs",
+					"cells": [
+						"Pesquisar e substituir depois",
+						"Posts remapeados; configurações perdidas",
+						"Posts e configurações remapeados na importação"
+					]
+				},
+				{
+					"label": "Site de destino",
+					"cells": [
+						"Sobrescrito",
+						"Somado",
+						"Somado"
+					]
+				}
+			]
+		},
+		"agent": {
+			"title": "Feito para agentes de IA, não remendado depois",
+			"text": "Cada exportação, importação, cópia e configuração é uma habilidade da Abilities API do WordPress — entrada tipada, saída tipada, permissões e avisos de segurança. Conecte um agente por MCP e peça com palavras simples; ou chame as mesmas habilidades por REST, PHP e WP-CLI.",
+			"points": [
+				"12 habilidades com esquemas JSON que um agente consegue ler",
+				"Ações só de leitura e destrutivas sinalizadas para o agente",
+				"As permissões são as do WordPress: export, import, manage_options",
+				"Documentação para agentes também: llms.txt e cada página em Markdown"
+			],
+			"chat": [
+				{
+					"who": "Você",
+					"text": "Exporte a página inicial com as imagens e as configurações básicas como .zip e me passe o link."
+				},
+				{
+					"who": "Agente",
+					"text": "Encontrei “Home” (ID 43) — é a página inicial."
+				},
+				{
+					"who": "Agente",
+					"text": "Concluído: home.zip (31 KB) com a página, 3 imagens, a configuração da página inicial e as Básicas. O link expira em um dia."
+				}
+			]
+		},
+		"compatibility": [
+			{
+				"points": [
+					"Produtos, variações, pedidos e cupons",
+					"As páginas da loja, do carrinho, de finalização de compra e da conta acompanham as páginas",
+					"Produtos mostrados por blocos sugeridos; avaliações em linha própria"
+				]
+			},
+			{
+				"points": [
+					"Os valores dos campos vão com os posts (campos personalizados)",
+					"IDs dentro dos campos (imagens, relacionamentos) não são remapeados",
+					"Grupos de campos: exporte-os com as ferramentas do próprio ACF"
+				]
+			},
+			{
+				"points": [
+					"Os designs vão com as páginas (_elementor_data)",
+					"IDs e URLs de imagens dentro dos designs não são remapeados",
+					"Kit do site e modelos: o Import / Export Kit do Elementor"
+				]
+			}
+		]
+	},
+	"donate": {
+		"title": "Apoie o projeto",
+		"description": "O Eizport é gratuito e de código aberto, e o apoio mantém assim. Se ele te poupou tempo, você pode apoiar com uma doação — ou de outras formas.",
+		"eyebrow": "Apoie",
+		"heading": "Gratuito e de código aberto. Mantido vivo por pessoas como você.",
+		"lead": "O Eizport é gratuito e de código aberto, sem versão paga segurando recursos — e continua assim enquanto o apoio cobrir o tempo necessário para desenvolver, manter e dar suporte com qualidade. Se ele te poupou uma tarde reenviando imagens e remontando uma página inicial, uma doação o mantém cuidado, testado a cada versão do WordPress e crescendo.",
+		"money": "Doar",
+		"with": "Apoiar pelo {name}",
+		"pixText": "Na hora, de qualquer app de banco — leia o código ou copie.",
+		"pixQr": "QR code do Pix",
+		"pixCode": "Pix copia e cola",
+		"pixWhere": "Brasil · {name}",
+		"pending": "As formas de doação estão sendo configuradas. Enquanto isso, as formas abaixo ajudam tanto quanto.",
+		"note": "Doações são presentes: não compram suporte, recursos nem prioridade. Todo mundo recebe o mesmo plugin, de graça. Quem doa recebe um agradecimento na {supporters}.",
+		"supportersLink": "página de apoiadores",
+		"other": "Outras formas de ajudar",
+		"ways": [
+			{
+				"title": "Dê uma estrela no GitHub",
+				"text": "Estrelas ajudam outras pessoas a encontrá-lo."
+			},
+			{
+				"title": "Relate o que quebrar",
+				"text": "Uma issue clara vale mais que uma solicitação de recurso."
+			},
+			{
+				"title": "Melhore a documentação",
+				"text": "Cada página tem um link “Editar esta página no GitHub”."
+			},
+			{
+				"title": "Conte para alguém",
+				"text": "A próxima pessoa que for levar um site WordPress vai agradecer."
+			}
+		],
+		"links": {
+			"github": {
+				"text": "Mensal ou uma vez, sem taxas: o GitHub repassa 100%.",
+				"audience": "Qualquer lugar"
+			},
+			"paypal": {
+				"text": "Qualquer valor, no cartão ou com saldo do PayPal.",
+				"audience": "Qualquer lugar"
+			},
+			"kofi": {
+				"text": "Pague um café — uma vez ou todo mês.",
+				"audience": "Qualquer lugar"
+			},
+			"apoiase": {
+				"text": "Apoio mensal em reais, a partir de R$ 5. O nome de cada apoiador vai na página de apoiadores.",
+				"audience": "Brasil",
+				"lang": "Página em português (pt-BR)"
+			}
+		}
+	},
+	"supporters": {
+		"title": "Apoiadores",
+		"description": "As pessoas cujo apoio mantém o Eizport gratuito e de código aberto, cuidado a cada versão do WordPress.",
+		"eyebrow": "Apoiadores",
+		"heading": "Obrigado.",
+		"lead": "O Eizport continua gratuito porque estas pessoas contribuem todo mês. O apoio delas paga o tempo necessário para mantê-lo compatível com cada versão do WordPress, do WooCommerce e do Playground, responder issues e escrever a documentação.",
+		"empty": "Ainda não há nomes aqui. O seu pode ser o primeiro.",
+		"join": "Junte-se a elas",
+		"joinText": "Apoie todo mês pelo Apoia.se, em reais, a partir de R$ 5: o nome de cada apoiador vai nesta página.",
+		"lang": "Página em português (pt-BR)",
+		"apoiase": "Apoiar no Apoia.se",
+		"other": "Outras formas de ajudar",
+		"perMonth": "{amount} / mês"
+	}
+}

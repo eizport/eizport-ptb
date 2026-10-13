@@ -3,7 +3,7 @@ choose: Escolha exatamente o que vai: a página inicial e as configurações que
 download: Um arquivo só, com o conteúdo, as imagens e as configurações.
 import: Em outro site, o Importador do WordPress que você já conhece recebe o arquivo.
 result: A página inicial continua sendo a página inicial — com as imagens. Sem buscar e substituir.
+as-plugin: Ou envie como plugin: instalado no outro site, ele traz o que precisa e se importa sozinho.
 playground-link: Ou o site inteiro num .zip do WordPress Playground — uma cópia feita em localhost abre no playground.wordpress.net.
 playground-cli: Ou rode off-line, com um comando.
-agents: Feito para agentes de IA: cada exportação, importação e configuração é uma habilidade.
 outro: Gratuito e de código aberto — eizport.github.io

@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.357
+Leve seu conteúdo WordPress. Não a bagunça.
+
+2
+00:00:04.357 --> 00:00:21.458
+Escolha exatamente o que vai: a página inicial e as configurações que vão com ela.
+
+3
+00:00:21.458 --> 00:00:32.742
+Um arquivo só, com o conteúdo, as imagens e as configurações.
+
+4
+00:00:32.742 --> 00:00:43.977
+Em outro site, o Importador do WordPress que você já conhece recebe o arquivo.
+
+5
+00:00:43.977 --> 00:00:51.995
+A página inicial continua sendo a página inicial — com as imagens. Sem buscar e substituir.
+
+6
+00:00:51.995 --> 00:01:30.183
+Ou envie como plugin: instalado no outro site, ele traz o que precisa e se importa sozinho.
+
+7
+00:01:30.184 --> 00:01:50.422
+Ou o site inteiro num .zip do WordPress Playground — uma cópia feita em localhost abre no playground.wordpress.net.
+
+8
+00:01:50.423 --> 00:01:58.479
+Ou rode off-line, com um comando.
+
+9
+00:01:58.480 --> 00:02:03.899
+Gratuito e de código aberto — eizport.github.io

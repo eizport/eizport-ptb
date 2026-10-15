@@ -18,7 +18,7 @@ wp plugin install https://github.com/eizport/eizport/releases/latest/download/ei
 
 ## Experimente antes
 
-Abra a [demonstração ao vivo no WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/eizport/eizport/main/playground/blueprint.json): um site descartável no seu navegador com o plugin e páginas de exemplo.
+Abra a [demonstração ao vivo no WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/eizport/eizport/trunk/playground/blueprint.json): um site descartável no seu navegador com o plugin e páginas de exemplo.
 
 ## Para importar
 

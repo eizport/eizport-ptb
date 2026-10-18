@@ -13,6 +13,7 @@ Este repositório só tem texto traduzido. O site é montado no repositório do 
 | `assets/screenshots/` | Screenshots da interface em português, com os mesmos nomes dos em inglês (`npm run screenshots -- --locale br=…` no repositório do plugin). |
 | `video/captions.txt`, `video/voice.json` | As legendas do vídeo de demonstração (uma linha `id: texto` por cena, os mesmos ids de `site/video/STORYBOARD.md` do repositório do plugin) e a voz da narração (`say` do macOS: voz, velocidade, como ler "ponto" e siglas). `npm run video -- --locale br=<este repositório>` grava o vídeo em português em `assets/video/`. |
 | `video/youtube.md` | Título, descrição e capítulos para enviar o vídeo em português ao YouTube. |
+| `demo/` | A loja do demo (Eiz Coffee) em português: `store.json` (real, gramas com pacote de 250 g, preços brasileiros, nomes e descrições dos produtos, categorias, menu) e o visual traduzido (`home.html`, `header.html`, `footer.html`, `archive-product.html`, `single-product.html`). Os screenshots e o vídeo em português aplicam isso sozinhos e voltam à loja em inglês no fim. `home.json` tem os textos; os `.html` são gerados a partir dele pelos builders da home. |
 
 A tradução do próprio plugin (a interface e o readme) fica no [translate.wordpress.org](https://translate.wordpress.org/locale/pt-br/default/wp-plugins/eizport/) e chega aos sites pelo pacote de idioma. `npm run plugin-languages`, no repositório do plugin, instala esse pacote nos sites locais.
 

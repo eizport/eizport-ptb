@@ -1,0 +1,160 @@
+{
+	"$comment": "Dados em pt-BR da home de exemplo (Eiz Coffee), aplicados sobre o data.json do builder: os textos (\"strings\", pela chave em inglês), os textos alternativos das imagens, os produtos, as categorias e a loja. {site} é o endereço do site. O builder gera demo/home.html a partir daqui.",
+	"strings": {
+		"Small-batch roasting since 2012": "Torra em pequenos lotes desde 2012",
+		"Coffee worth the climb.": "Café que vem do alto.",
+		"Single-origin and blended coffees, roasted every Tuesday in small batches and shipped while they are still at their best.": "Cafés de origem única e blends, torrados toda terça-feira em pequenos lotes e enviados enquanto estão no auge.",
+		"Shop coffee": "Comprar café",
+		"Our story": "Nossa história",
+		"Since 2012": "Desde 2012",
+		"Roasted on Tuesday, in your cup by Friday.": "Torrado na terça, na sua xícara até sexta.",
+		"Eiz Coffee started with a secondhand five-kilo roaster in a garage and one rule: never sell coffee older than a week. We still roast to order, in small batches, and we taste every batch before it ships.": "A Eiz Coffee começou numa garagem, com um torrador de cinco quilos de segunda mão e uma regra: nunca vender café com mais de uma semana. Ainda torramos sob encomenda, em pequenos lotes, e provamos cada lote antes do envio.",
+		"We buy from the same farms year after year, pay well above fair-trade prices, and print the farm, the altitude and the roast date on every bag.": "Compramos das mesmas fazendas ano após ano, pagamos bem acima dos preços do comércio justo e imprimimos a fazenda, a altitude e a data de torra em cada pacote.",
+		"First batch roasted": "Primeiro lote torrado",
+		"Partner farms in 6 countries": "Fazendas parceiras em 6 países",
+		"From roaster to your door": "Do torrador até a sua porta",
+		"Browse this season’s coffees →": "Conheça os cafés da estação →",
+		"Brew your way": "Prepare do seu jeito",
+		"Pick the method. We’ll pick the roast.": "Escolha o método. A torra fica com a gente.",
+		"Pour-over": "Coado",
+		"Bright, floral single origins roasted light to show off the farm.": "Cafés de origem única, vivos e florais, com torra clara para revelar a fazenda.",
+		"Shop single origins →": "Ver cafés de origem única →",
+		"Espresso": "Espresso",
+		"Sweet, syrupy blends built for milk and a thick crema.": "Blends doces e encorpados, feitos para leite e uma crema espessa.",
+		"Shop blends →": "Ver blends →",
+		"Cold brew": "Extração a frio",
+		"Coarse-cut and chocolatey, made for a 12-hour steep.": "Moagem grossa e notas de chocolate, para 12 horas de extração a frio.",
+		"Shop cold brew →": "Ver extração a frio →",
+		"View coffee": "Ver café",
+		"Fresh this week": "Novidades da semana",
+		"Trending coffees": "Cafés em alta",
+		"Best sellers, new arrivals and what our roasters are drinking right now.": "Os mais vendidos, as novidades e o que nossos torradores estão bebendo agora.",
+		"Shop all coffee": "Ver todos os cafés",
+		"Highland Sunrise is the first coffee our regulars ask for by name. It tastes like the bag says it will, every single week.": "O Aurora da Montanha é o primeiro café que nossos clientes pedem pelo nome. Tem exatamente o sabor que o pacote promete, toda semana.",
+		"Head barista, North Loop Cafe": "Barista-chefe, North Loop Cafe",
+		"We switched our house espresso to Eiz three years ago. Consistent roasts, real people on the phone, and beans never more than a week old.": "Trocamos o espresso da casa pela Eiz há três anos. Torras consistentes, gente de verdade no telefone e grãos com no máximo uma semana.",
+		"Owner, Harbor Espresso": "Proprietário, Harbor Espresso",
+		"The subscription is the one box I’m always happy to find on the doorstep. Five of my favorite coffees came from it.": "A assinatura é a única caixa que sempre fico feliz em encontrar na porta. Cinco dos meus cafés favoritos vieram dela.",
+		"Subscriber since 2021": "Assinante desde 2021",
+		"From the bar": "Do balcão",
+		"Poured by people who care about the cup.": "Servido por quem se importa com a xícara.",
+		"Poured at cafés we love": "Servido nos cafés que amamos",
+		"Never run out of good coffee.": "Nunca fique sem café bom.",
+		"Pick a coffee or let our roasters surprise you. Delivered every two or four weeks — skip, swap or cancel any time.": "Escolha um café ou deixe nossos torradores surpreenderem você. Entrega a cada duas ou quatro semanas: pule, troque ou cancele quando quiser.",
+		"Start a subscription": "Começar uma assinatura",
+		"Small-batch specialty coffee, roasted every Tuesday and shipped while it’s at its best.": "Café especial em pequenos lotes, torrado toda terça-feira e enviado no auge.",
+		"Shop": "Loja",
+		"All coffee": "Todos os cafés",
+		"Single origin": "Origem única",
+		"Blends": "Blends",
+		"Subscriptions": "Assinaturas",
+		"My account": "Minha conta",
+		"Visit the roastery": "Visite a torrefação",
+		"1420 Westlake Ave N<br>Seattle, WA 98109": "Rua Bocaiúva, 1420<br>Florianópolis, SC, 88015-530",
+		"Tuesday to Saturday<br>8 am to 4 pm": "De terça a sábado<br>das 8h às 16h",
+		"© 2026 Eiz Coffee. Roasted in small batches.": "© 2026 Eiz Coffee. Torrado em pequenos lotes.",
+		"A demo store made for Eizport: nothing here is for sale.": "Uma loja de demonstração feita para o Eizport: nada aqui está à venda.",
+		"Search": "Pesquisar",
+		"Search coffee…": "Buscar café…",
+		"Free U.S. shipping over $40": "Frete grátis acima de R$ 150",
+		"Subscribe &amp; save 10%": "Assine e economize 10%",
+		"Roasted to order, every Tuesday": "Torrado sob encomenda, toda terça-feira",
+		"Ships within 48 hours of roasting": "Enviado em até 48 horas após a torra"
+	},
+	"img": {
+		"472": {
+			"alt": "Um torrador de tambor no meio da torra, com os grãos caindo na bandeja de resfriamento sob a luz quente da manhã."
+		},
+		"473": {
+			"alt": "O mestre de torra conferindo um punhado de grãos recém-torrados ao lado do torrador."
+		},
+		"474": {
+			"alt": "Água quente caindo em espiral num coador sobre uma jarra de vidro."
+		},
+		"475": {
+			"alt": "Um espresso sendo extraído numa xícara pequena de cerâmica."
+		},
+		"476": {
+			"alt": "Um copo de café extraído a frio, com gelo, ao lado de uma garrafa."
+		},
+		"477": {
+			"alt": "Um pacote do café Aurora da Montanha."
+		},
+		"478": {
+			"alt": "Um pacote do café Noite no Cerrado."
+		},
+		"479": {
+			"alt": "Um pacote do café Blend da Casa."
+		},
+		"480": {
+			"alt": "Um pacote do café Eiz Espresso."
+		},
+		"481": {
+			"alt": "Um pacote do café Moagem Grossa para Extração a Frio."
+		},
+		"482": {
+			"alt": "Um pacote do café Crepúsculo Descafeinado."
+		},
+		"483": {
+			"alt": "Retrato de Maya Okafor, barista-chefe do North Loop Cafe."
+		},
+		"484": {
+			"alt": "Retrato de Lucas Ferreira, proprietário do Harbor Espresso."
+		},
+		"485": {
+			"alt": "Retrato de Hana Sato, assinante da Eiz Coffee."
+		}
+	},
+	"products": {
+		"491": {
+			"name": "Aurora da Montanha",
+			"url": "{site}/produto/aurora-da-montanha/",
+			"price": "R$ 98,00",
+			"short": "Etiópia, Yirgacheffe. Bergamota, damasco e mel. Torra clara para coado.",
+			"size": "Pacote de 250 g."
+		},
+		"492": {
+			"name": "Noite no Cerrado",
+			"url": "{site}/produto/noite-no-cerrado/",
+			"price": "R$ 52,00",
+			"short": "Brasil, Cerrado Mineiro. Chocolate amargo, avelã e final longo e doce.",
+			"size": "Pacote de 250 g."
+		},
+		"493": {
+			"name": "Blend da Casa",
+			"url": "{site}/produto/blend-da-casa/",
+			"price": "R$ 45,00",
+			"short": "Brasil e Colômbia. Caramelo, cacau e maçã vermelha. O café de todo dia.",
+			"size": "Pacote de 250 g."
+		},
+		"494": {
+			"name": "Eiz Espresso",
+			"url": "{site}/produto/eiz-espresso/",
+			"price": "R$ 55,00",
+			"short": "Brasil, Colômbia e Guatemala. Melaço, cereja e uma crema espessa.",
+			"size": "Pacote de 250 g."
+		},
+		"495": {
+			"name": "Moagem Grossa para Extração a Frio",
+			"url": "{site}/produto/moagem-grossa-para-extracao-a-frio/",
+			"price": "R$ 49,00",
+			"short": "Moagem grossa para 12 horas de extração a frio. Suave, achocolatado e de baixa acidez.",
+			"size": "Pacote de 250 g."
+		},
+		"496": {
+			"name": "Crepúsculo Descafeinado",
+			"url": "{site}/produto/crepusculo-descafeinado/",
+			"price": "R$ 62,00",
+			"short": "Colômbia, processo com cana-de-açúcar. Chocolate ao leite e ameixa, sem a cafeína.",
+			"size": "Pacote de 250 g."
+		}
+	},
+	"cats": {
+		"single-origin": "{site}/categoria-produto/origem-unica/",
+		"blends": "{site}/categoria-produto/blends/",
+		"cold-brew": "{site}/categoria-produto/extracao-a-frio/"
+	},
+	"shop": "{site}/loja/",
+	"site": "{site}",
+	"account": "{site}/minha-conta/"
+}

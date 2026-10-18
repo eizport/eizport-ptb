@@ -1,0 +1,124 @@
+{
+	"$comment": "A loja do demo em pt-BR, aplicada ao site de origem pelo useLocale() do eizport (site/scripts/lib/demo.mjs), que guarda antes o estado em inglês e o restaura na volta: opções do WooCommerce (real, gramas, permalinks em português), produtos pelo SKU, categorias pelo slug em inglês, páginas pela opção que guarda o ID, o menu do cabeçalho, template parts do tema (o rodapé, footer.html) e a home (home.html); os dois HTML são gerados pelos builders a partir de home.json. {site} é o endereço do site.",
+	"options": {
+		"woocommerce_currency": "BRL",
+		"woocommerce_currency_pos": "left_space",
+		"woocommerce_price_thousand_sep": ".",
+		"woocommerce_price_decimal_sep": ",",
+		"woocommerce_default_country": "BR:SC",
+		"woocommerce_weight_unit": "g",
+		"woocommerce_dimension_unit": "cm",
+		"woocommerce_permalinks": {
+			"product_base": "produto",
+			"category_base": "categoria-produto",
+			"tag_base": "tag-produto",
+			"attribute_base": "",
+			"use_verbose_page_rules": false
+		}
+	},
+	"products": {
+		"EIZ-HS": {
+			"name": "Aurora da Montanha",
+			"slug": "aurora-da-montanha",
+			"regular_price": "98.00",
+			"weight": "250",
+			"short_description": "Etiópia, Yirgacheffe. Bergamota, damasco e mel. Torra clara para coado.",
+			"description": "Etiópia, Yirgacheffe. Bergamota, damasco e mel. Torra clara para coado. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		},
+		"EIZ-CN": {
+			"name": "Noite no Cerrado",
+			"slug": "noite-no-cerrado",
+			"regular_price": "52.00",
+			"weight": "250",
+			"short_description": "Brasil, Cerrado Mineiro. Chocolate amargo, avelã e final longo e doce.",
+			"description": "Brasil, Cerrado Mineiro. Chocolate amargo, avelã e final longo e doce. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		},
+		"EIZ-RH": {
+			"name": "Blend da Casa",
+			"slug": "blend-da-casa",
+			"regular_price": "45.00",
+			"weight": "250",
+			"short_description": "Brasil e Colômbia. Caramelo, cacau e maçã vermelha. O café de todo dia.",
+			"description": "Brasil e Colômbia. Caramelo, cacau e maçã vermelha. O café de todo dia. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		},
+		"EIZ-EE": {
+			"name": "Eiz Espresso",
+			"slug": "eiz-espresso",
+			"regular_price": "55.00",
+			"weight": "250",
+			"short_description": "Brasil, Colômbia e Guatemala. Melaço, cereja e uma crema espessa.",
+			"description": "Brasil, Colômbia e Guatemala. Melaço, cereja e uma crema espessa. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		},
+		"EIZ-CB": {
+			"name": "Moagem Grossa para Extração a Frio",
+			"slug": "moagem-grossa-para-extracao-a-frio",
+			"regular_price": "49.00",
+			"weight": "250",
+			"short_description": "Moagem grossa para 12 horas de extração a frio. Suave, achocolatado e de baixa acidez.",
+			"description": "Moagem grossa para 12 horas de extração a frio. Suave, achocolatado e de baixa acidez. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		},
+		"EIZ-DT": {
+			"name": "Crepúsculo Descafeinado",
+			"slug": "crepusculo-descafeinado",
+			"regular_price": "62.00",
+			"weight": "250",
+			"short_description": "Colômbia, processo com cana-de-açúcar. Chocolate ao leite e ameixa, sem a cafeína.",
+			"description": "Colômbia, processo com cana-de-açúcar. Chocolate ao leite e ameixa, sem a cafeína. Torrado sob encomenda em pequenos lotes e enviado em até 48 horas. Pacote de 250 g, em grãos, salvo indicação."
+		}
+	},
+	"terms": {
+		"product_cat": {
+			"single-origin": {
+				"name": "Origem única",
+				"slug": "origem-unica",
+				"description": "Uma fazenda, uma safra, com torra clara para mostrar de onde veio."
+			},
+			"uncategorized": {
+				"name": "Sem categoria",
+				"slug": "sem-categoria"
+			},
+			"cold-brew": {
+				"name": "Extração a frio",
+				"slug": "extracao-a-frio",
+				"description": "Moagem grossa feita para 12 horas de extração lenta, a frio."
+			},
+			"blends": {
+				"name": "Blends",
+				"slug": "blends",
+				"description": "Blends equilibrados para espresso e leite, torrados para ter o mesmo sabor toda semana."
+			}
+		}
+	},
+	"pages": {
+		"woocommerce_shop_page_id": {
+			"post_title": "Loja",
+			"post_name": "loja"
+		},
+		"woocommerce_myaccount_page_id": {
+			"post_title": "Minha conta",
+			"post_name": "minha-conta"
+		}
+	},
+	"navigation": {
+		"content": "<!-- wp:navigation-link {\"label\":\"Loja\",\"url\":\"{site}/loja/\",\"kind\":\"custom\",\"isTopLevelLink\":true} /--><!-- wp:navigation-link {\"label\":\"Origem única\",\"url\":\"{site}/categoria-produto/origem-unica/\",\"kind\":\"custom\",\"isTopLevelLink\":true} /--><!-- wp:navigation-link {\"label\":\"Blends\",\"url\":\"{site}/categoria-produto/blends/\",\"kind\":\"custom\",\"isTopLevelLink\":true} /--><!-- wp:navigation-link {\"label\":\"Extração a frio\",\"url\":\"{site}/categoria-produto/extracao-a-frio/\",\"kind\":\"custom\",\"isTopLevelLink\":true} /-->"
+	},
+	"front_page": {
+		"file": "home.html"
+	},
+	"template_parts": {
+		"header": {
+			"file": "header.html"
+		},
+		"footer": {
+			"file": "footer.html"
+		}
+	},
+	"templates": {
+		"archive-product": {
+			"file": "archive-product.html"
+		},
+		"single-product": {
+			"file": "single-product.html"
+		}
+	}
+}

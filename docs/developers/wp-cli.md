@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
 ---
 
 ## wp eizport export
@@ -11,12 +11,14 @@ Exporta como a tela Exportar faz, para uma cópia guardada no site, e imprime o 
 ```bash
 wp eizport export --types=page:43,product --options=basics,page_on_front
 wp eizport export --types=page:43+44 --as-plugin --update-existing --filename=delivery
+wp eizport export --types=page --menus=classic:18 --filename=header
 ```
 
 | Argumento | |
 | --- | --- |
 | `--types=<types>` | Tipos de conteúdo, separados por vírgula: `tipo:ID+ID` para alguns itens, o tipo sozinho para todos. Nenhum: todo o conteúdo |
 | `--options=<options>` | Grupos de opções (como `basics`) e nomes de opções, separados por vírgula |
+| `--menus=<menus>` | [Menus](../../exporting/menus/): `all`, ou `classic:ID+ID` (IDs de termos de menu) e `navigation:ID+ID` (IDs de `wp_navigation`), separados por vírgula. Nenhum: sem menus (todo o conteúdo já os tem) |
 | `--[no-]media` | Arquivos de mídia dentro; padrão: sim |
 | `--zip` | Um pacote `.zip` em vez de `.wxrz` |
 | `--as-plugin` | Um `.zip` de [plugin](../../exporting/as-plugin/) que importa o próprio pacote |

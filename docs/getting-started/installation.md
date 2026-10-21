@@ -1,7 +1,7 @@
 ---
 title: "Instalação"
 description: "Instale o plugin pelo zip da versão, confira os requisitos e adicione o Importador do WordPress para importar."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
 ---
 
 ## Pelo zip da versão

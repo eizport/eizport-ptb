@@ -1,7 +1,7 @@
 ---
 title: "Escolher itens"
 description: "Itens por tipo de conteúdo, escolhidos no painel lateral na hora; sugestões; o filtro Seleção; descendentes, anexos, avaliações e funções."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
 ---
 
 Cada tipo de conteúdo é exportado inteiro (com a linha dele marcada na lista) ou **por itens**, escolhidos no painel lateral dele.
@@ -21,6 +21,8 @@ O que você escolhe pode sugerir mais, mostrado como **N sugeridos** nas outras 
 | Uma página para a qual uma configuração aponta (página inicial, página de posts, loja…) | Essas configurações, em **Opções** ([configurações vinculadas](../options/#linked-settings)) |
 | Uma página cujos blocos mostram produtos (*Produtos selecionados manualmente*, *Coleção de produtos* com produtos selecionados manualmente, *Produto único*, *Produto em destaque*, `[products ids="…"]`) | Esses produtos, em **Produtos** |
 | Produtos com avaliações | As avaliações aprovadas deles, em **Avaliações de produtos** |
+| Qualquer coisa | Os menus clássicos nas posições do tema e as navegações que os itens ou os modelos do tema usam, em **Menus** ([menus](../menus/)) |
+| Um menu | As páginas, os posts e os produtos para onde ele aponta, nas linhas deles |
 
 Marcar uma linha com sugestões as traz, e ela continua dizendo *2 sugeridos* — com o que mais você escolheu: *2 sugeridos + Básicas + 1 item*. Desmarcar uma delas no painel da linha transforma o resto em itens comuns. **Exportar tudo** leva o tipo inteiro. Plugins acrescentam as próprias sugestões com [`eizport_suggested_items`](../../developers/hooks/#eizport_suggested_items).
 

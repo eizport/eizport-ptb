@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "ffdc42c9741729dcf458bebf036c09f8fb7096b8"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.
@@ -83,6 +83,25 @@ Dispara depois que um post existente foi atualizado a partir de um item importad
 add_action( 'eizport_updated_from_import', function ( int $id, array $post ) {
 	clean_post_cache( $id );
 }, 10, 2 );
+```
+
+## eizport_block_id_attributes
+
+Os blocos cujos atributos guardam IDs de posts, remapeados para os itens importados quando a importação termina (Imagem, Galeria, Capa, Mídia e texto, Arquivo, Vídeo, Áudio e os links de navegação do core já estão lá). Acrescente o bloco de um plugin pelo nome completo.
+
+```php
+add_filter( 'eizport_block_id_attributes', function ( array $blocks ) {
+	$blocks['my-plugin/card'] = array( 'imageId', 'postIds' ); // Um número ou uma lista de números.
+	return $blocks;
+} );
+```
+
+## eizport_menus_update_existing
+
+Se uma importação substitui os itens dos menus clássicos que o site já tem (`true`) ou os deixa como estão (`false`, o padrão). *Atualizar existentes* liga isso na importação dele.
+
+```php
+add_filter( 'eizport_menus_update_existing', '__return_true' );
 ```
 
 ## eizport_suggested_items

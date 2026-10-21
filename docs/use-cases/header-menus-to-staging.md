@@ -1,7 +1,7 @@
 ---
 title: "Menus do cabeçalho para o staging"
 description: "Um site montado localmente — páginas, um menu de cabeçalho com submenus e a posição dele no tema — repetido no staging sem refazer o menu à mão."
-translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
+translatedFrom: "90ca59034a86059bfc2f8ef2fadb76b112fd7d91"
 ---
 
 ## O cenário
@@ -31,4 +31,4 @@ No staging, os itens do menu apontam para as páginas do staging (os IDs novos) 
 
 ## Da próxima vez
 
-Depois de mais mudanças, exporte de novo e importe com *Atualizar páginas, posts e produtos que já existem (mesmo slug)* marcada ([veja](../../getting-started/importing/#atualizar-os-itens-existentes)): as páginas são atualizadas, e o menu recebe os itens do arquivo em vez de ganhar uma segunda cópia deles.
+Depois de mais mudanças, exporte de novo e importe com *Atualizar páginas, posts e produtos que já existem (mesmo slug)* marcada (veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes)): as páginas são atualizadas, e o menu recebe os itens do arquivo em vez de ganhar uma segunda cópia deles.

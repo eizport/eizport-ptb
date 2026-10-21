@@ -1,7 +1,7 @@
 ---
 title: "Opções"
 description: "Exporte as configurações do site uma a uma, por grupo ou todas de uma vez; configurações vinculadas; o que nunca é exportado; como os IDs são remapeados."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "78585a2106b4117538ba50277fab0f9e9cbf62d2"
 ---
 
 A linha **Opções** exporta as configurações do site num `options.json` dentro do pacote, definidas no outro site quando a importação termina.
@@ -11,10 +11,10 @@ A linha **Opções** exporta as configurações do site num `options.json` dentr
 ## Três formas de escolher
 
 - **Uma a uma** — todas as opções que o site tem (pesquisa, páginas), cada uma com o tamanho e um selo *IDs remapeados na importação* quando guarda um ID de post.
-- **Por grupo** — filtre o painel por um grupo e exporte-o: **Básicas** (sugeridas), Leitura, Geral, Links permanentes, Discussão, Mídia, Privacidade, Personalizações do tema, Páginas do WooCommerce. Um grupo é resolvido quando o arquivo é gerado, então acompanha o tema ativo.
+- **Por grupo** — filtre o painel por um grupo e exporte-o: **Básicas** (sugeridas), Leitura, Geral, Links permanentes, Discussão, Mídia, Privacidade, Logo e ícone do site, Páginas do WooCommerce. As configurações do Personalizador do tema, o CSS adicional, os estilos do editor do site e os widgets têm [linhas próprias](../appearance/). Um grupo é resolvido quando o arquivo é gerado, então acompanha o tema ativo.
 - **Todas** — todas as opções que podem ser exportadas.
 
-Na tela nova, marcar uma opção no painel já a inclui (o filtro *Seleção* mostra as escolhidas); grupos e *todas* vêm de padrões salvos ou da tela clássica. Sem nada escolhido ainda, o painel abre em **Básicas**: título, descrição, idioma, fuso horário, formatos de data, página inicial e página de posts, posts por página, links permanentes, personalizações do tema e ícone do site.
+Na tela nova, marcar uma opção no painel já a inclui (o filtro *Seleção* mostra as escolhidas); grupos e *todas* vêm de padrões salvos ou da tela clássica. Sem nada escolhido ainda, o painel abre em **Básicas**: título, descrição, idioma, fuso horário, formatos de data, página inicial e página de posts, posts por página, links permanentes, logo e ícone do site.
 
 <a id="linked-settings"></a>
 ## Configurações vinculadas

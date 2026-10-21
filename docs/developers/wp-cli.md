@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
+translatedFrom: "78585a2106b4117538ba50277fab0f9e9cbf62d2"
 ---
 
 ## wp eizport export
@@ -18,6 +18,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | --- | --- |
 | `--types=<types>` | Tipos de conteúdo, separados por vírgula: `tipo:ID+ID` para alguns itens, o tipo sozinho para todos. Nenhum: todo o conteúdo |
 | `--options=<options>` | Grupos de opções (como `basics`) e nomes de opções, separados por vírgula |
+| `--appearance=<parts>` | A [aparência](../../exporting/appearance/) do site: `all`, ou algumas de `theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets`, separadas por vírgula |
 | `--menus=<menus>` | [Menus](../../exporting/menus/): `all`, ou `classic:ID+ID` (IDs de termos de menu) e `navigation:ID+ID` (IDs de `wp_navigation`), separados por vírgula. Nenhum: sem menus (todo o conteúdo já os tem) |
 | `--[no-]media` | Arquivos de mídia dentro; padrão: sim |
 | `--zip` | Um pacote `.zip` em vez de `.wxrz` |

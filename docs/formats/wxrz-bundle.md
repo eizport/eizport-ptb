@@ -24,8 +24,11 @@ uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploa
 
 ## manifest.json
 
+O [JSON Schema](https://eizport.github.io/eizport-schema-2.json) dele vem no `$schema` do manifesto, então um editor de código (VS Code, PhpStorm…) confere um manifesto editado à mão e completa as chaves; o Eizport o confere com o mesmo schema antes de importar e diz qual chave está errada. [`eizport-schema.json`](https://eizport.github.io/eizport-schema.json) é sempre o mais novo.
+
 ```json
 {
+  "$schema": "https://eizport.github.io/eizport-schema-2.json",
   "format": "wxrz",
   "version": 2,
   "requires": "1.1.0",
@@ -49,6 +52,7 @@ uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploa
 
 | Chave | Significado |
 | --- | --- |
+| `$schema` | O URL do schema, para editores |
 | `format`, `version` | Sempre `"wxrz"`; a versão da estrutura — `2` desde o Eizport 1.1.0, `1` antes. Um leitor aceita as versões que conhece e recusa as mais novas |
 | `requires` | O Eizport mais antigo que o lê (`1.1.0`); só sobe quando a estrutura muda. Um Eizport mais antigo recusa o pacote e pede para atualizar — o Eizport 1.0.x o recusa como sem manifesto válido |
 | `generator`, `site`, `created` | Quem fez (`Eizport <versão>`, mostrado na tela de um plugin de pacote), de onde, quando |

@@ -27,8 +27,9 @@ uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploa
 ```json
 {
   "format": "wxrz",
-  "version": 1,
-  "generator": "Eizport 1.0.0",
+  "version": 2,
+  "requires": "1.1.0",
+  "generator": "Eizport 1.1.0",
   "site": "https://example.com/",
   "created": "2026-10-10T22:11:50+00:00",
   "wxr": [ "example.WordPress.2026-10-10.xml" ],
@@ -48,8 +49,9 @@ uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploa
 
 | Chave | Significado |
 | --- | --- |
-| `format`, `version` | Sempre `"wxrz"` e `1` para esta estrutura; um leitor recusa outras versões |
-| `generator`, `site`, `created` | Quem fez, de onde, quando (informativo) |
+| `format`, `version` | Sempre `"wxrz"`; a versão da estrutura — `2` desde o Eizport 1.1.0, `1` antes. Um leitor aceita as versões que conhece e recusa as mais novas |
+| `requires` | O Eizport mais antigo que o lê (`1.1.0`); só sobe quando a estrutura muda. Um Eizport mais antigo recusa o pacote e pede para atualizar — o Eizport 1.0.x o recusa como sem manifesto válido |
+| `generator`, `site`, `created` | Quem fez (`Eizport <versão>`, mostrado na tela de um plugin de pacote), de onde, quando |
 | `wxr` | O nome da entrada do WXR (a primeira é lida) |
 | `files` | URL do anexo no WXR → entrada no arquivo. Quando o importador baixa esse URL, recebe a entrada como resposta |
 | `options` | A entrada do arquivo de opções, quando há uma |

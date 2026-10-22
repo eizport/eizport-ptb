@@ -24,6 +24,11 @@ O Importador do WordPress pula um item que já existe e adiciona uma cópia quan
 
 Fica desligado, a não ser que o pacote peça: **Atualizar existentes**, no painel **Detalhes** da tela Exportar, grava a escolha no pacote, e a caixa já vem marcada. Quem importa ainda pode desmarcar.
 
+## Versões
+
+- **Um pacote feito por um Eizport mais novo** — que precisa de uma versão que este site não tem — não é importado: o envio, `wp eizport import`, a habilidade e a tela de um plugin de pacote dizem de qual Eizport ele precisa, e o plugin de pacote oferece **Atualizar agora**. Pacotes feitos por versões anteriores importam como antes.
+- **O Importador do WordPress** precisa ser 0.9.6 ou mais novo (o Eizport para e pede para atualizá-lo). Uma versão mais nova que a testada pelo Eizport ainda importa, com um aviso na tela do importador, na do plugin de pacote e no WP-CLI.
+
 ## Nos bastidores
 
 Antes de o importador ler qualquer coisa:

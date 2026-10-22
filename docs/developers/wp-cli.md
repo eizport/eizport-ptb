@@ -63,7 +63,7 @@ wp eizport import site.wxrz --user=admin
 | `--css-mode=<mode>` | Como as regras CSS do pacote entram: `end`, `start`, `replace` (os blocos head/tail de mesmo nome que este site tem; sem nenhum, no fim) ou `replace_all`; padrão: o que o pacote pede |
 | `--[no-]css-markers` | Comentários head/tail em volta delas; padrão: o que o pacote pede |
 
-Ele precisa do plugin Importador do WordPress instalado (não precisa estar ativo).
+Ele precisa do plugin Importador do WordPress instalado (não precisa estar ativo), na versão 0.9.6 ou mais nova; uma mais nova que a versão com que o Eizport foi testado importa com um aviso. Um pacote feito por um Eizport mais novo que o deste site para com um erro que diz qual versão ele precisa.
 
 ## Exportar com a habilidade
 

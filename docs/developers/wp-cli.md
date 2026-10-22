@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "577d80000aa27cdc691bec1f740b7b925503f531"
+translatedFrom: "9ec38c9c09613b210f273b38f9b40505372fa980"
 ---
 
 ## wp eizport export
@@ -30,6 +30,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | `--playground` | Um [.zip do Playground](../../formats/playground-zip/) em vez de um pacote (não com `--as-plugin`, `--update-existing` nem `--dir`) |
 | `--themes=<stylesheets>` | Com `--playground`: temas a instalar, separados por vírgula (um tema descendente traz o ascendente) |
 | `--plugins=<files>` | Com `--playground`: arquivos de plugin a instalar, separados por vírgula (`woocommerce/woocommerce.php`), ativos ou inativos como neste site |
+| `--mu-plugins=<files>` | Com `--playground`: plugins obrigatórios a gravar, arquivos de `wp-content/mu-plugins` separados por vírgula (`cpt.php`), com as pastas que eles carregam |
 | `--landing=<where>` | Com `--playground`: onde abre — `home` (padrão), `admin`, `page:ID` (salvo como `/?pagename=<o caminho dela>`) ou um caminho (`/loja/`) |
 | `--language=<language>` | Com `--playground`: o idioma em que abre — `site` (padrão), `user`, `en_US` ou um locale instalado (`pt_BR`) |
 | `--filename=<name>` | Nome do arquivo, sem extensão |

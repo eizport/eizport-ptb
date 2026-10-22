@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "ffdc42c9741729dcf458bebf036c09f8fb7096b8"
+translatedFrom: "9ec38c9c09613b210f273b38f9b40505372fa980"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.
@@ -156,6 +156,14 @@ O blueprint de um `.zip` do Playground, antes de ser gravado.
 | --- | --- |
 | `array $blueprint` | O blueprint (`steps`, `landingPage`…) |
 | `string $wxr_name` | O nome do WXR dentro do `.zip` |
+
+## eizport_playground_mu_plugins
+
+Os plugins obrigatórios que um `.zip` do Playground pode levar — sem os da plataforma (WordPress Studio, hospedagens) e sem os do próprio Eizport. Tire o carregador de uma hospedagem, ou devolva um que ficou de fora.
+
+| Parâmetro | |
+| --- | --- |
+| `array $choices` | Arquivo => dados do plugin, como `get_mu_plugins()` os dá |
 
 ## eizport_selection_limit
 

@@ -1,7 +1,7 @@
 ---
 title: "Importação"
 description: "Como um pacote é importado com o Importador do WordPress, o que acontece com a mídia, os arquivos de conteúdo e as opções, e as outras formas de importar."
-translatedFrom: "28b5618aabf5763a82d30c48e413c391e11091db"
+translatedFrom: "55ddf8028d3ad0eb5b238612b1169c7cc9ba24af"
 ---
 
 ## Com o Importador do WordPress

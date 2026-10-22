@@ -31,4 +31,4 @@ No staging, os itens do menu apontam para as páginas do staging (os IDs novos) 
 
 ## Da próxima vez
 
-Depois de mais mudanças, exporte de novo e importe com *Atualizar páginas, posts e produtos que já existem (mesmo slug)* marcada (veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes)): as páginas são atualizadas, e o menu recebe os itens do arquivo em vez de ganhar uma segunda cópia deles.
+Depois de mais mudanças, exporte de novo e importe com *Atualizar os itens que já existem (mesmo tipo e slug)* marcada (veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes)): as páginas são atualizadas, e o menu recebe os itens do arquivo em vez de ganhar uma segunda cópia deles.

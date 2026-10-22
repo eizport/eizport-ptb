@@ -20,7 +20,7 @@ O botão **Como plugin**, ao lado de *Arquivos de mídia* (o ⓘ explica), embru
 
 ## Atualizar existentes
 
-**Atualizar existentes**, no painel **Detalhes**, pede à importação que atualize as páginas, posts e produtos que já existem no outro site (mesmo tipo e slug) em vez de adicionar cópias. A escolha fica gravada no pacote (`update_existing` no manifesto), e a caixa do importador já vem marcada. Não vale para WXR XML nem Playground. Veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes).
+**Atualizar existentes**, no painel **Detalhes**, pede à importação que atualize os itens dos tipos de conteúdo escolhidos que já existem no outro site (mesmo tipo e slug) — o ⓘ dele cita esses tipos (todos, com nada marcado), e ele fica desativado quando só linhas sem conteúdo estão marcadas: menus, opções, a aparência — em vez de adicionar cópias. A escolha fica gravada no pacote (`update_existing` no manifesto), e a caixa do importador já vem marcada. Não vale para WXR XML nem Playground. Veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes).
 
 ## Nome do arquivo
 

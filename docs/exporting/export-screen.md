@@ -35,7 +35,7 @@ Acima da lista, uma linha **Detalhes** resume o arquivo — como *WXRZ · nome d
 | **Nome do arquivo** | Vazio: o nome de sempre do WordPress, `<site>.WordPress.<date>`, mostrado como texto de marcação |
 | **Arquivos de mídia** | Coloca os arquivos dos anexos exportados dentro do pacote; o ⓘ explica |
 | **Como plugin** | Transforma o pacote num plugin que se importa sozinho ([como plugin](../as-plugin/)); o ⓘ explica. Desligado e desativado com o Playground |
-| **Atualizar existentes** | A importação atualiza as páginas, posts e produtos que já existem (mesmo slug) em vez de criar cópias ([mais](../../getting-started/importing/#updating-items-that-already-exist)); o ⓘ explica. Desligado e desativado com o Playground, que começa de um site novo |
+| **Atualizar existentes** | A importação atualiza os itens dos tipos de conteúdo escolhidos que já existem (mesmo tipo e slug) em vez de criar cópias, citados no ⓘ dele (todos, com nada marcado); desativado quando só linhas sem conteúdo estão marcadas ([mais](../../getting-started/importing/#updating-items-that-already-exist)); o ⓘ explica. Desligado e desativado com o Playground, que começa de um site novo |
 | **Opções do Playground** | Onde o .zip do Playground abre e os temas e plugins que ele instala (ativado com o formato Playground); um contador no botão diz quantos foram definidos ([.zip do Playground](../../formats/playground-zip/#opções-do-playground)) |
 
 ## Ações do cabeçalho

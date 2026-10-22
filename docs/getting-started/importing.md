@@ -16,7 +16,7 @@ O importador fica com o visual da tela Exportar do plugin: um cabeçalho com o b
 
 ## Atualizar os itens existentes
 
-O Importador do WordPress pula um item que já existe e adiciona uma cópia quando só o slug coincide: a página *Home* do tema vira `home-2`, e uma segunda entrega do mesmo pacote não muda nada. **Atualizar páginas, posts e produtos que já existem (mesmo slug) em vez de adicionar cópias**, na etapa 1 do importador (e na tela de um plugin exportado [como plugin](../../exporting/as-plugin/)), muda isso:
+O Importador do WordPress pula um item que já existe e adiciona uma cópia quando só o slug coincide: a página *Home* do tema vira `home-2`, e uma segunda entrega do mesmo pacote não muda nada. **Atualizar os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias: Páginas e Posts** — cita os tipos de conteúdo que o arquivo contém, e não aparece quando ele não contém nenhum — na etapa 1 do importador (e na tela de um plugin exportado [como plugin](../../exporting/as-plugin/)), muda isso:
 
 - um item do mesmo tipo e slug **é** o item: ele recebe o título, o conteúdo, o resumo, a ordem, os campos personalizados e os termos do pacote, e mantém o ID;
 - as configurações que apontam para ele (a página inicial, a página da loja…) continuam apontando para ele, então a *Home* do tema vira a página inicial com o conteúdo do pacote;

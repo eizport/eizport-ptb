@@ -1,7 +1,7 @@
 ---
 title: "Importação"
 description: "Como um pacote é importado com o Importador do WordPress, o que acontece com a mídia, os arquivos de conteúdo e as opções, e as outras formas de importar."
-translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
+translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
 ---
 
 ## Com o Importador do WordPress
@@ -55,7 +55,7 @@ As cópias feitas pela tela Exportar ficam listadas nas **Configurações → C�
 | `options.json` | Definido no final; as opções listadas em `post_ids` recebem o ID do post importado |
 | `term_media` no manifesto | Os term meta que guardam um ID de anexo recebem o ID do anexo importado |
 | IDs de posts em blocos | Os blocos Imagem, Galeria, Capa, Mídia e texto, Arquivo, Vídeo e Áudio (`"id"`, `"ids"`, `"mediaId"`, `wp-image-N`, o `data-id` da galeria), `[gallery ids]` e os links de navegação para páginas e posts apontam para os itens importados, nos itens novos e atualizados e nos widgets de bloco. Plugins acrescentam os blocos deles com `eizport_block_id_attributes` |
-| A aparência ([aparência](../../exporting/appearance/)) | As regras CSS entram no CSS deste site como o pacote pede (no fim, no início ou substituindo; comentários head/tail) — a etapa 1 do importador, `css_mode`/`css_markers` e `--css-mode`/`--[no-]css-markers` mudam isso; theme mods, grupos de estilo e widgets se juntam aos deste site |
+| A aparência ([aparência](../../exporting/appearance/)) | As regras CSS entram no CSS deste site como o pacote pede (no fim ou no início; comentários head/tail), ou — escolhido na importação — substituindo um bloco head/tail de mesmo nome ou todo o CSS — a etapa 1 do importador, `css_mode`/`css_markers` e `--css-mode`/`--[no-]css-markers` mudam isso; theme mods, grupos de estilo e widgets se juntam aos deste site |
 | Termos | As categorias, tags e outros termos dos itens chegam completos (descrição, ascendente, term meta) e são criados com os ascendentes primeiro; um termo que o site já tem (mesmo slug) é usado como está |
 | Links para o site de origem | O endereço do site de origem (o `base_site_url` do WXR) vira o deste site no conteúdo e no resumo dos itens importados (também escapado nos atributos de bloco, http ou https), nos links personalizados dos menus e nos widgets e theme mods |
 | Produtos e suas variações, páginas e suas descendentes | Importados com seus ascendentes, como faz o Importador do WordPress |

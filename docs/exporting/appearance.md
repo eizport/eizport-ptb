@@ -1,7 +1,7 @@
 ---
 title: "Aparência"
 description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo e regras CSS do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
-translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
+translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
 ---
 
 A aparência do site é exportada em linhas próprias, ao lado dos tipos de conteúdo. Uma linha só aparece quando o tema ativo tem algo nela, e o painel **Escolher itens** dela lista o que ela tem, cada item com uma prévia:
@@ -22,18 +22,20 @@ As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a li
 
 ## No outro site
 
-- As **regras CSS** (as do Personalizador e as do editor do site) são **acrescentadas** ao CSS do outro site, como diz **Detalhes → Regras CSS na importação**: no fim (o padrão), no início, ou substituindo-o. Elas vão entre dois comentários com o nome do arquivo:
+- As **regras CSS** (as do Personalizador e as do editor do site) são **acrescentadas** ao CSS do outro site, onde diz **Detalhes → Regras CSS na importação**: no fim (o padrão) ou no início. Elas vão entre dois comentários com o nome do arquivo:
 
   ```css
   .deles { color: purple; }
 
-  /* head entrega */
+  /* head COMB-584 */
   .site-footer { background: #ffeedd; }
-  /* tail entrega */
+  /* tail COMB-584 */
   ```
 
-  O nome é o nome do arquivo (sem extensão): uma marca de onde as regras vieram. Cada importação acrescenta o próprio bloco — os blocos não são únicos, e o mesmo nome pode aparecer mais de uma vez. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
-- Quem importa pode mudar as duas coisas na etapa 1 do importador (**CSS adicional**), com `css_mode`/`css_markers` no [`eizport/import`](../../developers/abilities/#eizportimport), ou com `--css-mode`/`--[no-]css-markers` no [WP-CLI](../../developers/wp-cli/).
+  O nome é o nome do arquivo sem extensão — aqui `COMB-584.wxrz`, com o nome de uma tarefa: uma marca de onde as regras vieram. Cada importação acrescenta o próprio bloco — os blocos não são únicos, e o mesmo nome pode aparecer mais de uma vez. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
+- Quem importa parte da escolha da exportação e pode mudá-la na etapa 1 do importador (**CSS adicional**), com `css_mode`/`css_markers` no [`eizport/import`](../../developers/abilities/#eizportimport), ou com `--css-mode`/`--[no-]css-markers` no [WP-CLI](../../developers/wp-cli/). Duas escolhas só existem ali:
+  - **Substituir o bloco "COMB-584" que este site já tem** — oferecida quando o CSS do outro site tem um bloco head/tail com o mesmo nome (uma entrega anterior de um arquivo com esse nome): o bloco novo fica no lugar dele, e o resto do CSS fica (`replace`);
+  - **Substituir todo o CSS deste site** — ficam só as regras do arquivo (`replace_all`).
 - Os **theme mods** escolhidos vão para o tema ativo e são **mesclados** aos dele: o que o arquivo não traz fica (as outras configurações, as posições dos menus). O logo e a imagem do cabeçalho apontam para os anexos importados, e os endereços das imagens de cabeçalho e de fundo para os arquivos importados.
 - Os **grupos de estilo** escolhidos substituem os mesmos grupos nos estilos do outro site (um tema de blocos); os outros grupos dele ficam.
 - Os **widgets** escolhidos vão para o **fim da mesma barra lateral**, ao lado dos widgets do próprio outro site (para *Widgets inativos* quando o tema dele não tem essa barra), cada um com um número livre. Importar o mesmo arquivo de novo com *Atualizar existentes* os atualiza no lugar em vez de acrescentá-los duas vezes. Um widget de menu de navegação aponta para o menu importado (exporte-o na linha [Menus](../menus/)), um widget de imagem para a imagem importada, e as imagens e os endereços nos widgets de bloco para os importados.

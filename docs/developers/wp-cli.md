@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
+translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
 ---
 
 ## wp eizport export
@@ -19,7 +19,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | `--types=<types>` | Tipos de conteúdo, separados por vírgula: `tipo:ID+ID` para alguns itens, o tipo sozinho para todos. Nenhum: todo o conteúdo |
 | `--options=<options>` | Grupos de opções (como `basics`) e nomes de opções, separados por vírgula |
 | `--appearance=<parts>` | A [aparência](../../exporting/appearance/) do site: `all`, ou linhas separadas por vírgula, cada uma inteira ou com as chaves dos itens depois de dois-pontos, unidas por `+` (`theme_mods:custom_logo+background_color,custom_css:r:1a2b3c4d5e`) |
-| `--css-mode=<mode>` | Como as regras CSS entram na importação: `end` (padrão), `start`, `replace` |
+| `--css-mode=<mode>` | Onde as regras CSS entram na importação: `end` (padrão) ou `start` |
 | `--[no-]css-markers` | Comentários head/tail em volta das regras CSS (padrão: Configurações → Exportação) |
 | `--menus=<menus>` | [Menus](../../exporting/menus/): `all`, ou `classic:ID+ID` (IDs de termos de menu) e `navigation:ID+ID` (IDs de `wp_navigation`), separados por vírgula. Nenhum: sem menus (todo o conteúdo já os tem) |
 | `--[no-]media` | Arquivos de mídia dentro; padrão: sim |
@@ -53,7 +53,7 @@ wp eizport import site.wxrz --user=admin
 | `<file>` | O arquivo ou a pasta de pacote a importar |
 | `--user=<login>` | A quem os posts são atribuídos; padrão: o primeiro administrador |
 | `--[no-]update-existing` | Atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: o que o pacote pede |
-| `--css-mode=<mode>` | Como as regras CSS do pacote entram: `end`, `start` ou `replace`; padrão: o que o pacote pede |
+| `--css-mode=<mode>` | Como as regras CSS do pacote entram: `end`, `start`, `replace` (os blocos head/tail de mesmo nome que este site tem; sem nenhum, no fim) ou `replace_all`; padrão: o que o pacote pede |
 | `--[no-]css-markers` | Comentários head/tail em volta delas; padrão: o que o pacote pede |
 
 Ele precisa do plugin Importador do WordPress instalado (não precisa estar ativo).

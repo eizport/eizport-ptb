@@ -8,7 +8,7 @@ translatedFrom: "c440162e6fccadacf68b3bd9ff4c31f835eff77c"
 
 Envie um pacote `.wxrz` ou `.zip` em **Ferramentas → Importar → WordPress**, como qualquer arquivo WXR. Arquivos WXR compactados com gzip (`.xml.gz`) e arquivos `.xml` simples também funcionam.
 
-Exportou [como plugin](../../exporting/as-plugin/)? Instale o `.zip` em **Plugins → Adicionar plugin → Enviar plugin** e use o **Executar importação** dele em Ferramentas.
+Exportou [como plugin](../../exporting/as-plugin/)? Instale o `.zip` em **Plugins → Adicionar plugin → Enviar plugin** e clique em **Executar importação** na linha dele na tela Plugins.
 
 **Ferramentas → Importar** abre direto o Importador do WordPress, e a tela dele leva a **Todos os importadores** ([Configurações → Geral](../../settings/general/) desliga isso).
 

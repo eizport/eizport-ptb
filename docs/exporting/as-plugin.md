@@ -40,9 +40,9 @@ O padrão continua um arquivo — um `.zip`, ou um `.wxrz` com *Pacote como .zip
 ## No outro site
 
 1. **Plugins → Adicionar plugin → Enviar plugin**, escolha o `.zip`, **Instalar agora**, **Ativar**.
-2. Um aviso e um link **Import** na linha do plugin levam à tela dele, **Ferramentas → Importação: EIZP-000**. Nada redireciona você ao ativar.
+2. **Executar importação**, na linha do plugin na tela Plugins — e um aviso, até a importação — abre a tela dele. Ela não fica no menu (uma importação feita uma vez não tem lugar ali); nela, *Ferramentas → Importar* aparece como item atual. Nada redireciona você ao ativar.
 3. A tela lista o que ele precisa, cada item com um ✓ ou um link:
-   - **Eizport**, ativo — ele desenha a tela e faz a importação. Sem ele, o plugin mostra como ativá-lo ou instalá-lo;
+   - **Eizport**, ativo — ele desenha a tela e faz a importação. Sem ele, ou numa versão mais antiga que a que o pacote precisa, a mesma tela mostra ✗ e **Instalar agora**, **Ativar** ou **Atualizar agora**, feitos ali mesmo; depois a página recarrega com o que o Eizport lê. Até lá, **O que ele contém** fica esmaecido e fechado, e *Atualizar existentes* e **Executar importação** ficam desativados;
    - **o Importador do WordPress**, instalado — com um botão *Instalar agora* que o instala e ativa ali mesmo, como Ferramentas → Importar instala um importador (*Instalando…*, *Ativando…*, depois ✓ e **Executar importação** pronto);
    - **o pacote**, com tamanho e data;
    - **Atualizar páginas, posts e produtos que já existem (mesmo slug)**, marcada quando a exportação tinha *Atualizar existentes* ligado (o cabeçalho `Eizport Update:` do plugin). Veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes).
@@ -55,7 +55,6 @@ O plugin leva o nome do arquivo da exportação: *Importação: EIZP-000* para `
 
 O mesmo `.zip` também é importado sem ser instalado: envie-o em **Ferramentas → Importar → WordPress**, como um `.wxrz`, ou passe-o para `wp eizport import`. O Eizport tira o pacote de dentro do plugin.
 
-Sem o Eizport, a tela oferece **Instalar agora**: instala o Eizport pelo diretório de plugins e o ativa na mesma tela, e **Continuar** abre a importação.
 
 ## Segurança
 

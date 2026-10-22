@@ -16,7 +16,7 @@ O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem
 
 ## Como plugin
 
-O botão **Como plugin**, ao lado de *Arquivos de mídia* (o ⓘ explica), embrulha o pacote num `.zip` de plugin. Instale-o no outro site como qualquer plugin e clique em **Executar importação** na tela dele em Ferramentas: sem arquivo para enviar. Veja [como plugin](../as-plugin/).
+O botão **Como plugin**, ao lado de *Arquivos de mídia* (o ⓘ explica), embrulha o pacote num `.zip` de plugin. Instale-o no outro site como qualquer plugin e clique em **Executar importação** na linha dele na tela Plugins: sem arquivo para enviar. Veja [como plugin](../as-plugin/).
 
 ## Atualizar existentes
 

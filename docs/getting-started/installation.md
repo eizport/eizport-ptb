@@ -27,7 +27,7 @@ Abra a [demonstração ao vivo no WordPress Playground](https://playground.wordp
 
 ## Para importar
 
-Importar exige o **Importador do WordPress**. Em **Ferramentas → Importar**, clique em **Instalar agora** abaixo de *WordPress* e depois em **Executar importador**. Os links do plugin levam até lá enquanto o importador não está instalado. Exportar funciona sem ele.
+Importar exige o **Importador do WordPress**. Em **Ferramentas → Importar**, clique em **Instalar agora** abaixo de *WordPress* e depois em **Executar importador**. Exportar funciona sem ele.
 
 ## Requisitos em detalhe
 

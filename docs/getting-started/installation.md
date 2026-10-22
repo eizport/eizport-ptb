@@ -1,7 +1,7 @@
 ---
 title: "Instalação"
 description: "Instale o plugin pelo diretório de plugins do WordPress.org, confira os requisitos e adicione o Importador do WordPress para importar."
-translatedFrom: "42fa49cee3337cf4e7d61a2b4888201f8329e437"
+translatedFrom: "3b3b2992af6efdf59a350ba71692a4ee09e6a285"
 ---
 
 ## Pelo diretório de plugins

@@ -1,7 +1,7 @@
 ---
 title: "Como plugin"
 description: "Exporte um plugin que importa o próprio pacote: instale-o no outro site, confira o que ele precisa, Executar importação, depois exclua-o."
-translatedFrom: "895b0a9c9fbe5ae9377ad28cc059922cf3e8bdec"
+translatedFrom: "80ba23eb5a0d7c185044ae06f6ebb563d42d62b4"
 ---
 
 **Como plugin**, ao lado de *Arquivos de mídia* no painel **Detalhes** da tela Exportar, transforma o arquivo num `.zip` de plugin com o pacote dentro. Instale-o no outro site como qualquer plugin, e ele se importa sozinho — sem arquivo para enviar, sem passar pela tela do importador.

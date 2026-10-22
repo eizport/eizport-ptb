@@ -1,7 +1,7 @@
 ---
 title: "Importação"
 description: "Como um pacote é importado com o Importador do WordPress, o que acontece com a mídia, os arquivos de conteúdo e as opções, e as outras formas de importar."
-translatedFrom: "16a6899a5e88ec5903f9592d2a96aff00f7920a8"
+translatedFrom: "bc8d52a248035881595101484e4bb88c1bb1aead"
 ---
 
 ## Com o Importador do WordPress
@@ -50,7 +50,7 @@ As cópias feitas pela tela Exportar ficam listadas nas **Configurações → C�
 
 | No arquivo | Na importação |
 | --- | --- |
-| URLs dos anexos | Os arquivos vêm do pacote; o importador cria os anexos e os tamanhos de imagem como sempre |
+| URLs dos anexos | Os arquivos vêm do pacote; o importador cria os anexos e os tamanhos de imagem como sempre. Um anexo que o site já tem é reaproveitado, com ou sem *Atualizar existentes*: as URLs dele (e as dos tamanhos de imagem) no conteúdo importado apontam para o arquivo daqui |
 | `post_content/<slug>.html` | Devolvido ao conteúdo do item |
 | `options.json` | Definido no final; as opções listadas em `post_ids` recebem o ID do post importado |
 | `term_media` no manifesto | Os term meta que guardam um ID de anexo recebem o ID do anexo importado |

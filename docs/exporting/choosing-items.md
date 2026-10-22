@@ -1,7 +1,7 @@
 ---
 title: "Escolher itens"
 description: "Itens por tipo de conteúdo, escolhidos no painel lateral na hora; sugestões; o filtro Seleção; descendentes, anexos, avaliações e funções."
-translatedFrom: "657fd3855ea94210e8b91ae8ef12950c56184ec5"
+translatedFrom: "16a6899a5e88ec5903f9592d2a96aff00f7920a8"
 ---
 
 Cada tipo de conteúdo é exportado inteiro (com a linha dele marcada na lista) ou **por itens**, escolhidos no painel lateral dele.
@@ -39,6 +39,7 @@ Exportar por filtros (status, autor, datas, termos) continua na [tela clássica]
 | --- | --- |
 | Qualquer item | Sua mídia anexada e sua imagem destacada (o WordPress faz isso) |
 | Qualquer item | A mídia usada no conteúdo sem estar anexada ([mídia](../media/)) |
+| Qualquer item | Suas categorias, tags e outros termos completos — descrição, categorias ascendentes e term meta (a miniatura e o tipo de exibição de uma categoria de produto) — não só os nomes |
 | Um produto | Suas variações. As avaliações só com a linha **Avaliações de produtos** (elas são sugeridas) — na tela clássica e na habilidade sem `reviews`, todas elas |
 | Uma página | Suas páginas descendentes só se também forem escolhidas |
 | Um item com uma função | As configurações que apontam para ele, sugeridas na linha Opções ([configurações vinculadas](../options/#linked-settings)) |

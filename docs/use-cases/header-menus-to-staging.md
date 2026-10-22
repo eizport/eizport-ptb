@@ -1,7 +1,7 @@
 ---
 title: "Menus do cabeçalho para o staging"
 description: "Um site montado localmente — páginas, um menu de cabeçalho com submenus e a posição dele no tema — repetido no staging sem refazer o menu à mão."
-translatedFrom: "42fa49cee3337cf4e7d61a2b4888201f8329e437"
+translatedFrom: "28b5618aabf5763a82d30c48e413c391e11091db"
 ---
 
 ## O cenário

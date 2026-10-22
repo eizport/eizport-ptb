@@ -1,7 +1,7 @@
 ---
 title: "Tela Exportar"
 description: "A nova tela Ferramentas → Exportar, parte por parte: as ações do cabeçalho, o painel Detalhes, a lista e os painéis laterais."
-translatedFrom: "544ab4b1e3d0caaf18b283d8899c18cee030893b"
+translatedFrom: "28b5618aabf5763a82d30c48e413c391e11091db"
 ---
 
 Ferramentas → Exportar abre uma tela construída como as telas mais recentes do painel do WordPress (DataViews e DataForm, sobre a estrutura de telas do painel dos arquivos básicos do WordPress). Ela usa as [habilidades](../../developers/abilities/) do plugin, então a tela, a REST e os agentes de IA exportam do mesmo jeito.

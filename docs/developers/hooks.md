@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "9ec38c9c09613b210f273b38f9b40505372fa980"
+translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.
@@ -121,6 +121,33 @@ add_filter( 'eizport_suggested_items', function ( array $suggested, WP_Post $pos
 ```
 
 Só são sugeridos posts de tipos que podem ser exportados.
+
+## eizport_content_types
+
+Os tipos de post que a tela de exportação oferece como linhas: tipo de post => valor do rádio *conteúdo* do core. Um plugin tira os seus tipos que viajam de outro jeito (a compatibilidade com o Advanced Custom Fields tira os grupos de campos, tipos de post e taxonomias do ACF).
+
+## eizport_look_items
+
+Os itens de uma linha ao lado das da aparência (`$items`, `$row`): um plugin preenche a sua própria linha, cada item com `key`, `label`, `details` e `preview` (`type` e `value`). Usado pela compatibilidade com o Advanced Custom Fields na linha `advanced-custom-fields`.
+
+## eizport_look_data
+
+Os dados do arquivo de opções para uma linha assim (`$out`, `$row`, `$keys`: as chaves dos itens escolhidos): a entrada da linha vai em `$out`.
+
+## eizport_look_suggested
+
+As chaves que uma linha assim sugere para os posts escolhidos (`$keys`, `$row`, `$chosen`: tipo de post => IDs).
+
+## eizport_advanced_custom_fields_id_types
+
+Os tipos de campo do ACF cujos valores são IDs que uma importação mapeia: tipo => `post`, `term` ou `user`. Adicione um tipo de campo de um plugin:
+
+```php
+add_filter( 'eizport_advanced_custom_fields_id_types', function ( array $types ) {
+	$types['my_product_picker'] = 'post';
+	return $types;
+} );
+```
 
 ## eizport_register_compat
 

@@ -1,7 +1,7 @@
 ---
 title: "Arquivo e formatos"
 description: "Escolha entre o WXR simples do WordPress, um pacote .wxrz ou .zip, um .zip do Playground e um plugin que se importa sozinho; nomes de arquivo e o que cada um contém."
-translatedFrom: "b987e2ecc6ba8e3d181ebdc951ca9d67a06e0eb2"
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
 O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem duas opções; o nome da primeira acompanha o que vai no arquivo.
@@ -28,7 +28,7 @@ Deixe vazio para o nome de sempre do WordPress, `<site name>.WordPress.<date>` �
 
 ## Conteúdo como arquivos .html
 
-Com **Configurações → Exportar → Conteúdo como arquivos .html** (ativado por padrão), o conteúdo de cada post vai para `post_content/<slug>.html` em vez de ficar dentro do WXR — fácil de ler, comparar e manter sob controle de versão. Na importação, ele é devolvido antes de o importador rodar.
+Com **Configurações → Exportar → Conteúdo como arquivos .html** (ativado por padrão), o conteúdo de cada post vai para `post_content/<slug>.html` em vez de ficar dentro do WXR — fácil de ler, comparar e manter sob controle de versão. Na importação, ele é devolvido antes de o importador rodar. Uma página feita com o [Elementor](../elementor/) vai como `post_content/<slug>.json`: o design dela no formato do Elementor, trazido pela importação do próprio Elementor.
 
 ## Cópias
 

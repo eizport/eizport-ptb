@@ -1,10 +1,10 @@
 ---
 title: "Compatibilidades"
-description: "Quais plugins são suportados (WooCommerce, Advanced Custom Fields) e quais ainda não oficialmente (Elementor), como o suporte é feito com os hooks públicos e como um plugin traz o seu próprio."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+description: "Quais plugins são suportados (WooCommerce, Advanced Custom Fields, Elementor), como o suporte é feito com os hooks públicos e como um plugin traz o seu próprio."
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
-O suporte a outro plugin é uma **compatibilidade**: um arquivo que usa só os [hooks](../hooks/) públicos. O plugin traz duas, para o WooCommerce e o Advanced Custom Fields; qualquer plugin pode adicionar a sua — ou substituir a que vem incluída.
+O suporte a outro plugin é uma **compatibilidade**: um arquivo que usa só os [hooks](../hooks/) públicos. O plugin traz três, para o WooCommerce, o Advanced Custom Fields e o Elementor; qualquer plugin pode adicionar a sua — ou substituir a que vem incluída.
 
 ## Resumo
 
@@ -12,9 +12,7 @@ O suporte a outro plugin é uma **compatibilidade**: um arquivo que usa só os [
 | --- | --- | --- |
 | **WooCommerce** | Suportado | Produtos, variações, pedidos e cupons como tipos de conteúdo; as páginas da loja, do carrinho, de finalização de compra, Minha conta e de termos como configurações vinculadas; galerias de produtos e imagens das categorias; produtos mostrados por blocos sugeridos; avaliações de produtos em linha própria; a tabela auxiliar de produtos atualizada depois de uma importação |
 | **Advanced Custom Fields (ACF)** | Suportado (6.1 ou mais novo, gratuito) | Os tipos de post, taxonomias e grupos de campos dele no formato de exportação próprio, em linha própria, importados antes do conteúdo; campos que guardam IDs remapeados; grupos de campos e posts ligados sugeridos; campos de imagem e arquivo como mídia usada |
-| **Elementor** | Ainda não suportado oficialmente, não testado | Veja abaixo |
-
-Não testado quer dizer só isso: nada foi conferido com o Elementor. O que vem a seguir vem de como ele guarda os dados e do que o Importador do WordPress faz com eles.
+| **Elementor** | Suportado (gratuito) | Configurações do site (o Kit) e modelos em linha própria; os designs das páginas como arquivos `.json`; tudo pelo exportador e pelo importador do próprio Elementor, com imagens, modelos e links remapeados; modelos e configurações do site sugeridos; CSS gerado refeito |
 
 ### Advanced Custom Fields
 
@@ -26,12 +24,13 @@ Suportado, com linha própria: veja [Advanced Custom Fields](../../exporting/adv
 
 ### Elementor
 
-- **Os designs** ficam nos campos personalizados de cada página (`_elementor_data`, um JSON com os widgets, com IDs e URLs de imagens), então vão junto com as páginas.
-- **IDs e URLs dentro desse JSON** não são remapeados pelo Importador do WordPress: as imagens podem continuar apontando para os IDs e endereços do site antigo.
-- **Estilos globais e modelos** (o kit do site, modelos salvos) são conteúdo do próprio Elementor; a ferramenta *Import / Export Kit* do Elementor é feita para eles.
-- **Os arquivos de CSS gerados** não são exportados; o Elementor os gera de novo (*Elementor → Tools → Regenerate CSS & Data*, como aparece em inglês).
+Suportado, com o exportador e o importador do próprio Elementor: veja [Elementor](../../exporting/elementor/). Em resumo:
 
-Usa um desses e quer que seja suportado? [Abra uma issue](https://github.com/eizport/eizport/issues) contando o que você exporta — ou escreva uma compatibilidade, como abaixo.
+- **As configurações do site** (o Kit) e **os modelos** vão numa linha própria, nos formatos do Elementor, e entram pela importação do próprio Elementor; uma entrega seguinte os atualiza.
+- **As páginas feitas com o Elementor** levam o design como `post_content/<slug>.json`, trazido pela importação de documento do Elementor, com imagens, modelos e links apontando para os itens do outro site.
+- O **Elementor Pro** (Theme Builder, popups, formulários) ainda não é coberto; as tags dinâmicas mantêm os IDs que guardam.
+
+Usa outro plugin e quer que seja suportado? [Abra uma issue](https://github.com/eizport/eizport/issues) contando o que você exporta — ou escreva uma compatibilidade, como abaixo.
 
 ## A compatibilidade com o WooCommerce
 
@@ -61,6 +60,19 @@ Usa um desses e quer que seja suportado? [Abra uma issue](https://github.com/eiz
 | `import_start` | Importa os tipos de post, as taxonomias e os grupos de campos (`acf_import_internal_post_type()`) e os registra |
 | `import_end` | Mapeia os IDs nos valores e nas regras de localização dos grupos de campos |
 | `wp_import_existing_post` | Os posts do próprio ACF num WXR existem pela chave, não pelo título e pela data |
+
+## A compatibilidade com o Elementor
+
+`includes/compat/elementor.php`, cadastrada em `eizport_register_compat` quando o Elementor está carregado, e `includes/import-elementor.php` para a importação:
+
+| Hook | Adiciona |
+| --- | --- |
+| `eizport_content_types` | Tira a biblioteca do Elementor (modelos e Kits) das linhas de conteúdo |
+| `eizport_look_items`, `eizport_look_data`, `eizport_look_suggested`, `eizport_look_media` | A linha *Elementor*: as configurações do site e os modelos, a exportação deles (nos formatos do Elementor), o que as páginas escolhidas sugerem e as imagens que eles usam |
+| `eizport_content_file` | Uma página feita com o Elementor como `post_content/<slug>.json` |
+| `wxr_export_skip_postmeta` | Os metas `_elementor_data`, `_elementor_page_settings` e `_elementor_css` fora do WXR, quando o `.json` os leva |
+| `eizport_media_used` | As imagens dos designs das páginas |
+| `import_end` | Modelos, configurações do site e designs pela importação do próprio Elementor (`documents->create()`, o `import()` do documento, o runner *Site_Settings*); os anexos marcados para a importação do Elementor os achar; o cache de CSS dele limpo |
 
 ## Como escrever uma
 

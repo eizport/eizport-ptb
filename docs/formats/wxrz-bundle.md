@@ -1,7 +1,7 @@
 ---
 title: "Pacote WXRZ"
 description: "O formato .wxrz, entrada por entrada — manifesto, WXR, mídia, post_content e options.json — e as regras de segurança quando um pacote é aberto."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
 Um arquivo `.wxrz` é um **arquivo tar compactado com gzip** (`ustar`). Qualquer ferramenta que lê `.tar.gz` o abre:
@@ -18,6 +18,7 @@ manifest.json                      required, first
 <site>.WordPress.<date>.xml        the WXR (WordPress eXtended RSS)
 options.json                       optional: settings
 post_content/<slug>.html           optional: one per post with content
+post_content/<slug>.json           optional: one per page built with Elementor, its design
 uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploads
 ```
 

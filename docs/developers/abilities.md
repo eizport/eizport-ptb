@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.
@@ -58,7 +58,7 @@ if ( ! is_wp_error( $copy ) ) {
 
 ## eizport/get-export-options
 
-Sem entrada. Retorna `types` (cada um com `type`, `label`, `count`, `hierarchical`, `statuses` e `taxonomies` com seus termos), `option_groups` (`group`, `label`, `options`), `front_pages` (IDs de `front` e `posts`), `themes`, `plugins`, `copy_lifetime` (segundos), `filename` (o nome padrão de hoje), `linked` (o modo das configurações vinculadas), `bundle_zip`, `review_count` (avaliações de produtos aprovadas; 0 sem o WooCommerce) `appearance` (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets`, `advanced-custom-fields` → os itens deles: `key`, `label`, `details`, `preview`; veja [Aparência](../../exporting/appearance/)) e `menus`: `classic` (`id`, `name`, `slug`, `items`, `locations` — os nomes das posições do tema em que ele está) e `navigation` (`id`, `title`, `links`) — veja [Menus](../../exporting/menus/).
+Sem entrada. Retorna `types` (cada um com `type`, `label`, `count`, `hierarchical`, `statuses` e `taxonomies` com seus termos), `option_groups` (`group`, `label`, `options`), `front_pages` (IDs de `front` e `posts`), `themes`, `plugins`, `copy_lifetime` (segundos), `filename` (o nome padrão de hoje), `linked` (o modo das configurações vinculadas), `bundle_zip`, `review_count` (avaliações de produtos aprovadas; 0 sem o WooCommerce) `appearance` (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets`, `advanced-custom-fields`, `elementor` → os itens deles: `key`, `label`, `details`, `preview`; veja [Aparência](../../exporting/appearance/)) e `menus`: `classic` (`id`, `name`, `slug`, `items`, `locations` — os nomes das posições do tema em que ele está) e `navigation` (`id`, `title`, `links`) — veja [Menus](../../exporting/menus/).
 
 ## eizport/get-items
 
@@ -101,7 +101,7 @@ Entrada: `search`, `include` (só estas), `page`, `per_page`. Retorna `items` (`
 | `as_plugin` | boolean: um `.zip` de plugin que importa o próprio pacote ([como plugin](../../exporting/as-plugin/)); não com `blueprint` | `false` |
 | `update_existing` | boolean: pede à importação que atualize os itens que já existem (mesmo tipo e slug); fica gravado no pacote | `false` |
 | `reviews` | object: `ids` (IDs de comentário; `[]` para nenhuma) ou `all` — avaliações de produtos do WooCommerce | todas as avaliações dos produtos |
-| `appearance` | object: linha (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets` e, com o ACF ativo, [`advanced-custom-fields`](../../exporting/advanced-custom-fields/)) → `"all"` ou as chaves dos itens dela (do `eizport/get-export-options`); uma lista de linhas significa cada uma inteira — a [aparência](../../exporting/appearance/) do site, com as mídias que ela usa; precisa de `bundle` | nenhuma |
+| `appearance` | object: linha (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets` e, com o ACF ativo, [`advanced-custom-fields`](../../exporting/advanced-custom-fields/) e, com o Elementor ativo, [`elementor`](../../exporting/elementor/)) → `"all"` ou as chaves dos itens dela (do `eizport/get-export-options`); uma lista de linhas significa cada uma inteira — a [aparência](../../exporting/appearance/) do site, com as mídias que ela usa; precisa de `bundle` | nenhuma |
 | `css_mode` | `end`, `start`, `replace` (os blocos head/tail de mesmo nome que o outro site tem; no fim sem nenhum) ou `replace_all`: como as regras CSS entram na importação; quem importa pode mudar | `end` |
 | `css_markers` | comentários head/tail em volta das regras CSS | Configurações → Exportação |
 | `menus` | object: `classic` (IDs de termos de menu, com os itens e as posições do tema), `navigation` (IDs de `wp_navigation`) ou `all` — [menus](../../exporting/menus/) | nenhum (*todo o conteúdo* já os tem) |

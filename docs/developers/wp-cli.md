@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
 ## wp eizport export
@@ -19,7 +19,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | --- | --- |
 | `--types=<types>` | Tipos de conteúdo, separados por vírgula: `tipo:ID+ID` para alguns itens, o tipo sozinho para todos. Nenhum: todo o conteúdo |
 | `--options=<options>` | Grupos de opções (como `basics`) e nomes de opções, separados por vírgula |
-| `--appearance=<parts>` | A [aparência](../../exporting/appearance/) do site: `all`, ou linhas separadas por vírgula, cada uma inteira ou com as chaves dos itens depois de dois-pontos, unidas por `+` (`theme_mods:custom_logo+background_color,custom_css:r:1a2b3c4d5e`); com o ACF ativo, `advanced-custom-fields` leva os [tipos de post, taxonomias e grupos de campos](../../exporting/advanced-custom-fields/) dele (`advanced-custom-fields:group_abc123+post_type_def456`) |
+| `--appearance=<parts>` | A [aparência](../../exporting/appearance/) do site: `all`, ou linhas separadas por vírgula, cada uma inteira ou com as chaves dos itens depois de dois-pontos, unidas por `+` (`theme_mods:custom_logo+background_color,custom_css:r:1a2b3c4d5e`); com o ACF ativo, `advanced-custom-fields` leva os [tipos de post, taxonomias e grupos de campos](../../exporting/advanced-custom-fields/) dele (`advanced-custom-fields:group_abc123+post_type_def456`); com o Elementor ativo, `elementor` leva as [configurações do site e os modelos](../../exporting/elementor/) dele (`elementor:kit+t:28`) |
 | `--css-mode=<mode>` | Como as regras CSS entram na importação: `end` (padrão), `start`, `replace` (o bloco de mesmo nome; no fim sem nenhum) ou `replace_all` |
 | `--[no-]css-markers` | Comentários head/tail em volta das regras CSS (padrão: Configurações → Exportação) |
 | `--menus=<menus>` | [Menus](../../exporting/menus/): `all`, ou `classic:ID+ID` (IDs de termos de menu) e `navigation:ID+ID` (IDs de `wp_navigation`), separados por vírgula. Nenhum: sem menus (todo o conteúdo já os tem) |

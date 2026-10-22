@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.
@@ -137,6 +137,14 @@ Os dados do arquivo de opções para uma linha assim (`$out`, `$row`, `$keys`: a
 ## eizport_look_suggested
 
 As chaves que uma linha assim sugere para os posts escolhidos (`$keys`, `$row`, `$chosen`: tipo de post => IDs).
+
+## eizport_look_media
+
+Os anexos que a aparência escolhida usa (`$ids`, `$choice`): a linha de um plugin acrescenta os que os itens dela usam (a linha Elementor: imagens de modelos e das configurações do site).
+
+## eizport_content_file
+
+O arquivo para onde vai o conteúdo de um post com *Conteúdo como arquivos .html* ativado (`$file`, `$post`): `null` para `post_content/<slug>.html`, ou `array( 'extension' => 'json', 'data' => … )` para o design de um construtor de páginas no formato dele — o conteúdo do post então fica no WXR, e o importador guarda o `.json` para quem o aplica quando a importação termina (`$GLOBALS['eizport_content_data']`, pelo ID original do item). A compatibilidade com o Elementor o usa.
 
 ## eizport_advanced_custom_fields_id_types
 

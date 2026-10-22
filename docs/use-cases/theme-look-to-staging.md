@@ -1,7 +1,7 @@
 ---
 title: "Aparência do tema para o staging"
 description: "Uma mudança na aparência de um tema feita localmente — a última regra CSS, o logo, um widget, ou a paleta de um tema de blocos — levada para o staging sem mexer no que o staging tem de próprio."
-translatedFrom: "6b4cd8c50d8b0d680a879db5894d5449d0c0569a"
+translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
 ---
 
 ## O cenário
@@ -25,7 +25,7 @@ O mesmo vale para um tema de blocos personalizado no editor do site: uma paleta 
 
 ## Da próxima vez
 
-Mude a regra localmente e exporte de novo **com o mesmo nome de arquivo**: no staging, o bloco entre os comentários é trocado, não acrescentado de novo. Com *Atualizar existentes* ligado, o widget *Horário* também é atualizado no lugar.
+Outra mudança local, outra exportação: no staging, um bloco novo entra depois do primeiro (os comentários mostram de que arquivo cada um veio; arrume em *CSS adicional* quando precisar). Com *Atualizar existentes* ligado, o widget *Horário* é atualizado no lugar em vez de ser acrescentado de novo.
 
 ## O que não leva
 

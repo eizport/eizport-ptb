@@ -1,7 +1,7 @@
 ---
 title: "Configurações de exportação"
 description: "Configurações do plugin → Exportar — mídia anexada, configurações vinculadas, pacotes .zip e conteúdo como arquivos .html."
-translatedFrom: "6b4cd8c50d8b0d680a879db5894d5449d0c0569a"
+translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
 ---
 
 ![Configurações do plugin → Exportar.](../../../assets/screenshots/settings-export.webp)
@@ -16,4 +16,4 @@ Tudo em um cartão, **Com os itens exportados**:
 | **Como plugin: permitir importar de novo** — um plugin exportado [como plugin](../../exporting/as-plugin/) continua oferecendo *Importar de novo* depois de importar | Desativado | — |
 | **Como plugin traz o pacote como** — num plugin exportado [como plugin](../../exporting/as-plugin/): um arquivo `.wxrz`, ou os arquivos dele ao lado dos do plugin, ou numa pasta `bundle/` | Um arquivo .wxrz | — |
 | **Conteúdo como arquivos .html** — o conteúdo de cada post em `post_content/<slug>.html` | Ativado | `post_content` |
-| **Marcar o CSS importado** — as regras CSS das [linhas da aparência](../../exporting/appearance/) vão entre comentários `/* head … */` e `/* tail … */` com o nome do arquivo, para que importá-lo de novo as substitua; o importador pode mudar isso | Ativado | `css_markers` |
+| **Marcar o CSS importado** — as regras CSS das [linhas da aparência](../../exporting/appearance/) vão entre comentários `/* head … */` e `/* tail … */` com o nome do arquivo, para mostrar de onde vieram; o importador pode mudar isso | Ativado | `css_markers` |

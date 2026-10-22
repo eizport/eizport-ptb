@@ -1,7 +1,7 @@
 ---
 title: "Aparência"
 description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo e regras CSS do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
-translatedFrom: "17fdec5ae125227569876bc5af8d1f167d717cff"
+translatedFrom: "647a05806d14a20c3a9c721fb9c5b9c04ec99b18"
 ---
 
 A aparência do site é exportada em linhas próprias, ao lado dos tipos de conteúdo. Uma linha só aparece quando o tema ativo tem algo nela, e o painel **Escolher itens** dela lista o que ela tem, cada item com uma prévia:
@@ -32,7 +32,7 @@ As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a li
   /* tail entrega */
   ```
 
-  O nome é o nome do arquivo (sem extensão), o mesmo em cada entrega do mesmo arquivo: **importá-lo de novo troca o bloco dele no lugar**, seja qual for o modo, em vez de acrescentar as regras duas vezes. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
+  O nome é o nome do arquivo (sem extensão): uma marca de onde as regras vieram. Cada importação acrescenta o próprio bloco — os blocos não são únicos, e o mesmo nome pode aparecer mais de uma vez. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
 - Quem importa pode mudar as duas coisas na etapa 1 do importador (**CSS adicional**), com `css_mode`/`css_markers` no [`eizport/import`](../../developers/abilities/#eizportimport), ou com `--css-mode`/`--[no-]css-markers` no [WP-CLI](../../developers/wp-cli/).
 - Os **theme mods** escolhidos vão para o tema ativo e são **mesclados** aos dele: o que o arquivo não traz fica (as outras configurações, as posições dos menus). O logo e a imagem do cabeçalho apontam para os anexos importados, e os endereços das imagens de cabeçalho e de fundo para os arquivos importados.
 - Os **grupos de estilo** escolhidos substituem os mesmos grupos nos estilos do outro site (um tema de blocos); os outros grupos dele ficam.

@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
+translatedFrom: "c440162e6fccadacf68b3bd9ff4c31f835eff77c"
 ---
 
 ## wp eizport export

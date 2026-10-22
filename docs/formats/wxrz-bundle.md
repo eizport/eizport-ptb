@@ -1,7 +1,7 @@
 ---
 title: "Pacote WXRZ"
 description: "O formato .wxrz, entrada por entrada — manifesto, WXR, mídia, post_content e options.json — e as regras de segurança quando um pacote é aberto."
-translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
+translatedFrom: "c440162e6fccadacf68b3bd9ff4c31f835eff77c"
 ---
 
 Um arquivo `.wxrz` é um **arquivo tar compactado com gzip** (`ustar`). Qualquer ferramenta que lê `.tar.gz` o abre:

@@ -24,7 +24,7 @@
 		"about": "{tagline} Gratuito e de código aberto, para o WordPress {requires} ou mais recente.",
 		"product": "Produto",
 		"playground": "Experimentar no Playground",
-		"download": "Baixar",
+		"download": "WordPress.org",
 		"changelog": "Registro de alterações",
 		"docs": "Documentação",
 		"gettingStarted": "Primeiros passos",
@@ -185,8 +185,8 @@
 		"hero": {
 			"title": "Leve o seu conteúdo do WordPress. Não a bagunça.",
 			"lead": "Escolha as páginas, os produtos ou os posts de que você precisa — ou só peça ao seu agente de IA. Eles chegam no outro site com suas imagens, suas configurações e sua página inicial: sem dump do banco de dados, sem imagens quebradas, sem pesquisar e substituir.",
-			"primary": "Experimente grátis no navegador",
-			"secondary": "Baixar grátis",
+			"primary": "Pré-visualização ao vivo",
+			"secondary": "Baixe no WordPress.org",
 			"note": "Gratuito e de código aberto. Sem conta, sem upsell, sem versão “pro”."
 		},
 		"pains": [

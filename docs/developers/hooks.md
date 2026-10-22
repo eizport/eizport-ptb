@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.

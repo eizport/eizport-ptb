@@ -1,7 +1,7 @@
 ---
 title: "Playground no seu idioma"
 description: "A demonstração de um site em inglês mostrada em português no WordPress Playground: o painel, o tema e os plugins traduzidos, num só link."
-translatedFrom: "577d80000aa27cdc691bec1f740b7b925503f531"
+translatedFrom: "0ef7d74f99bf37b0853577b1692b15f5e9b15b85"
 ---
 
 ## O cenário

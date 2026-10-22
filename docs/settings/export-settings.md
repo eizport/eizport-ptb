@@ -1,7 +1,7 @@
 ---
 title: "Configurações de exportação"
 description: "Configurações do plugin → Exportar — mídia anexada, configurações vinculadas, pacotes .zip e conteúdo como arquivos .html."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 ![Configurações do plugin → Exportar.](../../../assets/screenshots/settings-export.webp)

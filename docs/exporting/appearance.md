@@ -1,7 +1,7 @@
 ---
 title: "Aparência"
 description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo e regras CSS do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
-translatedFrom: "c240192ba60841a972255e981700d5fb847937d7"
+translatedFrom: "fd8a8ff7d1c76143e1e93971971b809fe7e23fb8"
 ---
 
 A aparência do site é exportada em linhas próprias, ao lado dos tipos de conteúdo. Uma linha só aparece quando o tema ativo tem algo nela, e o painel **Escolher itens** dela lista o que ela tem, cada item com uma prévia:

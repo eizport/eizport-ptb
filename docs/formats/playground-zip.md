@@ -1,7 +1,7 @@
 ---
 title: ".zip do Playground"
 description: "Um pacote de blueprint do WordPress Playground que inicia um site com o conteúdo, a mídia, o tema e os plugins exportados — como é montado e como executá-lo."
-translatedFrom: "9ec38c9c09613b210f273b38f9b40505372fa980"
+translatedFrom: "a620d4eee848fb59dd392ad124393c0c5a9e04b5"
 ---
 
 Com o formato **Playground**, a exportação é um `.zip` pronto para o [WordPress Playground](https://wordpress.org/playground/): um pacote de blueprint que instala os temas e plugins que você escolheu e importa o conteúdo.

@@ -1,7 +1,7 @@
 ---
 title: "Aparência do tema para o staging"
 description: "Uma mudança na aparência de um tema feita localmente — a última regra CSS, o logo, um widget, ou a paleta de um tema de blocos — levada para o staging sem mexer no que o staging tem de próprio."
-translatedFrom: "c240192ba60841a972255e981700d5fb847937d7"
+translatedFrom: "fd8a8ff7d1c76143e1e93971971b809fe7e23fb8"
 ---
 
 ## O cenário

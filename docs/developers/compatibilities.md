@@ -1,7 +1,7 @@
 ---
 title: "Compatibilidades"
 description: "Quais plugins são suportados (WooCommerce, Advanced Custom Fields, Elementor), como o suporte é feito com os hooks públicos e como um plugin traz o seu próprio."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 O suporte a outro plugin é uma **compatibilidade**: um arquivo que usa só os [hooks](../hooks/) públicos. O plugin traz três, para o WooCommerce, o Advanced Custom Fields e o Elementor; qualquer plugin pode adicionar a sua — ou substituir a que vem incluída.

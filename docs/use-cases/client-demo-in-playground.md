@@ -1,7 +1,7 @@
 ---
 title: "Demonstração para o cliente no Playground"
 description: "Uma página nova mostrada a um cliente no WordPress Playground: um link que abre direto nessa página, com os plugins do site como estão."
-translatedFrom: "ed7bad965f80e82c674848ca566269b29ec912dd"
+translatedFrom: "544ab4b1e3d0caaf18b283d8899c18cee030893b"
 ---
 
 ## O cenário

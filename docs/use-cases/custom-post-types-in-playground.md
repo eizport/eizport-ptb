@@ -1,7 +1,7 @@
 ---
 title: "Tipos de post personalizados no Playground"
 description: "Um site cujos tipos de post ficam num plugin obrigatório, mostrado no WordPress Playground: o plugin vai no .zip e roda antes da importação."
-translatedFrom: "9ec38c9c09613b210f273b38f9b40505372fa980"
+translatedFrom: "a620d4eee848fb59dd392ad124393c0c5a9e04b5"
 ---
 
 ## O cenário

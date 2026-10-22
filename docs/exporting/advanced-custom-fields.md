@@ -1,7 +1,7 @@
 ---
 title: "Advanced Custom Fields"
 description: "O Advanced Custom Fields (ACF) numa linha própria: os tipos de post, taxonomias e grupos de campos dele no formato de exportação do próprio ACF, importados antes do conteúdo, e os campos que guardam IDs apontando para os itens do outro site."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+translatedFrom: "92db1aadf4e5adfc8c30ef91dae53ee7df5db753"
 ---
 
 Com o **Advanced Custom Fields (ACF)** ativo (6.1 ou mais novo, o plugin gratuito), a tela de exportação ganha a linha **Advanced Custom Fields (ACF)**. O painel **Escolher itens** dela lista o que o ACF registra, cada um com uma prévia:

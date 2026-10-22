@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.

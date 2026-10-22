@@ -1,7 +1,7 @@
 ---
 title: "Opções"
 description: "Exporte as configurações do site uma a uma, por grupo ou todas de uma vez; configurações vinculadas; o que nunca é exportado; como os IDs são remapeados."
-translatedFrom: "78585a2106b4117538ba50277fab0f9e9cbf62d2"
+translatedFrom: "c6e1e88417a3efa4225278a31cefe270c61e1658"
 ---
 
 A linha **Opções** exporta as configurações do site num `options.json` dentro do pacote, definidas no outro site quando a importação termina.

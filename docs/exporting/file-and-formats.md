@@ -1,7 +1,7 @@
 ---
 title: "Arquivo e formatos"
 description: "Escolha entre o WXR simples do WordPress, um pacote .wxrz ou .zip, um .zip do Playground e um plugin que se importa sozinho; nomes de arquivo e o que cada um contém."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem duas opções; o nome da primeira acompanha o que vai no arquivo.

@@ -1,7 +1,7 @@
 ---
 title: "Elementor"
 description: "O Elementor com o exportador e o importador dele: as configurações do site (o Kit) e os modelos numa linha própria, o design de cada página num arquivo .json, e na importação cada imagem, modelo e link apontando para os itens do outro site."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 Com o **Elementor** ativo, o Eizport leva o que o *Import / Export Kit* do próprio Elementor leva — nos formatos do Elementor, entregues ao importador do próprio Elementor no outro site.

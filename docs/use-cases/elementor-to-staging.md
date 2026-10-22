@@ -1,7 +1,7 @@
 ---
 title: "Elementor para o staging"
 description: "Uma página de destino feita com o Elementor — as imagens dela, um modelo de seção salvo e as cores e fontes globais do site — levada ao staging com o importador do próprio Elementor, tudo apontando para os itens do staging."
-translatedFrom: "f2fe7ce537c3f04919216ec7fdb87b2d0a5deec7"
+translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
 ---
 
 ## O cenário

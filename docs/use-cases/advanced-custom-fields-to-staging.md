@@ -1,7 +1,7 @@
 ---
 title: "Advanced Custom Fields para o staging"
 description: "Receitas feitas com o Advanced Custom Fields (ACF) — o tipo de post, a taxonomia, o grupo de campos e os valores delas — levadas ao staging com cada foto, página e termo apontando certo."
-translatedFrom: "05f6e7529e5513decc72ab35ef6f11f82270434d"
+translatedFrom: "92db1aadf4e5adfc8c30ef91dae53ee7df5db753"
 ---
 
 ## O cenário

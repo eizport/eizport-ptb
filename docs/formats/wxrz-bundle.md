@@ -1,7 +1,7 @@
 ---
 title: "Pacote WXRZ"
 description: "O formato .wxrz, entrada por entrada — manifesto, WXR, mídia, post_content e options.json — e as regras de segurança quando um pacote é aberto."
-translatedFrom: "c440162e6fccadacf68b3bd9ff4c31f835eff77c"
+translatedFrom: "ab155ee027dec103e45e68b8f5a231245cf98e50"
 ---
 
 Um arquivo `.wxrz` é um **arquivo tar compactado com gzip** (`ustar`). Qualquer ferramenta que lê `.tar.gz` o abre:
@@ -24,11 +24,11 @@ uploads/2026/10/photo.jpg          optional: media files, as in wp-content/uploa
 
 ## manifest.json
 
-O [JSON Schema](https://eizport.github.io/eizport-schema-2.json) dele vem no `$schema` do manifesto, então um editor de código (VS Code, PhpStorm…) confere um manifesto editado à mão e completa as chaves; o Eizport o confere com o mesmo schema antes de importar e diz qual chave está errada. [`eizport-schema.json`](https://eizport.github.io/eizport-schema.json) é sempre o mais novo.
+O [JSON Schema](https://eizport.github.io/schemas/1.1/manifest.json) dele vem no `$schema` do manifesto, então um editor de código (VS Code, PhpStorm…) confere um manifesto editado à mão e completa as chaves; o Eizport o confere com o mesmo schema antes de importar e diz qual chave está errada. Cada versão tem o seu, congelado depois do lançamento; [`schemas/trunk/manifest.json`](https://eizport.github.io/schemas/trunk/manifest.json) é sempre o mais novo.
 
 ```json
 {
-  "$schema": "https://eizport.github.io/eizport-schema-2.json",
+  "$schema": "https://eizport.github.io/schemas/1.1/manifest.json",
   "format": "wxrz",
   "version": 2,
   "requires": "1.1.0",

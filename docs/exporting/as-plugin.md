@@ -40,7 +40,7 @@ O padrão continua um arquivo — um `.zip`, ou um `.wxrz` com *Pacote como .zip
 ## No outro site
 
 1. **Plugins → Adicionar plugin → Enviar plugin**, escolha o `.zip`, **Instalar agora**, **Ativar**.
-2. **Executar importação**, na linha do plugin na tela Plugins — e um aviso, até a importação — abre a tela dele. Ela não fica no menu (uma importação feita uma vez não tem lugar ali); nela, *Ferramentas → Importar* aparece como item atual. Nada redireciona você ao ativar.
+2. **Executar importação**, na linha do plugin na tela Plugins — ou a entrada dele em **Ferramentas → Importar**, destacada dos outros importadores, e um aviso até a importação — abre a tela dele. Ela não fica no menu (uma importação feita uma vez não tem lugar ali); nela, *Ferramentas → Importar* aparece como item atual. Enquanto ele espera, Ferramentas → Importar mostra a lista de importadores em vez de ir direto ao Importador do WordPress. Nada redireciona você ao ativar.
 3. A tela lista o que ele precisa, cada item com um ✓ ou um link:
    - **Eizport**, ativo — ele desenha a tela e faz a importação. Sem ele, ou numa versão mais antiga que a que o pacote precisa, a mesma tela mostra ✗ e **Instalar agora**, **Ativar** ou **Atualizar agora**, feitos ali mesmo; depois a página recarrega com o que o Eizport lê. Até lá, **O que ele contém** fica esmaecido e fechado, e *Atualizar existentes* e **Executar importação** ficam desativados;
    - **o Importador do WordPress**, instalado — com um botão *Instalar agora* que o instala e ativa ali mesmo, como Ferramentas → Importar instala um importador (*Instalando…*, *Ativando…*, depois ✓ e **Executar importação** pronto);

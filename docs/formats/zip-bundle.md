@@ -1,10 +1,10 @@
 ---
 title: "Pacote ZIP"
 description: "O mesmo pacote como um .zip comum, que qualquer computador abre — como ativá-lo e como ele é lido."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "b987e2ecc6ba8e3d181ebdc951ca9d67a06e0eb2"
 ---
 
-Com **Configurações → Exportar → Pacote como .zip**, os pacotes são arquivos `.zip` comuns em vez de `.wxrz`. As entradas são **exatamente as mesmas** — `manifest.json`, o WXR, `options.json`, `post_content/`, `uploads/` — então tudo o que está na [página do WXRZ](../wxrz-bundle/) vale aqui.
+Por padrão (**Configurações → Exportar → Pacote como .zip**, ativado), os pacotes são arquivos `.zip` comuns em vez de `.wxrz` — também dentro de um plugin feito como plugin. As entradas são **exatamente as mesmas** — `manifest.json`, o WXR, `options.json`, `post_content/`, `uploads/` — então tudo o que está na [página do WXRZ](../wxrz-bundle/) vale aqui.
 
 ## Por quê
 

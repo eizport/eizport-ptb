@@ -1,7 +1,7 @@
 ---
 title: "Arquivo e formatos"
 description: "Escolha entre o WXR simples do WordPress, um pacote .wxrz ou .zip, um .zip do Playground e um plugin que se importa sozinho; nomes de arquivo e o que cada um contém."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "b987e2ecc6ba8e3d181ebdc951ca9d67a06e0eb2"
 ---
 
 O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem duas opções; o nome da primeira acompanha o que vai no arquivo.
@@ -9,8 +9,8 @@ O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem
 | Aparece como | Arquivo | Quando | Contém |
 | --- | --- | --- | --- |
 | **WXR XML** | `.xml` | Arquivos de mídia desativados e nenhuma opção | A exportação do próprio WordPress, sem mudanças |
-| **WXRZ** | `.wxrz` | Arquivos de mídia ou opções | Um [pacote](../../formats/wxrz-bundle/): o WXR, a mídia, `post_content/`, `options.json` |
-| **WXR ZIP** | `.zip` | Igual, com *Pacote como .zip* ativado | O mesmo [pacote como um .zip simples](../../formats/zip-bundle/) |
+| **WXR ZIP** | `.zip` | Arquivos de mídia ou opções (o padrão) | Um [pacote como um .zip simples](../../formats/zip-bundle/): o WXR, a mídia, `post_content/`, `options.json` |
+| **WXRZ** | `.wxrz` | Igual, com *Pacote como .zip* desativado | O mesmo [pacote como um tar com gzip](../../formats/wxrz-bundle/) |
 | **Playground** | `.zip` | Escolhido | Um [pacote de blueprint do Playground](../../formats/playground-zip/) com temas e plugins |
 | **Como plugin** | `.zip` | *Como plugin* ativado (não com o Playground) | Um plugin com o pacote dentro, que o importa no outro site com um clique ([como plugin](../as-plugin/)) |
 

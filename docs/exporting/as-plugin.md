@@ -1,7 +1,7 @@
 ---
 title: "Como plugin"
 description: "Exporte um plugin que importa o próprio pacote: instale-o no outro site, confira o que ele precisa, Executar importação, depois exclua-o."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "b987e2ecc6ba8e3d181ebdc951ca9d67a06e0eb2"
 ---
 
 **Como plugin**, ao lado de *Arquivos de mídia* no painel **Detalhes** da tela Exportar, transforma o arquivo num `.zip` de plugin com o pacote dentro. Instale-o no outro site como qualquer plugin, e ele se importa sozinho — sem arquivo para enviar, sem passar pela tela do importador.
@@ -15,12 +15,12 @@ meusite-wordpress-2026-10-12.zip
 └── meusite-wordpress-2026-10-12-k3x9q2m7a1b8c4d6/
     ├── meusite-wordpress-2026-10-12-k3x9q2m7a1b8c4d6.php   o plugin: "Importação: meusite-wordpress-2026-10-12"
     ├── readme.txt                                           o que ele é, como pede o Plugin Check do WordPress.org
-    └── meusite-wordpress-2026-10-12-k3x9q2m7a1b8c4d6.wxrz  o pacote (conteúdo, mídia, configurações, como escolhidos)
+    └── meusite-wordpress-2026-10-12-k3x9q2m7a1b8c4d6.zip   o pacote (conteúdo, mídia, configurações, como escolhidos)
 ```
 
 A pasta e o arquivo do plugin levam o nome do arquivo da exportação, mais a parte aleatória do nome da cópia em minúsculas (a mesma que [Cópias](../../settings/copies/) mostra). Assim nenhum nome de arquivo o transforma em outro plugin: uma exportação chamada `woocommerce` continua `woocommerce-<aleatório>/`, nunca a pasta do WooCommerce. Cada entrega se instala como um plugin próprio.
 
-**Configurações → Exportar → Como plugin traz o pacote como** pode pôr os arquivos do pacote no plugin em vez do `.wxrz` — as mesmas entradas, com o WXR formatado linha a linha, para ver ou mudar antes de instalar. **Ao lado dos do plugin**, a pasta do plugin é o pacote:
+**Configurações → Exportar → Como plugin traz o pacote como** pode pôr os arquivos do pacote no plugin em vez do arquivo do pacote — as mesmas entradas, com o WXR formatado linha a linha, para ver ou mudar antes de instalar. **Ao lado dos do plugin**, a pasta do plugin é o pacote:
 
 ```
 meusite-wordpress-2026-10-12.zip
@@ -35,7 +35,7 @@ meusite-wordpress-2026-10-12.zip
 
 **Numa pasta bundle/**, os mesmos arquivos vão para `bundle/`, separados dos do plugin. O cabeçalho do plugin (`Eizport Bundle:`) aponta para `manifest.json` ou `bundle/manifest.json`.
 
-O padrão continua um `.wxrz`: um download menor, e os arquivos do pacote não se misturam aos do plugin. Nos dois casos, os arquivos podem ser acessados por URL enquanto o plugin está instalado — exclua-o depois da importação. Não funciona com o formato Playground: lá o toggle fica desligado e desativado.
+O padrão continua um arquivo — um `.zip`, ou um `.wxrz` com *Pacote como .zip* desativado: um download menor, e os arquivos do pacote não se misturam aos do plugin. Nos dois casos, os arquivos podem ser acessados por URL enquanto o plugin está instalado — exclua-o depois da importação. Não funciona com o formato Playground: lá o toggle fica desligado e desativado.
 
 ## No outro site
 

@@ -1,7 +1,7 @@
 ---
 title: ".zip do Playground"
 description: "Um pacote de blueprint do WordPress Playground que inicia um site com o conteúdo, a mídia, o tema e os plugins exportados — como é montado e como executá-lo."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "ed7bad965f80e82c674848ca566269b29ec912dd"
 ---
 
 Com o formato **Playground**, a exportação é um `.zip` pronto para o [WordPress Playground](https://wordpress.org/playground/): um pacote de blueprint que instala os temas e plugins que você escolheu e importa o conteúdo.
@@ -18,9 +18,17 @@ Ou abra o link dele no playground.wordpress.net (nova tela: a ação **Abrir no 
 
 **Mesmo de um servidor local.** O Playground roda no seu navegador, então uma cópia feita no WordPress Studio ou em qualquer site `localhost` abre no playground.wordpress.net sem ser enviada a lugar nenhum — o navegador a coleta da sua máquina (o link só funciona no seu computador).
 
-## Temas e plugins
+## Opções do Playground
 
-Qualquer tema ou plugin **instalado** pode entrar. Os do diretório do WordPress.org não são copiados: o blueprint os instala do diretório, **na versão que este site tem** (`woocommerce.11.2.1.zip`). Os outros — premium, personalizados, internos — são compactados a partir do site dentro do pacote, e o Playground os instala dali. A própria verificação de atualizações do WordPress diz quais vêm do diretório.
+**Detalhes → Opções do Playground** (ativado com o formato Playground) abre dois grupos, um de cada vez; o botão conta o que foi definido.
+
+### Página inicial
+
+Onde o Playground abre quando o site fica pronto — **Página inicial** (o padrão), **Painel**, **Uma página** deste site, ou **Um caminho** (`/loja/`). Uma página vai no blueprint como caminho relativo, `/?pagename=<o caminho dela>`, para abrir a mesma página seja qual for o ID que ela ganhe no Playground. (Sem isso, o próprio Playground abriria o painel.)
+
+### Temas e plugins
+
+Qualquer tema ou plugin **instalado** pode entrar. Os plugins são instalados **ativos ou inativos como estão neste site**; dos temas, o deste site é ativado (quando escolhido), e um tema descendente traz o ascendente. Os do diretório do WordPress.org não são copiados: o blueprint os instala do diretório, **na versão que este site tem** (`woocommerce.11.2.1.zip`). Os outros — premium, personalizados, internos — são compactados a partir do site dentro do pacote, e o Playground os instala dali. A própria verificação de atualizações do WordPress diz quais vêm do diretório.
 
 > **Use com responsabilidade.** Temas e plugins premium e personalizados são copiados para dentro do arquivo. Compartilhe um `.zip` do Playground só onde as licenças deles permitem — guarde os de licença paga para você ou sua equipe.
 

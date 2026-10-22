@@ -1,7 +1,7 @@
 ---
 title: "Tela Exportar"
 description: "A nova tela Ferramentas → Exportar, parte por parte: as ações do cabeçalho, o painel Detalhes, a lista e os painéis laterais."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "ed7bad965f80e82c674848ca566269b29ec912dd"
 ---
 
 Ferramentas → Exportar abre uma tela construída como as telas mais recentes do painel do WordPress (DataViews e DataForm, sobre a estrutura de telas do painel dos arquivos básicos do WordPress). Ela usa as [habilidades](../../developers/abilities/) do plugin, então a tela, a REST e os agentes de IA exportam do mesmo jeito.
@@ -36,7 +36,7 @@ Acima da lista, uma linha **Detalhes** resume o arquivo — como *WXRZ · nome d
 | **Arquivos de mídia** | Coloca os arquivos dos anexos exportados dentro do pacote; o ⓘ explica |
 | **Como plugin** | Transforma o pacote num plugin que se importa sozinho ([como plugin](../as-plugin/)); o ⓘ explica. Desligado e desativado com o Playground |
 | **Atualizar existentes** | A importação atualiza as páginas, posts e produtos que já existem (mesmo slug) em vez de criar cópias ([mais](../../getting-started/importing/#updating-items-that-already-exist)); o ⓘ explica. Desligado e desativado com o Playground, que começa de um site novo |
-| **Temas e plugins** | O que o .zip do Playground instala (ativado com o formato Playground); um contador no botão diz quantos foram escolhidos |
+| **Opções do Playground** | Onde o .zip do Playground abre e os temas e plugins que ele instala (ativado com o formato Playground); um contador no botão diz quantos foram definidos ([.zip do Playground](../../formats/playground-zip/#opções-do-playground)) |
 
 ## Ações do cabeçalho
 

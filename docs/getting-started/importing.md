@@ -1,7 +1,7 @@
 ---
 title: "Importação"
 description: "Como um pacote é importado com o Importador do WordPress, o que acontece com a mídia, os arquivos de conteúdo e as opções, e as outras formas de importar."
-translatedFrom: "ffdc42c9741729dcf458bebf036c09f8fb7096b8"
+translatedFrom: "c0d140d85ccd8055e30700149fdfbe97106df12d"
 ---
 
 ## Com o Importador do WordPress
@@ -55,4 +55,5 @@ As cópias feitas pela tela Exportar ficam listadas nas **Configurações → C�
 | `options.json` | Definido no final; as opções listadas em `post_ids` recebem o ID do post importado |
 | `term_media` no manifesto | Os term meta que guardam um ID de anexo recebem o ID do anexo importado |
 | IDs de posts em blocos | Os blocos Imagem, Galeria, Capa, Mídia e texto, Arquivo, Vídeo e Áudio (`"id"`, `"ids"`, `"mediaId"`, `wp-image-N`, o `data-id` da galeria), `[gallery ids]` e os links de navegação para páginas e posts apontam para os itens importados, nos itens novos e atualizados e nos widgets de bloco. Plugins acrescentam os blocos deles com `eizport_block_id_attributes` |
+| Links para o site de origem | O endereço do site de origem (o `base_site_url` do WXR) vira o deste site no conteúdo e no resumo dos itens importados (também escapado nos atributos de bloco, http ou https), nos links personalizados dos menus e nos widgets e theme mods |
 | Produtos e suas variações, páginas e suas descendentes | Importados com seus ascendentes, como faz o Importador do WordPress |

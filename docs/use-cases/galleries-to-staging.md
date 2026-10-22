@@ -1,7 +1,7 @@
 ---
 title: "Galerias para o staging"
 description: "Páginas feitas com blocos Imagem, Galeria e Capa, levadas para um site onde as mídias ganham outros IDs — e ainda editáveis como estavam."
-translatedFrom: "ffdc42c9741729dcf458bebf036c09f8fb7096b8"
+translatedFrom: "c0d140d85ccd8055e30700149fdfbe97106df12d"
 ---
 
 ## O cenário
@@ -22,4 +22,3 @@ Só os IDs que vieram no arquivo e mudaram são tocados: um bloco que aponta par
 ## O que não faz
 
 - Os blocos próprios de um plugin, até ele os listar (o filtro [`eizport_block_id_attributes`](../../developers/hooks/#eizport_block_id_attributes)).
-- Links para as páginas do site de origem no texto (endereços, não IDs) — veja as [issues](https://github.com/eizport/eizport/issues).

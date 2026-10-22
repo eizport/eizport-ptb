@@ -1,7 +1,7 @@
 ---
 title: "Menus"
 description: "Menus clássicos com os itens e as posições do tema, e navegações de bloco, numa linha própria; o que é sugerido, o que a importação faz com os menus que o outro site já tem, e os limites."
-translatedFrom: "ffdc42c9741729dcf458bebf036c09f8fb7096b8"
+translatedFrom: "c0d140d85ccd8055e30700149fdfbe97106df12d"
 ---
 
 Os menus de navegação são exportados numa linha própria, **Menus**, ao lado dos tipos de conteúdo. O painel lateral dela lista os dois tipos:
@@ -39,5 +39,4 @@ A habilidade [`eizport/export`](../../developers/abilities/#eizportexport) receb
 
 - **Todo o conteúdo** (nenhum tipo escolhido) já leva todos os menus, como a exportação do próprio WordPress; escolher menus aí acrescenta as posições do tema.
 - Sem nenhum tipo marcado e com menus escolhidos, só os menus são exportados.
-- Dentro de uma navegação, cada link para uma página ou um post aponta para o importado; o endereço dele é o que tinha neste site até os links para o site de origem serem remapeados (veja as [issues](https://github.com/eizport/eizport/issues)). Os itens de menus clássicos sempre apontam para as páginas importadas.
 - A tela clássica (*Ferramentas → Exportar → Clássica*) não tem a linha Menus.

@@ -1,7 +1,7 @@
 ---
 title: "Aparência"
-description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo e regras CSS do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
-translatedFrom: "fd8a8ff7d1c76143e1e93971971b809fe7e23fb8"
+description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo, regras CSS, modelos e partes de modelo do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
+translatedFrom: "3029021021c6849c9bfe01e368f284b72848fe58"
 ---
 
 A aparência do site é exportada em linhas próprias, ao lado dos tipos de conteúdo. Uma linha só aparece quando o tema ativo tem algo nela, e o painel **Escolher itens** dela lista o que ela tem, cada item com uma prévia:
@@ -12,13 +12,17 @@ A aparência do site é exportada em linhas próprias, ao lado dos tipos de cont
 | **CSS adicional do Personalizador** | Uma regra de *Personalizar → CSS adicional* (um bloco `@media` conta como uma; um comentário logo antes vai junto) | A regra, e qual é: *Regra 3 de 3 (a última)* | Um tema com CSS adicional |
 | **Estilos globais do editor** | Um grupo de *Aparência → Editor → Estilos*: Paleta de cores, Cores do site, Tipografia, Espaçamento e layout, Elementos, cada bloco com estilos próprios | As cores dele, ou um resumo | Temas de blocos com estilos salvos |
 | **CSS global do editor** | Uma regra do *CSS adicional* do editor do site | A regra | Temas de blocos com CSS adicional ali |
+| **Modelos do editor** | Um modelo do tema ativo editado em *Aparência → Editor → Modelos* (Páginas, Posts individuais, um personalizado) | A marcação de blocos dele | Temas de blocos com modelos editados ali |
+| **Partes de modelo do editor** | Uma parte de modelo do tema ativo editada ali: o Cabeçalho, o Rodapé, uma parte própria, com a área dela | A marcação de blocos dela | Temas de blocos com partes editadas ali |
 | **Widgets** | Um widget — clássico (texto, imagem, menu…) ou de bloco — com a barra lateral dele | O texto ou a imagem | Temas clássicos com widgets nas barras laterais |
 
-Marque uma linha para levar tudo o que ela tem (todo item vem sugerido), ou abra **Escolher itens** e marque só alguns: a última regra CSS, o logo e a cor de fundo, um widget. Elas precisam de um pacote (`.wxrz`, `.zip` ou um `.zip` do Playground): vão no `options.json` dele.
+Marque uma linha para levar tudo o que ela tem (todo item vem sugerido), ou abra **Escolher itens** e marque só alguns: a última regra CSS, o logo e a cor de fundo, um widget, o cabeçalho. Elas precisam de um pacote (`.wxrz`, `.zip` ou um `.zip` do Playground): vão no `options.json` dele — menos os modelos e as partes de modelo, que são posts e vão no WXR como o conteúdo (um `.xml` simples também os leva).
+
+Só aparece o que foi editado no editor do site: um modelo que está nos arquivos do próprio tema, sem mudanças, o tema do outro site já tem.
 
 ## O que vai junto
 
-As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a linha Anexos marcada: o logo, as imagens de cabeçalho e de fundo, as mídias dos widgets de imagem e de bloco, e os uploads para onde os estilos e o CSS apontam (*Só mídia anexada*, nas [configurações de exportação](../../settings/export-settings/), desliga isso, como no conteúdo).
+As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a linha Anexos marcada: o logo, as imagens de cabeçalho e de fundo, as mídias dos widgets de imagem e de bloco, as imagens dos modelos e das partes de modelo, e os uploads para onde os estilos e o CSS apontam (*Só mídia anexada*, nas [configurações de exportação](../../settings/export-settings/), desliga isso, como no conteúdo).
 
 ## No outro site
 
@@ -38,6 +42,7 @@ As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a li
   - **Substituir todo o CSS deste site** — ficam só as regras do arquivo (`replace_all`).
 - Os **theme mods** escolhidos vão para o tema ativo e são **mesclados** aos dele: o que o arquivo não traz fica (as outras configurações, as posições dos menus). O logo e a imagem do cabeçalho apontam para os anexos importados, e os endereços das imagens de cabeçalho e de fundo para os arquivos importados.
 - Os **grupos de estilo** escolhidos substituem os mesmos grupos nos estilos do outro site (um tema de blocos); os outros grupos dele ficam.
+- Os **modelos e as partes de modelo** escolhidos **substituem** o mesmo modelo do mesmo tema no outro site (mesmo slug: o Cabeçalho substitui o Cabeçalho dele, não vira um *Cabeçalho 2* ao lado), qualquer que seja o **Atualizar existentes**; um que ele não tem é acrescentado. Os blocos de navegação deles apontam para as navegações importadas (exporte-as na linha [Menus](../menus/): as navegações dos modelos vêm sugeridas), as imagens para os anexos importados, e os links para o site de origem para o outro site.
 - Os **widgets** escolhidos vão para o **fim da mesma barra lateral**, ao lado dos widgets do próprio outro site (para *Widgets inativos* quando o tema dele não tem essa barra), cada um com um número livre. Importar o mesmo arquivo de novo com *Atualizar existentes* os atualiza no lugar em vez de acrescentá-los duas vezes. Um widget de menu de navegação aponta para o menu importado (exporte-o na linha [Menus](../menus/)), um widget de imagem para a imagem importada, e as imagens e os endereços nos widgets de bloco para os importados.
 
 ## Pelo WP-CLI e pela habilidade
@@ -45,6 +50,7 @@ As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a li
 ```bash
 wp eizport export --types=page --appearance=theme_mods:custom_logo+background_color,custom_css,widgets:text-3
 wp eizport export --appearance=all --css-mode=start --no-css-markers
+wp eizport export --types=page --menus=all --appearance=template_parts:header,templates:page
 wp eizport import entrega.wxrz --css-mode=replace
 ```
 
@@ -53,5 +59,6 @@ Uma linha sozinha leva tudo dela; a chave de uma regra CSS (`r:…`) vem do [`ei
 ## Limites
 
 - A aparência vai para o **tema ativo** do outro site. Exportados de um tema e importados com outro, os theme mods só fazem sentido se esse tema usa as mesmas configurações.
+- Modelos e partes de modelo pertencem ao tema deles: importados num site com outro tema ativo, ficam guardados, sem uso, até esse tema ser ativado.
 - As fontes instaladas pela Biblioteca de fontes não são exportadas: os estilos que as usam caem nas fontes do outro site.
 - Os theme mods não vêm mais com o grupo *Básicas* da linha Opções: marque **Theme mods do Personalizador**. O logo do site de um tema de blocos é uma opção, em *Básicas*.

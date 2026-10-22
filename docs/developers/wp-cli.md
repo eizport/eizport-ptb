@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "04132e826f70706513c1edca221765b29d3f1b04"
+translatedFrom: "577d80000aa27cdc691bec1f740b7b925503f531"
 ---
 
 ## wp eizport export
@@ -11,7 +11,7 @@ Exporta como a tela Exportar faz, para uma cópia guardada no site, e imprime o 
 ```bash
 wp eizport export --types=page:43,product --options=basics,page_on_front
 wp eizport export --types=page:43+44 --as-plugin --update-existing --filename=delivery
-wp eizport export --types=page:43 --playground --themes=twentytwentyfive --plugins=woocommerce/woocommerce.php --landing=page:43
+wp eizport export --types=page:43 --playground --themes=twentytwentyfive --plugins=woocommerce/woocommerce.php --landing=page:43 --language=pt_BR
 wp eizport export --types=page --menus=classic:18 --filename=header
 ```
 
@@ -31,6 +31,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | `--themes=<stylesheets>` | Com `--playground`: temas a instalar, separados por vírgula (um tema descendente traz o ascendente) |
 | `--plugins=<files>` | Com `--playground`: arquivos de plugin a instalar, separados por vírgula (`woocommerce/woocommerce.php`), ativos ou inativos como neste site |
 | `--landing=<where>` | Com `--playground`: onde abre — `home` (padrão), `admin`, `page:ID` (salvo como `/?pagename=<o caminho dela>`) ou um caminho (`/loja/`) |
+| `--language=<language>` | Com `--playground`: o idioma em que abre — `site` (padrão), `user`, `en_US` ou um locale instalado (`pt_BR`) |
 | `--filename=<name>` | Nome do arquivo, sem extensão |
 | `--dir=<folder>` | Grava também os arquivos do pacote numa pasta (veja abaixo) |
 

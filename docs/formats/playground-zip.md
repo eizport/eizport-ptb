@@ -1,7 +1,7 @@
 ---
 title: ".zip do Playground"
 description: "Um pacote de blueprint do WordPress Playground que inicia um site com o conteúdo, a mídia, o tema e os plugins exportados — como é montado e como executá-lo."
-translatedFrom: "ed7bad965f80e82c674848ca566269b29ec912dd"
+translatedFrom: "577d80000aa27cdc691bec1f740b7b925503f531"
 ---
 
 Com o formato **Playground**, a exportação é um `.zip` pronto para o [WordPress Playground](https://wordpress.org/playground/): um pacote de blueprint que instala os temas e plugins que você escolheu e importa o conteúdo.
@@ -20,11 +20,15 @@ Ou abra o link dele no playground.wordpress.net (nova tela: a ação **Abrir no 
 
 ## Opções do Playground
 
-**Detalhes → Opções do Playground** (ativado com o formato Playground) abre dois grupos, um de cada vez; o botão conta o que foi definido.
+**Detalhes → Opções do Playground** (ativado com o formato Playground) abre três grupos, um de cada vez; o botão conta o que foi definido.
 
 ### Página inicial
 
 Onde o Playground abre quando o site fica pronto — **Página inicial** (o padrão), **Painel**, **Uma página** deste site, ou **Um caminho** (`/loja/`). Uma página vai no blueprint como caminho relativo, `/?pagename=<o caminho dela>`, para abrir a mesma página seja qual for o ID que ela ganhe no Playground. (Sem isso, o próprio Playground abriria o painel.)
+
+### Idioma
+
+O idioma em que o Playground abre — **Idioma do site** (o padrão), **Seu idioma** (aparece quando o do seu perfil é outro) ou **English (United States)**. Num idioma que não é o inglês, o blueprint executa o passo `setSiteLanguage` do Playground depois das instalações: ele define o idioma do site e baixa as traduções do WordPress e dos temas e plugins do diretório do WordPress.org. As traduções que este site tem dos outros — premium, personalizados — vão dentro do `.zip`. Um idioma que este site não instalou não é oferecido.
 
 ### Temas e plugins
 
@@ -41,14 +45,16 @@ uploads/…                          media files, when Media files is on
 post_content/…                     content files, when Content as .html files is on
 themes/<stylesheet>.zip            cada tema escolhido que não está no diretório (um filho traz o ascendente)
 plugins/<slug>.zip                 cada plugin escolhido que não está no diretório
+languages/plugins|themes/…         as traduções deles, num idioma que não é o inglês
 ```
 
 ## O que o blueprint faz
 
 1. Instala os temas (os ascendentes primeiro) — do diretório ou do pacote — e ativa o tema ativo, se escolhido, senão o primeiro.
 2. Instala e ativa os plugins, do mesmo jeito.
-3. Grava os arquivos de mídia e de conteúdo e dois plugins obrigatórios temporários: um responde com os arquivos quando o importador baixa a mídia e devolve cada `.html` ao seu post (`wp_import_post_data_raw`); o outro define as opções quando a importação termina, com os IDs remapeados.
-4. Executa `importWxr` (o próprio Playground instala o Importador do WordPress).
-5. Remove os plugins e arquivos temporários.
+3. Em outro idioma: define o idioma (`setSiteLanguage`, que baixa as traduções do diretório) e grava as que vêm no pacote.
+4. Grava os arquivos de mídia e de conteúdo e dois plugins obrigatórios temporários: um responde com os arquivos quando o importador baixa a mídia e devolve cada `.html` ao seu post (`wp_import_post_data_raw`); o outro define as opções quando a importação termina, com os IDs remapeados.
+5. Executa `importWxr` (o próprio Playground instala o Importador do WordPress).
+6. Remove os plugins e arquivos temporários.
 
 O filtro [`eizport_playground_blueprint`](../../developers/hooks/#eizport_playground_blueprint) altera o blueprint antes de ele ser gravado.

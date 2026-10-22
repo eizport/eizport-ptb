@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "ed7bad965f80e82c674848ca566269b29ec912dd"
+translatedFrom: "577d80000aa27cdc691bec1f740b7b925503f531"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.
@@ -97,7 +97,7 @@ Entrada: `search`, `include` (só estas), `page`, `per_page`. Retorna `items` (`
 | `bundle` | boolean: `false` para o `.xml` simples do WordPress | `true` |
 | `zip` | boolean: `.zip` em vez de `.wxrz` | *Pacote como .zip* |
 | `options` | object: `groups`, `names`, `all`, `front_pages`, `linked` | nenhuma |
-| `blueprint` | object: `themes`, `plugins` (instalados ativos ou inativos como neste site), `landing_page` (`"home"`, `"admin"`, `{ "page": ID }` ou um caminho como `"/loja/"`) — gera um `.zip` do Playground | — |
+| `blueprint` | object: `themes`, `plugins` (instalados ativos ou inativos como neste site), `landing_page` (`"home"`, `"admin"`, `{ "page": ID }` ou um caminho como `"/loja/"`), `language` (`"site"`, o padrão, `"user"`, `"en_US"` ou um locale instalado como `"pt_BR"`) — gera um `.zip` do Playground | — |
 | `as_plugin` | boolean: um `.zip` de plugin que importa o próprio pacote ([como plugin](../../exporting/as-plugin/)); não com `blueprint` | `false` |
 | `update_existing` | boolean: pede à importação que atualize os itens que já existem (mesmo tipo e slug); fica gravado no pacote | `false` |
 | `reviews` | object: `ids` (IDs de comentário; `[]` para nenhuma) ou `all` — avaliações de produtos do WooCommerce | todas as avaliações dos produtos |

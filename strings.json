@@ -1,6 +1,6 @@
 {
 	"language": "Português (Brasil)",
-	"translatedFrom": "eb84d2800a1d07522114a9f68fb8428d95ae84c5",
+	"translatedFrom": "49daf8568b1a2065181919dc26b6edd2f3bec6a4",
 	"site": {
 		"tagline": "Leve o conteúdo do WordPress com sua mídia, configurações e arquivos.",
 		"description": "O Eizport dá a Ferramentas → Exportar uma tela nova e pacotes .wxrz: o conteúdo com sua mídia, configurações e arquivos de conteúdo dos posts num arquivo só. Escolha os itens e o que eles usam vem como sugestão; importe com o Importador do WordPress, ou envie o arquivo como um plugin que se importa sozinho. Gratuito e de código aberto."

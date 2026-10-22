@@ -1,13 +1,14 @@
 name: Publish
 
-# Each push asks the plugin's repository to rebuild the site, which downloads
-# this translation (site/translations.json there). DISPATCH_TOKEN is a
+# A push to "site" (the translation of the released version, the one the
+# published site downloads) asks the plugin's repository to rebuild the
+# site; trunk translates the next version and isn't published. DISPATCH_TOKEN is a
 # fine-grained token with access only to eizport/eizport and
 # "Contents: read and write".
 
 on:
   push:
-    branches: [ trunk ]
+    branches: [ site ]
   workflow_dispatch:
 
 permissions:

@@ -2,7 +2,7 @@
 
 Tradução em português do Brasil do site do [Eizport](https://github.com/eizport/eizport): https://eizport.github.io/br/.
 
-Este repositório só tem texto traduzido. O site é montado no repositório do plugin, que baixa esta tradução a cada publicação (veja `site/translations.json` e `site/scripts/translations.mjs` lá). Um push aqui publica o site de novo.
+Este repositório só tem texto traduzido. O site é montado no repositório do plugin, que baixa esta tradução a cada publicação (veja `site/translations.json` e `site/scripts/translations.mjs` lá). O site publicado usa a branch `site`, e um push nela publica o site de novo (veja abaixo).
 
 ## O que há aqui
 
@@ -24,6 +24,12 @@ A tradução do próprio plugin (a interface e o readme) fica no [translate.word
 3. Em `translatedFrom`, ponha o commit do repositório do plugin de onde a página em inglês foi copiada.
 
 Quando a página em inglês muda depois desse commit, o site mostra um aviso de que a tradução está desatualizada. Atualize o texto e o `translatedFrom`. Uma página que ainda não existe aqui aparece em inglês, com um link para traduzi-la.
+
+## Branches
+
+- `trunk` traduz o `trunk` do plugin, ou seja, a próxima versão. As traduções do dia a dia entram aqui.
+- `site` é a tradução publicada, a da versão lançada. Cada lançamento do plugin cria aqui a tag da versão (`1.1.0`, …) e move `site` para o `trunk`.
+- Para corrigir algo que já está no ar, faça a correção no `trunk` e depois `git switch site && git cherry-pick <commit> && git push`. O push publica o site.
 
 ## Ver localmente
 

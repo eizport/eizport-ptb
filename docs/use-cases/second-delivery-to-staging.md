@@ -1,7 +1,7 @@
 ---
-title: "Uma segunda entrega para o staging"
+title: "Segunda entrega para o staging"
 description: "Entregar páginas novas a um staging que já tem as mídias da primeira entrega — sem duplicar as imagens e sem links para o site local."
-translatedFrom: "bc8d52a248035881595101484e4bb88c1bb1aead"
+translatedFrom: "5cb859aa8161f5fe2e99bb7d4665f35b6f9e75f0"
 ---
 
 ## O cenário

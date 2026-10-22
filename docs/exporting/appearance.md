@@ -1,7 +1,7 @@
 ---
 title: "Aparência"
 description: "A aparência do site em linhas próprias, item por item: theme mods e regras CSS do Personalizador, grupos de estilo e regras CSS do editor do site, e widgets — com uma prévia de cada um, as mídias que eles usam e como o outro site os recebe."
-translatedFrom: "6b4cd8c50d8b0d680a879db5894d5449d0c0569a"
+translatedFrom: "17fdec5ae125227569876bc5af8d1f167d717cff"
 ---
 
 A aparência do site é exportada em linhas próprias, ao lado dos tipos de conteúdo. Uma linha só aparece quando o tema ativo tem algo nela, e o painel **Escolher itens** dela lista o que ela tem, cada item com uma prévia:
@@ -27,12 +27,12 @@ As imagens que os itens escolhidos usam são exportadas com eles, mesmo sem a li
   ```css
   .deles { color: purple; }
 
-  /* head entrega 0bf978b5 */
+  /* head entrega */
   .site-footer { background: #ffeedd; }
-  /* tail entrega 0bf978b5 */
+  /* tail entrega */
   ```
 
-  O nome é o nome do arquivo e um hash curto deste site e desse nome, o mesmo em cada entrega do mesmo arquivo: **importá-lo de novo troca o bloco dele no lugar**, seja qual for o modo, em vez de acrescentar as regras duas vezes. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
+  O nome é o nome do arquivo (sem extensão), o mesmo em cada entrega do mesmo arquivo: **importá-lo de novo troca o bloco dele no lugar**, seja qual for o modo, em vez de acrescentar as regras duas vezes. Sem os comentários ([configurações de exportação](../../settings/export-settings/), ou o importador), regras que o outro site já tem (mesmo texto) não são repetidas.
 - Quem importa pode mudar as duas coisas na etapa 1 do importador (**CSS adicional**), com `css_mode`/`css_markers` no [`eizport/import`](../../developers/abilities/#eizportimport), ou com `--css-mode`/`--[no-]css-markers` no [WP-CLI](../../developers/wp-cli/).
 - Os **theme mods** escolhidos vão para o tema ativo e são **mesclados** aos dele: o que o arquivo não traz fica (as outras configurações, as posições dos menus). O logo e a imagem do cabeçalho apontam para os anexos importados, e os endereços das imagens de cabeçalho e de fundo para os arquivos importados.
 - Os **grupos de estilo** escolhidos substituem os mesmos grupos nos estilos do outro site (um tema de blocos); os outros grupos dele ficam.

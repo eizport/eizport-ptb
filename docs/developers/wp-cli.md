@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
+translatedFrom: "c240192ba60841a972255e981700d5fb847937d7"
 ---
 
 ## wp eizport export
@@ -19,7 +19,7 @@ wp eizport export --types=page --menus=classic:18 --filename=header
 | `--types=<types>` | Tipos de conteúdo, separados por vírgula: `tipo:ID+ID` para alguns itens, o tipo sozinho para todos. Nenhum: todo o conteúdo |
 | `--options=<options>` | Grupos de opções (como `basics`) e nomes de opções, separados por vírgula |
 | `--appearance=<parts>` | A [aparência](../../exporting/appearance/) do site: `all`, ou linhas separadas por vírgula, cada uma inteira ou com as chaves dos itens depois de dois-pontos, unidas por `+` (`theme_mods:custom_logo+background_color,custom_css:r:1a2b3c4d5e`) |
-| `--css-mode=<mode>` | Onde as regras CSS entram na importação: `end` (padrão) ou `start` |
+| `--css-mode=<mode>` | Como as regras CSS entram na importação: `end` (padrão), `start`, `replace` (o bloco de mesmo nome; no fim sem nenhum) ou `replace_all` |
 | `--[no-]css-markers` | Comentários head/tail em volta das regras CSS (padrão: Configurações → Exportação) |
 | `--menus=<menus>` | [Menus](../../exporting/menus/): `all`, ou `classic:ID+ID` (IDs de termos de menu) e `navigation:ID+ID` (IDs de `wp_navigation`), separados por vírgula. Nenhum: sem menus (todo o conteúdo já os tem) |
 | `--[no-]media` | Arquivos de mídia dentro; padrão: sim |

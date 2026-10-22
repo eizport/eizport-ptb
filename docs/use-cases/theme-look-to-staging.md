@@ -1,7 +1,7 @@
 ---
 title: "Aparência do tema para o staging"
 description: "Uma mudança na aparência de um tema feita localmente — a última regra CSS, o logo, um widget, ou a paleta de um tema de blocos — levada para o staging sem mexer no que o staging tem de próprio."
-translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
+translatedFrom: "c240192ba60841a972255e981700d5fb847937d7"
 ---
 
 ## O cenário
@@ -25,7 +25,7 @@ O mesmo vale para um tema de blocos personalizado no editor do site: uma paleta 
 
 ## Da próxima vez
 
-Dê às exportações o nome da tarefa — `COMB-584.wxrz` — e as regras no staging ficam entre `/* head COMB-584 */` e `/* tail COMB-584 */`. Outra mudança da mesma tarefa, outra exportação com o mesmo nome: a etapa 1 do importador passa a oferecer **Substituir o bloco "COMB-584" que este site já tem**, que troca as regras antigas pelas novas e deixa o resto do CSS do staging como está. Deixando a escolha da exportação, um segundo bloco entra depois do primeiro. Com *Atualizar existentes* ligado, o widget *Horário* é atualizado no lugar em vez de ser acrescentado de novo.
+Dê às exportações o nome da tarefa — `COMB-584.wxrz` — e as regras no staging ficam entre `/* head COMB-584 */` e `/* tail COMB-584 */`. Outra mudança da mesma tarefa, outra exportação com o mesmo nome — com **Detalhes → Regras CSS na importação: Substituir o bloco de mesmo nome**: a etapa 1 do importador vem com **Substituir o bloco "COMB-584" que este site já tem** escolhido, que troca as regras antigas pelas novas e deixa o resto do CSS do staging como está. Com *Acrescentar no fim*, um segundo bloco entra depois do primeiro (o importador também oferece a substituição). Com *Atualizar existentes* ligado, o widget *Horário* é atualizado no lugar em vez de ser acrescentado de novo.
 
 ## O que não leva
 

@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "12cb65d62b687dc57030c9df21b19288070463ac"
+translatedFrom: "c240192ba60841a972255e981700d5fb847937d7"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.
@@ -102,7 +102,7 @@ Entrada: `search`, `include` (só estas), `page`, `per_page`. Retorna `items` (`
 | `update_existing` | boolean: pede à importação que atualize os itens que já existem (mesmo tipo e slug); fica gravado no pacote | `false` |
 | `reviews` | object: `ids` (IDs de comentário; `[]` para nenhuma) ou `all` — avaliações de produtos do WooCommerce | todas as avaliações dos produtos |
 | `appearance` | object: linha (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets`) → `"all"` ou as chaves dos itens dela (do `eizport/get-export-options`); uma lista de linhas significa cada uma inteira — a [aparência](../../exporting/appearance/) do site, com as mídias que ela usa; precisa de `bundle` | nenhuma |
-| `css_mode` | `end` ou `start`: onde as regras CSS entram na importação (quem importa também pode substituir um bloco de mesmo nome, ou todo o CSS) | `end` |
+| `css_mode` | `end`, `start`, `replace` (os blocos head/tail de mesmo nome que o outro site tem; no fim sem nenhum) ou `replace_all`: como as regras CSS entram na importação; quem importa pode mudar | `end` |
 | `css_markers` | comentários head/tail em volta das regras CSS | Configurações → Exportação |
 | `menus` | object: `classic` (IDs de termos de menu, com os itens e as posições do tema), `navigation` (IDs de `wp_navigation`) ou `all` — [menus](../../exporting/menus/) | nenhum (*todo o conteúdo* já os tem) |
 | `filename` | string, sem extensão | `<site>.WordPress.<date>` |

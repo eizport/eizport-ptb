@@ -1,33 +1,33 @@
 ---
 title: "Aparência do tema para o staging"
-description: "Um tema personalizado localmente — logo, fundo, CSS adicional, widgets, ou os estilos de um tema de blocos — repetido no staging sem refazer no Personalizador ou no editor do site."
-translatedFrom: "78585a2106b4117538ba50277fab0f9e9cbf62d2"
+description: "Uma mudança na aparência de um tema feita localmente — a última regra CSS, o logo, um widget, ou a paleta de um tema de blocos — levada para o staging sem mexer no que o staging tem de próprio."
+translatedFrom: "6b4cd8c50d8b0d680a879db5894d5449d0c0569a"
 ---
 
 ## O cenário
 
-Um tema clássico foi personalizado localmente: o logo, uma imagem e uma cor de fundo no Personalizador, algumas linhas de CSS adicional, e a barra lateral do rodapé com uma imagem, um menu e um bloco de texto. O staging tem o mesmo tema, recém-instalado. Refazer tudo à mão — e enviar as imagens de novo — é a parte em que sempre se esquece alguma coisa.
+O staging já tem a aparência dele: o próprio CSS adicional, os widgets, as cores. Localmente, entrou uma última regra CSS para o rodapé, o logo mudou, e um widget *Horário* foi para o rodapé. Só isso deve chegar ao staging — copiar a aparência inteira apagaria o que o staging tem de próprio, e refazer à mão é onde algo é esquecido.
 
-O mesmo vale para um tema de blocos personalizado no editor do site: as cores e a tipografia (*Estilos*) e o CSS adicional dele.
+O mesmo vale para um tema de blocos personalizado no editor do site: uma paleta de cores nova, mais uma regra no CSS adicional dele.
 
 ## Os passos
 
-1. No site local, **Ferramentas → Exportar**. As linhas **Theme mods do Personalizador**, **CSS adicional do Personalizador** e **Widgets** dizem *Sugerido* (com um tema de blocos: **Estilos globais do editor** e **CSS global do editor**). Marque-as.
-2. Marque também **Menus** se um widget mostra um menu, e as páginas de que o site precisa.
-3. **Exportar**, e no staging **Ferramentas → Importar → WordPress** com o arquivo (com o Eizport ativo lá, que aplica a aparência quando a importação termina).
+1. No site local, **Ferramentas → Exportar**. Abra **Escolher itens** em **CSS adicional do Personalizador** e marque só a última regra (*Regra 3 de 3 (a última)*), cada uma com a prévia; em **Theme mods do Personalizador**, o Logo; em **Widgets**, *Horário*. Com um tema de blocos: o grupo *Paleta de cores* de **Estilos globais do editor** e uma regra de **CSS global do editor**.
+2. **Detalhes → Regras CSS na importação**: *Acrescentar no fim do CSS do site* (o padrão).
+3. **Exportar**, e no staging **Ferramentas → Importar → WordPress** com o arquivo (com o Eizport ativo lá). A etapa 1 mostra **CSS adicional**, como o arquivo pede; mude ali se precisar.
 
-## O que o arquivo leva
+## O que o staging recebe
 
-- Os theme mods, o CSS adicional e os widgets com as barras laterais — ou os estilos e o CSS do tema de blocos.
-- As imagens que eles usam: o logo, o fundo, a imagem do widget de imagem.
+- O próprio CSS, e depois a regra, entre comentários `/* head … */` e `/* tail … */` com o nome do arquivo.
+- O logo (a imagem é importada junto); os outros theme mods dele como estavam.
+- *Horário* no fim do rodapé, depois dos widgets dele.
+- Com um tema de blocos: a paleta; as próprias cores e a tipografia como estavam.
 
-No staging, o logo e o fundo são as imagens importadas, os widgets voltam para o rodapé, o widget de menu mostra o menu importado, e o CSS é o CSS adicional do tema. As configurações do próprio staging que o arquivo não traz ficam como estavam.
+## Da próxima vez
+
+Mude a regra localmente e exporte de novo **com o mesmo nome de arquivo**: no staging, o bloco entre os comentários é trocado, não acrescentado de novo. Com *Atualizar existentes* ligado, o widget *Horário* também é atualizado no lugar.
 
 ## O que não leva
 
 - Fontes instaladas pela Biblioteca de fontes.
 - Uma barra lateral que o tema do staging não tem: os widgets dela vão para *Widgets inativos*.
-
-## Só o CSS
-
-Para levar só o CSS adicional de um tema de blocos, marque apenas **CSS global do editor**: o staging mantém as próprias cores e tipografia.

@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "78585a2106b4117538ba50277fab0f9e9cbf62d2"
+translatedFrom: "6b4cd8c50d8b0d680a879db5894d5449d0c0569a"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.
@@ -58,7 +58,7 @@ if ( ! is_wp_error( $copy ) ) {
 
 ## eizport/get-export-options
 
-Sem entrada. Retorna `types` (cada um com `type`, `label`, `count`, `hierarchical`, `statuses` e `taxonomies` com seus termos), `option_groups` (`group`, `label`, `options`), `front_pages` (IDs de `front` e `posts`), `themes`, `plugins`, `copy_lifetime` (segundos), `filename` (o nome padrão de hoje), `linked` (o modo das configurações vinculadas), `bundle_zip`, `review_count` (avaliações de produtos aprovadas; 0 sem o WooCommerce) `appearance` (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets` → quantos o site tem, 0 para nenhum; veja [Aparência](../../exporting/appearance/)) e `menus`: `classic` (`id`, `name`, `slug`, `items`, `locations` — os nomes das posições do tema em que ele está) e `navigation` (`id`, `title`, `links`) — veja [Menus](../../exporting/menus/).
+Sem entrada. Retorna `types` (cada um com `type`, `label`, `count`, `hierarchical`, `statuses` e `taxonomies` com seus termos), `option_groups` (`group`, `label`, `options`), `front_pages` (IDs de `front` e `posts`), `themes`, `plugins`, `copy_lifetime` (segundos), `filename` (o nome padrão de hoje), `linked` (o modo das configurações vinculadas), `bundle_zip`, `review_count` (avaliações de produtos aprovadas; 0 sem o WooCommerce) `appearance` (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets` → os itens deles: `key`, `label`, `details`, `preview`; veja [Aparência](../../exporting/appearance/)) e `menus`: `classic` (`id`, `name`, `slug`, `items`, `locations` — os nomes das posições do tema em que ele está) e `navigation` (`id`, `title`, `links`) — veja [Menus](../../exporting/menus/).
 
 ## eizport/get-items
 
@@ -80,7 +80,7 @@ Entrada: `search`, `group` (uma chave de `option_groups`), `names` (só estas), 
 
 ## eizport/get-suggestions
 
-Entrada: `types` (como o `eizport/export` os recebe), `whole` (tipos de post escolhidos inteiros, o mesmo que `{}` em `types`) e `menus.classic` (os menus escolhidos). Retorna `items` (tipo de post → IDs que o conteúdo dos itens usa, por [`eizport_suggested_items`](../hooks/#eizport_suggested_items), e as páginas e os posts para onde os menus escolhidos apontam), `reviews` (avaliações aprovadas dos produtos escolhidos), `options` (configurações que apontam para os itens, a menos que *Configurações vinculadas* esteja em *Nunca* ou *Na exportação*), `appearance` (as partes da aparência que o site tem) e `menus` (`classic`: os menus nas posições do tema; `navigation`: as navegações que o conteúdo dos itens ou os modelos do tema usam). Nada é adicionado a uma exportação sozinho.
+Entrada: `types` (como o `eizport/export` os recebe), `whole` (tipos de post escolhidos inteiros, o mesmo que `{}` em `types`) e `menus.classic` (os menus escolhidos). Retorna `items` (tipo de post → IDs que o conteúdo dos itens usa, por [`eizport_suggested_items`](../hooks/#eizport_suggested_items), e as páginas e os posts para onde os menus escolhidos apontam), `reviews` (avaliações aprovadas dos produtos escolhidos), `options` (configurações que apontam para os itens, a menos que *Configurações vinculadas* esteja em *Nunca* ou *Na exportação*), `appearance` (linha → as chaves dos itens dela, todos sugeridos) e `menus` (`classic`: os menus nas posições do tema; `navigation`: as navegações que o conteúdo dos itens ou os modelos do tema usam). Nada é adicionado a uma exportação sozinho.
 
 ## eizport/get-reviews
 
@@ -101,7 +101,9 @@ Entrada: `search`, `include` (só estas), `page`, `per_page`. Retorna `items` (`
 | `as_plugin` | boolean: um `.zip` de plugin que importa o próprio pacote ([como plugin](../../exporting/as-plugin/)); não com `blueprint` | `false` |
 | `update_existing` | boolean: pede à importação que atualize os itens que já existem (mesmo tipo e slug); fica gravado no pacote | `false` |
 | `reviews` | object: `ids` (IDs de comentário; `[]` para nenhuma) ou `all` — avaliações de produtos do WooCommerce | todas as avaliações dos produtos |
-| `appearance` | string[]: `theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets` — a [aparência](../../exporting/appearance/) do site, com as mídias que ela usa; precisa de `bundle` | nenhuma |
+| `appearance` | object: linha (`theme_mods`, `custom_css`, `global_styles`, `global_css`, `widgets`) → `"all"` ou as chaves dos itens dela (do `eizport/get-export-options`); uma lista de linhas significa cada uma inteira — a [aparência](../../exporting/appearance/) do site, com as mídias que ela usa; precisa de `bundle` | nenhuma |
+| `css_mode` | `end`, `start` ou `replace`: como as regras CSS entram na importação | `end` |
+| `css_markers` | comentários head/tail em volta das regras CSS | Configurações → Exportação |
 | `menus` | object: `classic` (IDs de termos de menu, com os itens e as posições do tema), `navigation` (IDs de `wp_navigation`) ou `all` — [menus](../../exporting/menus/) | nenhum (*todo o conteúdo* já os tem) |
 | `filename` | string, sem extensão | `<site>.WordPress.<date>` |
 
@@ -128,7 +130,7 @@ Retorna a cópia:
 
 ## eizport/import
 
-Entrada: `copy` (o nome de uma cópia) ou `attachment_id` (um `.wxrz`, `.zip`, `.xml` ou `.xml.gz` na biblioteca de mídia). `update_existing` (boolean) atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: o que o pacote pede. Precisa do Importador do WordPress instalado. Um plugin feito [como plugin](../../exporting/as-plugin/) é recusado (`eizport_plugin_zip`): instale-o como plugin. Retorna `posts` (quantos o importador criou ou encontrou), `options` (os nomes definidos) e `log` (as mensagens do importador, como texto).
+Entrada: `copy` (o nome de uma cópia) ou `attachment_id` (um `.wxrz`, `.zip`, `.xml` ou `.xml.gz` na biblioteca de mídia). `update_existing` (boolean) atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: o que o pacote pede. `css_mode` (`end`, `start`, `replace`) e `css_markers` (boolean) mudam como as regras CSS do pacote entram ([aparência](../../exporting/appearance/)); padrão: o que o pacote pede. Precisa do Importador do WordPress instalado. Um plugin feito [como plugin](../../exporting/as-plugin/) é recusado (`eizport_plugin_zip`): instale-o como plugin. Retorna `posts` (quantos o importador criou ou encontrou), `options` (os nomes definidos) e `log` (as mensagens do importador, como texto).
 
 ## Padrões
 

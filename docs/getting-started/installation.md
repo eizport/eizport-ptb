@@ -1,20 +1,25 @@
 ---
 title: "Instalação"
-description: "Instale o plugin pelo zip da versão, confira os requisitos e adicione o Importador do WordPress para importar."
+description: "Instale o plugin pelo diretório de plugins do WordPress.org, confira os requisitos e adicione o Importador do WordPress para importar."
 translatedFrom: "42fa49cee3337cf4e7d61a2b4888201f8329e437"
 ---
 
-## Pelo zip da versão
+## Pelo diretório de plugins
 
-1. Baixe a versão mais recente: [`eizport.zip`](https://github.com/eizport/eizport/releases/latest/download/eizport.zip). O URL sempre aponta para a versão mais recente.
-2. No WordPress, vá em **Plugins → Adicionar plugin → Enviar plugin**, escolha o arquivo e clique em **Instalar agora**.
-3. **Ative** o plugin. Ferramentas → Exportar agora abre a nova tela Exportar.
+1. No WordPress, vá em **Plugins → Adicionar plugin** e pesquise por **Eizport** — ou abra a página dele, [wordpress.org/plugins/eizport](https://br.wordpress.org/plugins/eizport/).
+2. Clique em **Instalar agora** e depois em **Ativar**. Ferramentas → Exportar agora abre a nova tela Exportar.
+
+As atualizações chegam do mesmo jeito, em **Painel → Atualizações**.
 
 ## Com WP-CLI
 
 ```bash
-wp plugin install https://github.com/eizport/eizport/releases/latest/download/eizport.zip --activate
+wp plugin install eizport --activate
 ```
+
+## Versões de desenvolvimento e versões anteriores
+
+Toda versão também está no [GitHub](https://github.com/eizport/eizport/releases), como `eizport.zip`: adicione-o em **Plugins → Adicionar plugin → Enviar plugin**.
 
 ## Experimente antes
 

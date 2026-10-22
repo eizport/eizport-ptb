@@ -55,7 +55,7 @@ O plugin leva o nome do arquivo da exportação: *Importação: EIZP-000* para `
 
 O mesmo `.zip` também é importado sem ser instalado: envie-o em **Ferramentas → Importar → WordPress**, como um `.wxrz`, ou passe-o para `wp eizport import`. O Eizport tira o pacote de dentro do plugin.
 
-Sem o Eizport, a tela diz como obtê-lo: **Instalar agora** quando o Eizport estiver no diretório de plugins — instala e ativa o Eizport na mesma tela, e **Continuar** abre a importação. Até lá, a última versão dele, para baixar e adicionar em **Enviar plugin**.
+Sem o Eizport, a tela oferece **Instalar agora**: instala o Eizport pelo diretório de plugins e o ativa na mesma tela, e **Continuar** abre a importação.
 
 ## Segurança
 

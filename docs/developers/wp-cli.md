@@ -1,7 +1,7 @@
 ---
 title: "WP-CLI"
 description: "Exporte e importe pacotes pela linha de comando com wp eizport export e wp eizport import, guarde uma entrega numa pasta para comparar e rode as habilidades com wp eval."
-translatedFrom: "c440162e6fccadacf68b3bd9ff4c31f835eff77c"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 ## wp eizport export
@@ -59,7 +59,8 @@ wp eizport import site.wxrz --user=admin
 | --- | --- |
 | `<file>` | O arquivo ou a pasta de pacote a importar |
 | `--user=<login>` | A quem os posts são atribuídos; padrão: o primeiro administrador |
-| `--[no-]update-existing` | Atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: o que o pacote pede |
+| `--[no-]update-existing` | Atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: não — o pacote nunca decide isso sozinho |
+| `--options=<names>` | As opções do pacote fora dos [grupos de opções](../../exporting/options/#opções-fora-dos-grupos-na-importação) a definir também, separadas por vírgula; padrão: nenhuma |
 | `--css-mode=<mode>` | Como as regras CSS do pacote entram: `end`, `start`, `replace` (os blocos head/tail de mesmo nome que este site tem; sem nenhum, no fim) ou `replace_all`; padrão: o que o pacote pede |
 | `--[no-]css-markers` | Comentários head/tail em volta delas; padrão: o que o pacote pede |
 

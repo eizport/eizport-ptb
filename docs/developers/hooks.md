@@ -1,7 +1,7 @@
 ---
 title: "Hooks"
 description: "Cada filtro e ação do Eizport, com seus parâmetros e um exemplo."
-translatedFrom: "eb84d2800a1d07522114a9f68fb8428d95ae84c5"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 Todos os hooks têm o prefixo `eizport_`. Adicione-os a partir de um plugin ou do `functions.php` de um tema.
@@ -47,6 +47,16 @@ Mais opções que nunca são exportadas — chaves, tokens, licenças, números 
 add_filter( 'eizport_denied_options', function ( array $names ) {
 	return array_merge( $names, array( 'my_plugin_api_key', 'my_plugin_db_version' ) );
 } );
+```
+
+## eizport_is_secret
+
+Se um nome — uma opção, uma modificação do tema, um campo de widget — guarda um segredo, e por isso nunca é exportado nem listado. Por padrão: nomes com `secret`, `password`, `token`, `api_key`, `license`, `private`, `credential`, `access_key`, `auth_key` ou `webhook`, e os lugares conhecidos onde plugins os guardam (WP Mail SMTP, gateways de pagamento). Marque os seus, ou deixe passar um:
+
+```php
+add_filter( 'eizport_is_secret', function ( bool $secret, string $name ) {
+	return 'my_plugin_connection' === $name ? true : $secret;
+}, 10, 2 );
 ```
 
 ## eizport_media_used

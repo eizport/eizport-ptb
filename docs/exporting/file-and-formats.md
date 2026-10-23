@@ -1,7 +1,7 @@
 ---
 title: "Arquivo e formatos"
 description: "Escolha entre o WXR simples do WordPress, um pacote .wxrz ou .zip, um .zip do Playground e um plugin que se importa sozinho; nomes de arquivo e o que cada um contém."
-translatedFrom: "28b5618aabf5763a82d30c48e413c391e11091db"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 O botão de alternância **Formato**, no painel **Detalhes** acima da lista, tem duas opções; o nome da primeira acompanha o que vai no arquivo.
@@ -20,7 +20,7 @@ O botão **Como plugin**, ao lado de *Arquivos de mídia* (o ⓘ explica), embru
 
 ## Atualizar existentes
 
-**Atualizar existentes**, no painel **Detalhes**, pede à importação que atualize os itens dos tipos de conteúdo escolhidos que já existem no outro site (mesmo tipo e slug) — o ⓘ dele cita esses tipos (todos, com nada marcado), e ele fica desativado quando só linhas sem conteúdo estão marcadas: menus, opções, a aparência — em vez de adicionar cópias. A escolha fica gravada no pacote (`update_existing` no manifesto), e a caixa do importador já vem marcada. Não vale para WXR XML nem Playground. Veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes).
+**Atualizar existentes**, no painel **Detalhes**, pede à importação que atualize os itens dos tipos de conteúdo escolhidos que já existem no outro site (mesmo tipo e slug) — o ⓘ dele cita esses tipos (todos, com nada marcado), e ele fica desativado quando só linhas sem conteúdo estão marcadas: menus, opções, a aparência — em vez de adicionar cópias. A escolha fica gravada no pacote (`update_existing` no manifesto), e a caixa do importador já vem marcada; com o WP-CLI e a habilidade, a importação só atualiza quando isso é pedido. Não vale para WXR XML nem Playground. Veja [atualizar os itens existentes](../../getting-started/importing/#atualizar-os-itens-existentes).
 
 ## Nome do arquivo
 

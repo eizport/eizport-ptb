@@ -1,7 +1,7 @@
 ---
 title: "Opções"
 description: "Exporte as configurações do site uma a uma, por grupo ou todas de uma vez; configurações vinculadas; o que nunca é exportado; como os IDs são remapeados."
-translatedFrom: "c6e1e88417a3efa4225278a31cefe270c61e1658"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 A linha **Opções** exporta as configurações do site num `options.json` dentro do pacote, definidas no outro site quando a importação termina.
@@ -36,7 +36,13 @@ A configuração decide quando elas são sugeridas ou adicionadas:
 
 URLs do site (`siteurl`, `home`), o e-mail do administrador, chaves e salts, `active_plugins`, funções (`<prefix>user_roles`), quem pode se registrar e com qual função (`users_can_register`, `default_role`), `cron`, `rewrite_rules`, versões do banco de dados, credenciais do servidor de e-mail, as próprias configurações do plugin e todos os transients. Plugins acrescentam as suas com [`eizport_denied_options`](../../developers/hooks/#eizport_denied_options); as do próprio WordPress não podem ser removidas.
 
+Os **segredos** também não são exportados nem listados: uma opção, uma modificação do tema ou um campo de widget cujo nome diz que guarda um — `secret`, `password`, `token`, `api_key`, `license`, `private`, `credential`… — e os lugares conhecidos onde plugins os guardam (WP Mail SMTP, configurações de gateways de pagamento). Um plugin marca os seus, ou deixa passar um, com [`eizport_is_secret`](../../developers/hooks/#eizport_is_secret).
+
 Uma importação também nunca grava as do próprio WordPress, seja o que for que o pacote traga: um pacote é um arquivo que qualquer um pode ter escrito.
+
+## Opções fora dos grupos, na importação
+
+Uma importação define as opções dos grupos (com as que plugins acrescentam), as opções que apontam para um post, as modificações do tema e os widgets. Qualquer outra opção que o pacote traga — exportada **pelo nome** — espera por quem importa: a etapa 1 do importador as lista em **Outras opções**, desmarcadas, e só as marcadas são definidas (na tela de um [plugin de pacote](../as-plugin/) também). Com o [WP-CLI](../../developers/wp-cli/) e a habilidade [`eizport/import`](../../developers/abilities/#eizportimport), só as citadas em `--options` / `options`. Numa rede, só para quem pode gerenciar as opções da rede.
 
 ## IDs na importação
 

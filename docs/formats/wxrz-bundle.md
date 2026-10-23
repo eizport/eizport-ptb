@@ -1,7 +1,7 @@
 ---
 title: "Pacote WXRZ"
 description: "O formato .wxrz, entrada por entrada — manifesto, WXR, mídia, post_content e options.json — e as regras de segurança quando um pacote é aberto."
-translatedFrom: "ab155ee027dec103e45e68b8f5a231245cf98e50"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 Um arquivo `.wxrz` é um **arquivo tar compactado com gzip** (`ustar`). Qualquer ferramenta que lê `.tar.gz` o abre:
@@ -59,7 +59,7 @@ O [JSON Schema](https://eizport.github.io/schemas/1.1/manifest.json) dele vem no
 | `wxr` | O nome da entrada do WXR (a primeira é lida) |
 | `files` | URL do anexo no WXR → entrada no arquivo. Quando o importador baixa esse URL, recebe a entrada como resposta |
 | `options` | A entrada do arquivo de opções, quando há uma |
-| `update_existing` | `true` quando a importação deve atualizar os itens que já existem (mesmo tipo e slug); a caixa do importador já vem marcada |
+| `update_existing` | `true` quando a importação deve atualizar os itens que já existem (mesmo tipo e slug); a caixa do importador já vem marcada. O WP-CLI e a habilidade só atualizam quando isso é pedido |
 | `term_media` | Taxonomia → slug do termo → chave de meta → ID do anexo no site que exportou, para os termos que os itens usam ([`eizport_term_media`](../../developers/hooks/#eizport_term_media)); remapeado para o anexo importado no fim da importação |
 | `post_content` | Arquivo de conteúdo → o item a que pertence: `id`, `type` e `slug` originais |
 

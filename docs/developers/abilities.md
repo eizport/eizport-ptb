@@ -1,7 +1,7 @@
 ---
 title: "Habilidades"
 description: "Cada habilidade eizport/* da Abilities API do WordPress — entrada, saída, permissão — por REST, PHP e MCP."
-translatedFrom: "3029021021c6849c9bfe01e368f284b72848fe58"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 Tudo o que as telas fazem é uma **habilidade** da [Abilities API](https://developer.wordpress.org/apis/abilities/) (WordPress 6.9+), na categoria `eizport`. As telas Exportar e Configurações também as chamam, então código, agentes de IA e a interface seguem o mesmo caminho.
@@ -130,7 +130,7 @@ Retorna a cópia:
 
 ## eizport/import
 
-Entrada: `copy` (o nome de uma cópia) ou `attachment_id` (um `.wxrz`, `.zip`, `.xml` ou `.xml.gz` na biblioteca de mídia). `update_existing` (boolean) atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: o que o pacote pede. `css_mode` (`end`, `start`, `replace` — os blocos head/tail de mesmo nome que este site tem, ou no fim quando não há nenhum —, `replace_all`) e `css_markers` (boolean) mudam como as regras CSS do pacote entram ([aparência](../../exporting/appearance/)); padrão: o que o pacote pede. Precisa do Importador do WordPress instalado. Um plugin feito [como plugin](../../exporting/as-plugin/) é recusado (`eizport_plugin_zip`): instale-o como plugin. Retorna `posts` (quantos o importador criou ou encontrou), `options` (os nomes definidos) e `log` (as mensagens do importador, como texto).
+Entrada: `copy` (o nome de uma cópia) ou `attachment_id` (um `.wxrz`, `.zip`, `.xml` ou `.xml.gz` na biblioteca de mídia). `update_existing` (boolean) atualiza os itens que já existem (mesmo tipo e slug) em vez de adicionar cópias; padrão: não — o pacote nunca decide isso sozinho. `options` (nomes) define também as opções do pacote fora dos [grupos de opções](../../exporting/options/#opções-fora-dos-grupos-na-importação); padrão: nenhuma. `css_mode` (`end`, `start`, `replace` — os blocos head/tail de mesmo nome que este site tem, ou no fim quando não há nenhum —, `replace_all`) e `css_markers` (boolean) mudam como as regras CSS do pacote entram ([aparência](../../exporting/appearance/)); padrão: o que o pacote pede. Precisa do Importador do WordPress instalado. Um plugin feito [como plugin](../../exporting/as-plugin/) é recusado (`eizport_plugin_zip`): instale-o como plugin. Retorna `posts` (quantos o importador criou ou encontrou), `options` (os nomes definidos) e `log` (as mensagens do importador, como texto).
 
 ## Padrões
 

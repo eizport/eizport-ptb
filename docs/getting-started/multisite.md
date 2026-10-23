@@ -1,7 +1,7 @@
 ---
 title: "Multisite"
 description: "O Eizport numa rede WordPress: ativação na rede ou por site, quem pode o quê, onde ficam os arquivos de cada site, WP-CLI com --url e desinstalação."
-translatedFrom: "3dc0222b2a05c2e50e848fdd964046c781cdadd0"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 O Eizport funciona em cada site de uma rede como num site simples: um site exporta o próprio conteúdo e importa nele mesmo, seja o que for que os outros sites tenham.
@@ -14,9 +14,9 @@ Use **Ativar na rede** em *Painel da rede → Plugins* para tê-lo em todos os s
 
 | Quem | Pode |
 | --- | --- |
-| Administradores de site | Exportar e importar no site deles, e mudar as configurações do Eizport nele |
+| Administradores de site | Exportar e importar no site deles, e mudar as configurações do Eizport nele. Um [.zip do Playground](../../formats/playground-zip/) leva só os plugins ativos no site deles e os temas que ele pode usar — nenhum plugin indispensável: o código da rede é dos super administradores. Na importação, as opções do pacote fora dos [grupos](../../exporting/options/#opções-fora-dos-grupos-na-importação) e o CSS personalizado não são definidos |
 | Super administradores | Tudo isso em todos os sites, e instalar plugins — um `.zip` [como plugin](../../exporting/as-plugin/) precisa de um para ser instalado; administradores de site importam o pacote que vai dentro dele em Ferramentas → Importar |
-| Usuários que não podem publicar HTML sem filtro | Importam como o WordPress deixa: numa rede só os super administradores podem, então scripts e alguns embeds do conteúdo importado são filtrados para os outros, como seriam se digitados no editor |
+| Usuários que não podem publicar HTML sem filtro | Importam como o WordPress deixa: numa rede só os super administradores podem, então scripts e alguns embeds do conteúdo importado — modelos, partes de modelo e widgets também — são filtrados para os outros, como seriam se digitados no editor |
 
 ## Os arquivos de cada site
 

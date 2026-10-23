@@ -1,7 +1,7 @@
 ---
 title: "Agentes de IA"
 description: "Deixe um agente de IA exportar, importar e gerenciar cópias por você: as habilidades via MCP, o que pedir, o que o agente vê e a segurança embutida."
-translatedFrom: "fd91ed47b73026c542c7910f368d8ca1f1399eeb"
+translatedFrom: "9fd577e7caba305c2b5ac04e7413466a6437c413"
 ---
 
 O Eizport é **pensado para agentes**: tudo o que as telas fazem é uma [habilidade](../abilities/) da Abilities API do WordPress — uma ação com nome, um JSON Schema para a entrada e a saída, uma verificação de permissão e indicações se ela só lê ou se exclui. É exatamente o que um agente de IA precisa para agir num site com segurança, sem raspar telas.
@@ -40,7 +40,7 @@ Os erros voltam como códigos com que um agente pode agir: `eizport_invalid_type
 ## Segurança embutida
 
 - **As permissões do WordPress:** o agente só pode fazer o que o usuário dele pode — `export` para exportações e cópias, `import` para importar, `manage_options` para configurações.
-- **Nenhum segredo sai:** URLs do site, o e-mail do administrador, chaves e salts, usuários e funções, plugins ativos, transients e caches nunca são exportados, não importa o que o agente peça.
+- **Nenhum segredo sai:** URLs do site, o e-mail do administrador, chaves e salts, usuários e funções, plugins ativos, transients e caches nunca são exportados, não importa o que o agente peça — nem opções, modificações do tema ou campos de widget com nome de segredo (senhas, tokens, chaves de API e de licença).
 - **As cópias são temporárias e ocultas:** um token aleatório de 16 caracteres em cada link, `noindex` e robots.txt, uma pasta bloqueada contra acesso direto, e exclusão quando expiram ([cópias](../../settings/copies/)).
 - **As importações mesclam**, não sobrescrevem o site.
 

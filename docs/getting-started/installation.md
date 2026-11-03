@@ -1,7 +1,7 @@
 ---
 title: "Instalação"
 description: "Instale o plugin pelo diretório de plugins do WordPress.org, confira os requisitos e adicione o Importador do WordPress para importar."
-translatedFrom: "3b3b2992af6efdf59a350ba71692a4ee09e6a285"
+translatedFrom: "71402b445ef652c1782fe484dad063d046d1bc05"
 ---
 
 ## Pelo diretório de plugins
@@ -23,7 +23,7 @@ Toda versão também está no [GitHub](https://github.com/eizport/eizport/releas
 
 ## Experimente antes
 
-Abra a [demonstração ao vivo no WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/eizport/eizport/trunk/playground/blueprint.json&language=pt_BR): um site descartável no seu navegador com o plugin e páginas de exemplo.
+Abra a [Pré-visualização ao vivo](https://br.wordpress.org/plugins/eizport/?preview=1) do diretório de plugins: um site WordPress descartável no seu navegador (WordPress Playground), com o Eizport na tela Exportar.
 
 ## Para importar
 
